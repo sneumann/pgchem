@@ -13,9 +13,9 @@ MATCHMOL_LIB_DIR=barsoi/
 MODULE_big = libpgchem
 OBJS = reaction/reaction_op.o reaction/reaction_gist.o reaction/reaction_io.o molecule/molecule_op.o molecule/molecule_gist.o molecule/molecule_io.o  obwrapper.o functions.o ${OPENBABEL_SOURCE_DIR}/fingerprints/fingerpc8.o ${OPENBABEL_SOURCE_DIR}/fingerprints/finger2.o ${OPENBABEL_SOURCE_DIR}/fingerprints/finger3.o ${OPENBABEL_SOURCE_DIR}/formats/inchiformat.o
 
-SHLIB_LINK = -static -L${MATCHMOL_LIB_DIR} -lbarsoi ${OPENBABEL_LIB_DIRS} -lopenbabel -linchi -lformats --driver-name=g++ -u __ZN9OpenBabel9MDLFormat11GetMIMETypeEv -u __ZN9OpenBabel13SMIBaseFormat11GetMIMETypeEv -lz 
+SHLIB_LINK = -L${MATCHMOL_LIB_DIR} -lbarsoi ${OPENBABEL_LIB_DIRS} -lopenbabel -linchi -lformats --driver-name=g++ -u __ZN9OpenBabel9MDLFormat11GetMIMETypeEv -u __ZN9OpenBabel13SMIBaseFormat11GetMIMETypeEv -lz 
 #PG_CPPFLAGS = -O2 -finline-functions -I. ${OPENBABEL_INCLUDE_DIRS} 
-PG_CPPFLAGS=-O2 -finline-functions -funroll-loops -I. ${OPENBABEL_INCLUDE_DIRS} 
+PG_CPPFLAGS=-fPIC -O2 -finline-functions -funroll-loops -I. ${OPENBABEL_INCLUDE_DIRS} 
 ifdef USE_PGXS
 PGXS = $(shell pg_config --pgxs)
 include $(PGXS)
