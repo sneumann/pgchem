@@ -14,4 +14,4 @@ checkmol:
 
 
 clean:
-	rm -f libbarsoi.so checkmol matchmol
+	rm -f libbarsoi.so checkmol matchmol *.o
