@@ -1,0 +1,1 @@
+#define RFPSIZE (2*FPSIZE2)

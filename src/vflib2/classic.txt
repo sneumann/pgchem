@@ -1,0 +1,2 @@
+Classic matrix multiplication
+Elapsed time:  11.5130 sec (0.0010 sec resolution)

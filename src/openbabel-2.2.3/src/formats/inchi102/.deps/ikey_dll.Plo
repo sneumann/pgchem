@@ -1,0 +1,58 @@
+ikey_dll.lo: ikey_dll.c \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/time.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/_mingw.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/include/stddef.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/stdlib.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/stdio.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/include/stdarg.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/sys/types.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/string.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/ctype.h \
+  ../../../include/inchi102/sha2.h \
+  ../../../include/inchi102/ikey_base26.h \
+  ../../../include/inchi102/ichisize.h ../../../include/inchi102/mode.h \
+  ../../../include/inchi102/inchi_api.h ../../../include/inchi102/util.h \
+  ../../../include/inchi102/inpdef.h ../../../include/inchi102/mode.h \
+  ../../../include/inchi102/incomdef.h \
+  ../../../include/inchi102/ichisize.h \
+  ../../../include/inchi102/ichidrp.h
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/time.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/_mingw.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/include/stddef.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/stdlib.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/stdio.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/include/stdarg.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/sys/types.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/string.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/ctype.h:
+
+../../../include/inchi102/sha2.h:
+
+../../../include/inchi102/ikey_base26.h:
+
+../../../include/inchi102/ichisize.h:
+
+../../../include/inchi102/mode.h:
+
+../../../include/inchi102/inchi_api.h:
+
+../../../include/inchi102/util.h:
+
+../../../include/inchi102/inpdef.h:
+
+../../../include/inchi102/mode.h:
+
+../../../include/inchi102/incomdef.h:
+
+../../../include/inchi102/ichisize.h:
+
+../../../include/inchi102/ichidrp.h:

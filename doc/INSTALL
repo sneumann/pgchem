@@ -1,0 +1,29 @@
+READ THE IF_YOU_LIKE_THIS DOCUMENT!
+
+1.) install postgresql > 8.x as Source and put pgchem/ under the contrib/ directory
+2.) OpenBabel 2.3.3 is now included 
+
+With Openbabel 2.3.3 the build process has become less complicated but still no fun.  On x86_32 all needed Openbabel parts are now linked into libpgchem.dll/.so, so we recommend, that you use the binary distributions, if possible and continue with step 6!!! For x86_64 you also need libinchi.so and libopenbabel.so.
+
+IF YOU COMPILE YOURSELF: 
+
+On Windows:
+OpenBabel must be compiled with static libraries: configure --disable-dynamic-modules --enable-static=yes 
+
+On Linux:
+OpenBabel must be compiled with static libraries: configure --disable-dynamic-modules --enable-static=yes
+
+After successful compiliation of OpenBabel you _must_ rename the file openbabel-2.3.3/include/openbabel/locale.h to _locale.h otherwise the compiler will barf when compiling pgchem!
+
+3.) make. Windows and Linux 32 Bit now have a single makefile without suffix!
+4.) On Windows copy or link libbarsoi.dll and libpgchem.dll into the postgresql lib/ directory. 
+On Linux copy or link libbarsoi.so, libpgchem.so, liopenbabel.so and libinchi.so into the postgresql lib/ directory.
+The server process must be able to see them when running! This is no problem with libpgchem, but in order to find libbarsoi the PATH on Windows and LD_LIBRARY_PATH on Linux must point to the postgresql lib/ directory, otherwise the indirect loading of libbarsoi through libpgchem WILL FAIL!
+5.) create a database. You can name it as you like. All follwing steps must be executed on that database you've just created
+6.) install the plpgsql language into the database
+7.) execute pgchem_setup.sql as postgresql superuser (usually 'postgres')
+8.) if SELECT pgchem_version() produces something like 'pgchem...UNIX' or 'pgchem...WIN32' you're almost there :-)
+9.) Copy the content of tigressdata.zip to c:/ on Windows or to /usr/local/share/ on Linux. Sorry, this paths are hardcoded for now and can only be changed by recompiling.
+10.) Refer to the User's Guide how to design a database Schema for pgchem::tigress (and look at the Examples!)
+
+READ THE IF_YOU_LIKE_THIS DOCUMENT!

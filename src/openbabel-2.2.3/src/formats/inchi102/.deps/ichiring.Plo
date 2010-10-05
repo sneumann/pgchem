@@ -1,0 +1,43 @@
+ichiring.lo: ichiring.c \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/stdio.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/_mingw.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/include/stddef.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/include/stdarg.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/sys/types.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/stdlib.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/string.h \
+  ../../../include/inchi102/mode.h ../../../include/inchi102/inpdef.h \
+  ../../../include/inchi102/mode.h ../../../include/inchi102/incomdef.h \
+  ../../../include/inchi102/ichisize.h \
+  ../../../include/inchi102/ichidrp.h ../../../include/inchi102/extr_ct.h \
+  ../../../include/inchi102/ichiring.h
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/stdio.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/_mingw.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/include/stddef.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/include/stdarg.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/sys/types.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/stdlib.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/string.h:
+
+../../../include/inchi102/mode.h:
+
+../../../include/inchi102/inpdef.h:
+
+../../../include/inchi102/mode.h:
+
+../../../include/inchi102/incomdef.h:
+
+../../../include/inchi102/ichisize.h:
+
+../../../include/inchi102/ichidrp.h:
+
+../../../include/inchi102/extr_ct.h:
+
+../../../include/inchi102/ichiring.h:

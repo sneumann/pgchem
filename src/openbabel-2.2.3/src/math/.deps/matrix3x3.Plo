@@ -1,0 +1,278 @@
+matrix3x3.lo: matrix3x3.cpp ../../include/openbabel/babelconfig.h \
+  ../../include/openbabel/math/matrix3x3.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/ostream \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/ios \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/iosfwd \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/c++config.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/os_defines.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/cpu_defines.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stringfwd.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/postypes.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/cwchar \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/cstddef \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/include/stddef.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/wchar.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/_mingw.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/include/stdarg.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/wctype.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/sys/types.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/stdint.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/exception \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/char_traits.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_algobase.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/functexcept.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/exception_defines.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/cpp_type_traits.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/ext/type_traits.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/ext/numeric_traits.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_pair.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_move.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/concept_check.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_iterator_base_types.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_iterator_base_funcs.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_iterator.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/debug/debug.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/cstdio \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/stdio.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/localefwd.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/c++locale.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/clocale \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/locale.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/cctype \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/ctype.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/ios_base.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/ext/atomicity.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/gthr.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/gthr-default.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/errno.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/atomic_word.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/locale_classes.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/string \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/allocator.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/c++allocator.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/ext/new_allocator.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/new \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/ostream_insert.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/cxxabi-forced.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_function.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/backward/binders.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/basic_string.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/basic_string.tcc \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/locale_classes.tcc \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/streambuf \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/streambuf.tcc \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/basic_ios.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/locale_facets.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/cwctype \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/ctype_base.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/streambuf_iterator.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/ctype_inline.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/locale_facets.tcc \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/basic_ios.tcc \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/ostream.tcc \
+  ../../include/openbabel/math/vector3.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/math.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/iostream \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/istream \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/istream.tcc \
+  ../../include/openbabel/rand.h ../../include/openbabel/oberror.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/sstream \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/sstream.tcc \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/vector \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_construct.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_uninitialized.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_vector.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_bvector.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/vector.tcc \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/deque \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_deque.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/deque.tcc \
+  ../../include/openbabel/obutil.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/sys/time.h \
+  c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/time.h
+
+../../include/openbabel/babelconfig.h:
+
+../../include/openbabel/math/matrix3x3.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/ostream:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/ios:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/iosfwd:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/c++config.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/os_defines.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/cpu_defines.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stringfwd.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/postypes.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/cwchar:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/cstddef:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/include/stddef.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/wchar.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/_mingw.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/include/stdarg.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/wctype.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/sys/types.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/stdint.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/exception:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/char_traits.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_algobase.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/functexcept.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/exception_defines.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/cpp_type_traits.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/ext/type_traits.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/ext/numeric_traits.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_pair.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_move.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/concept_check.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_iterator_base_types.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_iterator_base_funcs.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_iterator.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/debug/debug.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/cstdio:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/stdio.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/localefwd.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/c++locale.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/clocale:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/locale.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/cctype:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/ctype.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/ios_base.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/ext/atomicity.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/gthr.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/gthr-default.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/errno.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/atomic_word.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/locale_classes.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/string:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/allocator.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/c++allocator.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/ext/new_allocator.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/new:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/ostream_insert.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/cxxabi-forced.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_function.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/backward/binders.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/basic_string.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/basic_string.tcc:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/locale_classes.tcc:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/streambuf:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/streambuf.tcc:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/basic_ios.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/locale_facets.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/cwctype:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/ctype_base.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/streambuf_iterator.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/i686-pc-mingw32/bits/ctype_inline.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/locale_facets.tcc:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/basic_ios.tcc:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/ostream.tcc:
+
+../../include/openbabel/math/vector3.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/math.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/iostream:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/istream:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/istream.tcc:
+
+../../include/openbabel/rand.h:
+
+../../include/openbabel/oberror.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/sstream:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/sstream.tcc:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/vector:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_construct.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_uninitialized.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_vector.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_bvector.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/vector.tcc:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/deque:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/stl_deque.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/c++/4.3.3-dw2-tdm-1/bits/deque.tcc:
+
+../../include/openbabel/obutil.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/sys/time.h:
+
+c:\mingw\bin\../lib/gcc/i686-pc-mingw32/4.3.3-dw2-tdm-1/../../../../include/time.h:

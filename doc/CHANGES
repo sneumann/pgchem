@@ -1,0 +1,70 @@
+0.2j->0.2k:
+Win32 is working again (with tempfiles)
+OS X Makefile
+Minimal checkmol/matchmol testsuite
+General code cleanup
+create_chembank does not prompt for password on every step anymore
+
+0.2k->0.3
+tweak_molfile short-circuits if molfile was already processed -> possible speedup when inserting/updating pre-processed molfiles
+smiles_to_molecule and molecule_to_smiles now work as expected repeatedly and when nested in other function calls
+uses checkmol/matchmol 0.3 in non-compatibility mode -> update your fingerprints! (or stay with checkmol/matchmol 0.2k, this works too)
+
+0.3->0.3i
+new matching controls: R/S and E/Z stereo isomer matching globally or per atom / per bond
+made tweak_molfile short circuit code configurable, because checkmol 0.3i adds additional stereo
+information to molfiles. Short circuit code is activated when TWEAK_MOLFILE_SHORT_CIRCUIT in pgchem_config.h is defined
+removed the operators because the new stereo matching capabilities of matchmol led to combinatory explosion, so everything is done by pgchem_match_exact and pgchem_match_substruct.
+I discourage the use of an functional index for exact matching. The speedup is marginal but it kills ANALYZE on structure tables
+All functionality for similarity searching was removed, it gave answers of very limited usefulness anyway
+
+0.3->0.3j
+Update all functions and triggers
+Update your fingerprints
+tweak_molecule() is now runtime configurable, TWEAK_MOLFILE_SHORT_CIRCUIT was removed.
+Contains Barsoi accelerator library, all available accelerated functions are suffixed '_a'
+For top speed on Intel machines, try icc instead of gcc. I found a speed gain of 25% on a dual Xeon 2.8GHz, but your mileage may vary.
+
+Raw performance of Barsoi on this machine (gcc -O2):
+
+Untweaked molfile input:
+Exact match:		~370 structures/sec. / ~819 structures/sec. (burst mode)
+Substructure match:	~353 structures/sec. / ~775 structures/sec. (burst mode)
+
+Tweaked molfile input:
+Approx. twice the speed of untweaked molfile input
+
+0.3j->0.3l
+Now uses Openbabel2.
+With Openbabel2 the build process has become quite complicated. All needed Openbabel parts are now linked into libpgchem.dll/.so, so we recommend, that you use the binary distributions, if possible.
+Includes all important changes of checkmol/matchmol up to 0.3m
+A lot new functions (See the User's guide)
+FastMatch searching (See the User's guide)
+The molstatistics table has one new column, n_rbz and similarity searching is back again (see trigger_functions.sql, functions.sql and the examples how to set up those features. Just installing the libraries upon an older schema WILL FAIL!Update all functions and triggers
+Update your fingerprints)
+
+0.3l->7.0
+Uses only barsoi by default. Support for external checkmol/matchmol was removed from the build (but is still in the code).
+Includes all functions of checkmol 0.3o, especially the correct processing of unconnected graphs (e.g. salts/mixtures).
+Some new/altered functions (See the User guide)
+The fingerprint has some new fields, so molsimilarity has more columns. Update your fingerprints.
+Runtime builds now have MODULE_MAGIC enabled and were built against PostgreSQL 8.2.2.
+
+7.0->7.1
+Uses OpenBabel 2.1.1.
+Substructure screening with binary fingerprints possible.
+x64 Linux runtime.
+Convenience funtions.
+Support for 10-digit CAS-RNs.
+Massive naming cleanup and many small fixes, see the User guide.
+FastMatch by default.
+
+7.1->1.0 GiST
+True GiST molecular index with operators.
+Lots of new functions and some renamed, see the User guide.
+
+1.0->1.1 GiST
+New internal molecule format.  About ten times faster. See: http://chemdb.sourceforge.net/wiki/index.php/Binary_storage_of_OBMol_objects_for_faster_operations for how it works.
+
+YOU MUST MIGRATE YOUR DATABASE to the new format. The easiest way is to backup the affected table(s) i.e. tables with 'molecule' columns, drop those table(s), then replace 1.0 with 1.1 (libpgchem, libbarsoi) and restore the table(s) from the backup.
+
