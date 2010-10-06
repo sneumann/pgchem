@@ -292,12 +292,22 @@ molecule_similarity_gist (PG_FUNCTION_ARGS)
   HeapTupleHeader  t = PG_GETARG_HEAPTUPLEHEADER(1);
   bool isnull;
   float8 similarity;
-  MOLECULE *mol2 = (MOLECULE*) DatumGetPointer(GetAttributeByName(t, "_mq", &isnull));
-  if(isnull) elog (ERROR, "Query molecule must not be NULL");
-  char *oper = (char*) DatumGetPointer(GetAttributeByName(t, "_op", &isnull));
-  if(isnull) elog (ERROR, "Query operator must not be NULL");
-  float8 threshold = DatumGetFloat8(GetAttributeByName(t, "_threshold", &isnull));
-  if(isnull) elog (ERROR, "Query threshold must not be NULL");
+
+  MOLECULE *mol2 = NULL;
+  char *oper = NULL;
+  float8 threshold;
+
+  mol2 = (MOLECULE*) DatumGetPointer(GetAttributeByName(t, "_mq", &isnull));
+  if(isnull) 
+	  elog (ERROR, "Query molecule must not be NULL");
+
+  oper = (char*) DatumGetPointer(GetAttributeByName(t, "_op", &isnull));
+  if(isnull) 
+	  elog (ERROR, "Query operator must not be NULL");
+
+  threshold = DatumGetFloat8(GetAttributeByName(t, "_threshold", &isnull));
+  if(isnull) 
+	  elog (ERROR, "Query threshold must not be NULL");
   
   similarity = ob_tanimoto
 		    ((uint8 *) mol1->fp,  (uint8 *) mol2->fp, FPSIZE2*sizeof(uint32));		    
