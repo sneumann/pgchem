@@ -232,7 +232,7 @@ if(mode==1) {
 
 //printf("12");
 
-memcpy(tmpbuf,workptrA,((int)workptrB-(int)workptrA)*sizeof(char));
+memcpy(tmpbuf, workptrA, (workptrB-workptrA));
 
 //printf("13");
 
