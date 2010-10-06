@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 70
+Makefile
+Makefile.old
+blib
+pm_to_blib
+OpenBabel.bs
+*.cpp
+OpenBabel.pm
+
+END

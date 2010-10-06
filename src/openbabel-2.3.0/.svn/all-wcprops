@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/openbabel/!svn/ver/4136/openbabel/trunk
+END
+OpenBabel2Config.cmake.in
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/3777/openbabel/trunk/OpenBabel2Config.cmake.in
+END
+authors.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openbabel/!svn/ver/3826/openbabel/trunk/authors.txt
+END
+openbabel-2.0.pc.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/3777/openbabel/trunk/openbabel-2.0.pc.cmake
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/openbabel/!svn/ver/3210/openbabel/trunk/AUTHORS
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/openbabel/!svn/ver/3888/openbabel/trunk/INSTALL
+END
+CTestConfig.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/3777/openbabel/trunk/CTestConfig.cmake
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openbabel/!svn/ver/4122/openbabel/trunk/ChangeLog
+END
+THANKS
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/openbabel/!svn/ver/3826/openbabel/trunk/THANKS
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/openbabel/!svn/ver/1720/openbabel/trunk/COPYING
+END
+OpenBabel2ConfigVersion.cmake.in
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openbabel/!svn/ver/3777/openbabel/trunk/OpenBabel2ConfigVersion.cmake.in
+END
+ChangeLog.1.x
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openbabel/!svn/ver/1165/openbabel/trunk/ChangeLog.1.x
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/openbabel/!svn/ver/3432/openbabel/trunk/NEWS
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/openbabel/!svn/ver/3937/openbabel/trunk/README
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/4104/openbabel/trunk/CMakeLists.txt
+END

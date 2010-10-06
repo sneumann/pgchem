@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103
+END
+ichicomn.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichicomn.h
+END
+ichicomp.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichicomp.h
+END
+ichiparm.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichiparm.h
+END
+ichiring.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichiring.h
+END
+sha2.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/include/inchi103/sha2.h
+END
+ikey_base26.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ikey_base26.h
+END
+ichi_io.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichi_io.h
+END
+inpdef.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/inpdef.h
+END
+ichinorm.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichinorm.h
+END
+ichister.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichister.h
+END
+ichi.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichi.h
+END
+ichicano.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichicano.h
+END
+util.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/util.h
+END
+ichi_bns.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichi_bns.h
+END
+ichicant.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichicant.h
+END
+inchi_api.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/inchi_api.h
+END
+mode.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/mode.h
+END
+incomdef.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/incomdef.h
+END
+inchi_dll_main.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/inchi_dll_main.h
+END
+ichirvrs.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichirvrs.h
+END
+inchicmp.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/inchicmp.h
+END
+ichitime.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichitime.h
+END
+lreadmol.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/lreadmol.h
+END
+aux2atom.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/aux2atom.h
+END
+strutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/strutil.h
+END
+ichisize.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichisize.h
+END
+extr_ct.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/extr_ct.h
+END
+ichitaut.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichitaut.h
+END
+ichimake.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichimake.h
+END
+ichimain.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichimain.h
+END
+ichidrp.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichidrp.h
+END
+inchi_dll_a.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/inchi_dll_a.h
+END
+ichierr.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi103/ichierr.h
+END

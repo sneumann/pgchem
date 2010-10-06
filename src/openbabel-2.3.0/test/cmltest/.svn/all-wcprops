@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openbabel/!svn/ver/2768/openbabel/trunk/test/cmltest
+END
+cycleformats.bat
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openbabel/!svn/ver/1408/openbabel/trunk/test/cmltest/cycleformats.bat
+END
+3d.head.sdf
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/1372/openbabel/trunk/test/cmltest/3d.head.sdf
+END
+cs2a.cml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/336/openbabel/trunk/test/cmltest/cs2a.cml
+END
+cycleformats.sh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/test/cmltest/cycleformats.sh
+END
+nsc2dcml.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/314/openbabel/trunk/test/cmltest/nsc2dcml.xml
+END
+test.bat
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/320/openbabel/trunk/test/cmltest/test.bat
+END
+nsc3dcml.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/314/openbabel/trunk/test/cmltest/nsc3dcml.xml
+END
+nsc2dmol.mol
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/314/openbabel/trunk/test/cmltest/nsc2dmol.mol
+END
+nsc3dmol.mol
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/314/openbabel/trunk/test/cmltest/nsc3dmol.mol
+END
+test.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/test/cmltest/test.sh
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/314/openbabel/trunk/test/cmltest/readme.txt
+END
+README-UNIX.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/336/openbabel/trunk/test/cmltest/README-UNIX.txt
+END

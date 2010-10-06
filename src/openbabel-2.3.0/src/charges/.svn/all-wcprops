@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/charges
+END
+mmff94.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/charges/mmff94.cpp
+END
+qtpie.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/charges/qtpie.cpp
+END
+qeq.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/charges/qeq.cpp
+END
+qtpie.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/charges/qtpie.h
+END
+gasteiger.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/charges/gasteiger.cpp
+END
+qeq.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/charges/qeq.h
+END

@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml
+END
+xmlschemastypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xmlschemastypes.h
+END
+xmlwin32version.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xmlwin32version.h
+END
+nanohttp.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/nanohttp.h
+END
+parser.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/parser.h
+END
+xmlwriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xmlwriter.h
+END
+relaxng.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/relaxng.h
+END
+nanoftp.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/nanoftp.h
+END
+xmlversion.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xmlversion.h
+END
+debugXML.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/debugXML.h
+END
+xpointer.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xpointer.h
+END
+catalog.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/catalog.h
+END
+SAX2.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/SAX2.h
+END
+xmlsave.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xmlsave.h
+END
+HTMLparser.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/HTMLparser.h
+END
+dict.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/dict.h
+END
+hash.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/hash.h
+END
+xmlexports.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xmlexports.h
+END
+encoding.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/encoding.h
+END
+xmlmemory.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xmlmemory.h
+END
+threads.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/threads.h
+END
+SAX.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/SAX.h
+END
+xmlautomata.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xmlautomata.h
+END
+valid.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/valid.h
+END
+uri.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/uri.h
+END
+tree.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/tree.h
+END
+schemasInternals.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/schemasInternals.h
+END
+xmlschemas.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xmlschemas.h
+END
+xpathInternals.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xpathInternals.h
+END
+c14n.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/c14n.h
+END
+xmlmodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xmlmodule.h
+END
+xmlunicode.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xmlunicode.h
+END
+xmlerror.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xmlerror.h
+END
+chvalid.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/chvalid.h
+END
+xinclude.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xinclude.h
+END
+list.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/list.h
+END
+xmlregexp.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xmlregexp.h
+END
+parserInternals.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/parserInternals.h
+END
+pattern.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/pattern.h
+END
+globals.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/globals.h
+END
+xmlreader.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xmlreader.h
+END
+DOCBparser.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/DOCBparser.h
+END
+HTMLtree.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/HTMLtree.h
+END
+entities.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/entities.h
+END
+xpath.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xpath.h
+END
+xlink.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xlink.h
+END
+xmlstring.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xmlstring.h
+END
+xmlIO.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/libxml/xmlIO.h
+END

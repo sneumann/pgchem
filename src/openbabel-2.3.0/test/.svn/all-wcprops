@@ -1,0 +1,455 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/openbabel/!svn/ver/4136/openbabel/trunk/test
+END
+aromatest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/3520/openbabel/trunk/test/aromatest.cpp
+END
+residue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3520/openbabel/trunk/test/residue.cpp
+END
+testexample.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/testexample.py
+END
+invalidsmiles.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/3521/openbabel/trunk/test/invalidsmiles.cpp
+END
+cml.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/test/cml.sh
+END
+testbindings.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/4131/openbabel/trunk/test/testbindings.py
+END
+rotortest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/3961/openbabel/trunk/test/rotortest.cpp
+END
+inchiwrite.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/3597/openbabel/trunk/test/inchiwrite.cpp
+END
+inchi2.pl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/inchi2.pl
+END
+mmff94validate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/test/mmff94validate.cpp
+END
+testunique.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/testunique.py
+END
+spectrophoretest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/3835/openbabel/trunk/test/spectrophoretest.cpp
+END
+tetraplanartest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/tetraplanartest.cpp
+END
+ffmmff94.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/4136/openbabel/trunk/test/ffmmff94.cpp
+END
+testsym.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/4121/openbabel/trunk/test/testsym.py
+END
+roundtrip.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/test/roundtrip.cpp
+END
+testkekule.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/4076/openbabel/trunk/test/testkekule.py
+END
+automorphismtest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/4063/openbabel/trunk/test/automorphismtest.cpp
+END
+phmodel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3520/openbabel/trunk/test/phmodel.cpp
+END
+aromatic.pl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/1375/openbabel/trunk/test/aromatic.pl
+END
+canonstabletest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/4092/openbabel/trunk/test/canonstabletest.cpp
+END
+testfastsearch.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/testfastsearch.py
+END
+formalcharge.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/3523/openbabel/trunk/test/formalcharge.cpp
+END
+tetrahedraltest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/tetrahedraltest.cpp
+END
+obtest.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openbabel/!svn/ver/4073/openbabel/trunk/test/obtest.h
+END
+obbench.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/obbench.h
+END
+canonconsistenttest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openbabel/!svn/ver/4135/openbabel/trunk/test/canonconsistenttest.cpp
+END
+smartstest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/3521/openbabel/trunk/test/smartstest.cpp
+END
+isomorphismtest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/4063/openbabel/trunk/test/isomorphismtest.cpp
+END
+datatest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/3438/openbabel/trunk/test/datatest.cpp
+END
+testbabel.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/testbabel.py
+END
+zipstream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/zipstream.cpp
+END
+ffgaff.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/4107/openbabel/trunk/test/ffgaff.cpp
+END
+unitcell.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/3645/openbabel/trunk/test/unitcell.cpp
+END
+lssrtest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/3847/openbabel/trunk/test/lssrtest.cpp
+END
+inchi.pl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/inchi.pl
+END
+conversion.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/3532/openbabel/trunk/test/conversion.cpp
+END
+ffghemical.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/3523/openbabel/trunk/test/ffghemical.cpp
+END
+cistranstest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/cistranstest.cpp
+END
+math.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openbabel/!svn/ver/3212/openbabel/trunk/test/math.cpp
+END
+charge-mmff94.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/4125/openbabel/trunk/test/charge-mmff94.cpp
+END
+stereoperceptiontest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/stereoperceptiontest.cpp
+END
+smilestest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/4088/openbabel/trunk/test/smilestest.cpp
+END
+shuffletest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/4092/openbabel/trunk/test/shuffletest.cpp
+END
+ffuff.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/3523/openbabel/trunk/test/ffuff.cpp
+END
+ringtest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/3521/openbabel/trunk/test/ringtest.cpp
+END
+strip.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/strip.cpp
+END
+stereotest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/4063/openbabel/trunk/test/stereotest.cpp
+END
+smilesmatch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/3521/openbabel/trunk/test/smilesmatch.cpp
+END
+iterators.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/3521/openbabel/trunk/test/iterators.cpp
+END
+bond.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openbabel/!svn/ver/3161/openbabel/trunk/test/bond.cpp
+END
+obmolbenchmark.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/obmolbenchmark.cpp
+END
+mol.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openbabel/!svn/ver/3585/openbabel/trunk/test/mol.cpp
+END
+format.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/3520/openbabel/trunk/test/format.cpp
+END
+graphsymtest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/4088/openbabel/trunk/test/graphsymtest.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/4107/openbabel/trunk/test/CMakeLists.txt
+END
+squareplanartest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/squareplanartest.cpp
+END
+test-set.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/test/test-set.sh
+END
+atom.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/test/atom.cpp
+END
+charge-gasteiger.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/4125/openbabel/trunk/test/charge-gasteiger.cpp
+END
+internalcoord.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/test/internalcoord.cpp
+END
+logp_psa.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/3520/openbabel/trunk/test/logp_psa.cpp
+END
+smartsparse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/smartsparse.cpp
+END
+formula.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3523/openbabel/trunk/test/formula.cpp
+END
+cmlreadfile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/3520/openbabel/trunk/test/cmlreadfile.cpp
+END
+cansmi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/3520/openbabel/trunk/test/cansmi.cpp
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openbabel/!svn/ver/1164/openbabel/trunk/test/README
+END
+invalidsmarts.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/3521/openbabel/trunk/test/invalidsmarts.cpp
+END
+test_pybel.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/test_pybel.py
+END
+cansmiles_shuffle.sh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/cansmiles_shuffle.sh
+END
+generate.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/generate.sh
+END
+uniqueidtest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/uniqueidtest.cpp
+END
+buildertest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/4004/openbabel/trunk/test/buildertest.cpp
+END
+tetranonplanartest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/tetranonplanartest.cpp
+END
+aligntest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/4079/openbabel/trunk/test/aligntest.cpp
+END

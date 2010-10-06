@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openbabel/!svn/ver/3923/openbabel/trunk/doc/examples
+END
+obconversion_readstring.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openbabel/!svn/ver/3861/openbabel/trunk/doc/examples/obconversion_readstring.py
+END
+obfingerprint_getfingerprint.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openbabel/!svn/ver/3923/openbabel/trunk/doc/examples/obfingerprint_getfingerprint.cpp
+END
+obconformersearch_default.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openbabel/!svn/ver/3861/openbabel/trunk/doc/examples/obconformersearch_default.cpp
+END
+obconversion_readstring.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openbabel/!svn/ver/3861/openbabel/trunk/doc/examples/obconversion_readstring.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3861/openbabel/trunk/doc/examples/CMakeLists.txt
+END
+obforcefield_energy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openbabel/!svn/ver/3861/openbabel/trunk/doc/examples/obforcefield_energy.cpp
+END

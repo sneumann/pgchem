@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/3843/openbabel/trunk/windows-vc2008/include/rpc
+END
+xdr.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openbabel/!svn/ver/3843/openbabel/trunk/windows-vc2008/include/rpc/xdr.h
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openbabel/!svn/ver/3843/openbabel/trunk/windows-vc2008/include/rpc/types.h
+END

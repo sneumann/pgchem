@@ -1,0 +1,239 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/openbabel/!svn/ver/3979/openbabel/trunk/doc
+END
+obgrep.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/2675/openbabel/trunk/doc/obgrep.html
+END
+obrotate.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/2675/openbabel/trunk/doc/obrotate.html
+END
+roundtrip.1
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/2920/openbabel/trunk/doc/roundtrip.1
+END
+obchiral.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/2675/openbabel/trunk/doc/obchiral.html
+END
+obprobe.1
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openbabel/!svn/ver/2920/openbabel/trunk/doc/obprobe.1
+END
+obgen.1
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openbabel/!svn/ver/2920/openbabel/trunk/doc/obgen.1
+END
+README.dioxin.pov
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/184/openbabel/trunk/doc/README.dioxin.pov
+END
+obrotamer.1
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/2920/openbabel/trunk/doc/obrotamer.1
+END
+obprobe.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/2675/openbabel/trunk/doc/obprobe.html
+END
+obgen.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/2675/openbabel/trunk/doc/obgen.html
+END
+obrotamer.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/2675/openbabel/trunk/doc/obrotamer.html
+END
+OpenBabelGUI.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/3979/openbabel/trunk/doc/OpenBabelGUI.html
+END
+obfit.1
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openbabel/!svn/ver/2920/openbabel/trunk/doc/obfit.1
+END
+api-header.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/3793/openbabel/trunk/doc/api-header.html
+END
+babel.1
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openbabel/!svn/ver/3347/openbabel/trunk/doc/babel.1
+END
+obprop.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/2675/openbabel/trunk/doc/obprop.html
+END
+OBTwoMigration.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/2675/openbabel/trunk/doc/OBTwoMigration.html
+END
+README.povray
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/184/openbabel/trunk/doc/README.povray
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/3861/openbabel/trunk/doc/CMakeLists.txt
+END
+obconformer.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/2675/openbabel/trunk/doc/obconformer.html
+END
+obrotate.1
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/2920/openbabel/trunk/doc/obrotate.1
+END
+obchiral.1
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/3347/openbabel/trunk/doc/obchiral.1
+END
+Doxyfile.in
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/3926/openbabel/trunk/doc/Doxyfile.in
+END
+dioxin.pov
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openbabel/!svn/ver/181/openbabel/trunk/doc/dioxin.pov
+END
+modules.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openbabel/!svn/ver/3926/openbabel/trunk/doc/modules.h
+END
+obprop.1
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openbabel/!svn/ver/2920/openbabel/trunk/doc/obprop.1
+END
+obminimize.1
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/2920/openbabel/trunk/doc/obminimize.1
+END
+dioxin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openbabel/!svn/ver/184/openbabel/trunk/doc/dioxin.inc
+END
+dioxin.mol2
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/184/openbabel/trunk/doc/dioxin.mol2
+END
+obminimize.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/2675/openbabel/trunk/doc/obminimize.html
+END
+obfit.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/2675/openbabel/trunk/doc/obfit.html
+END
+api-footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/2675/openbabel/trunk/doc/api-footer.html
+END
+babel.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/2675/openbabel/trunk/doc/babel.html
+END
+obenergy.1
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/2920/openbabel/trunk/doc/obenergy.1
+END
+obconformer.1
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/2920/openbabel/trunk/doc/obconformer.1
+END
+FAQ.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openbabel/!svn/ver/2675/openbabel/trunk/doc/FAQ.html
+END
+obgrep.1
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openbabel/!svn/ver/2920/openbabel/trunk/doc/obgrep.1
+END
+obenergy.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/2675/openbabel/trunk/doc/obenergy.html
+END
+dioxin.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openbabel/!svn/ver/184/openbabel/trunk/doc/dioxin.png
+END

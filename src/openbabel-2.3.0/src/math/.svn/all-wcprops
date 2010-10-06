@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openbabel/!svn/ver/4112/openbabel/trunk/src/math
+END
+matrix3x3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/math/matrix3x3.cpp
+END
+transform3d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/math/transform3d.cpp
+END
+vector3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/math/vector3.cpp
+END
+spacegroup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/4112/openbabel/trunk/src/math/spacegroup.cpp
+END
+align.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/4079/openbabel/trunk/src/math/align.cpp
+END

@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openbabel/!svn/ver/4136/openbabel/trunk/test/files
+END
+alias.mol
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/alias.mol
+END
+charge-gasteiger.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openbabel/!svn/ver/4106/openbabel/trunk/test/files/charge-gasteiger.txt
+END
+uffresults.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/4049/openbabel/trunk/test/files/uffresults.txt
+END
+cansmi-roundtrip.smi
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openbabel/!svn/ver/3984/openbabel/trunk/test/files/cansmi-roundtrip.smi
+END
+progesterone.sdf
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3956/openbabel/trunk/test/files/progesterone.sdf
+END
+smartstest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/1881/openbabel/trunk/test/files/smartstest.txt
+END
+testsym_2Dtests.sdf
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/testsym_2Dtests.sdf
+END
+unitcell.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/3645/openbabel/trunk/test/files/unitcell.txt
+END
+ringresults.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/1509/openbabel/trunk/test/files/ringresults.txt
+END
+test3d.xyz
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/test3d.xyz
+END
+1DRF.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/1DRF.pdb
+END
+CFGT27.CONFIG
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/4021/openbabel/trunk/test/files/CFGT27.CONFIG
+END
+mmff94results.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openbabel/!svn/ver/4049/openbabel/trunk/test/files/mmff94results.txt
+END
+gaffresults.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/4107/openbabel/trunk/test/files/gaffresults.txt
+END
+isomorphism1.cml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3915/openbabel/trunk/test/files/isomorphism1.cml
+END
+formularesults.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/formularesults.txt
+END
+charge-mmff94.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openbabel/!svn/ver/4106/openbabel/trunk/test/files/charge-mmff94.txt
+END
+ghemicalresults.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openbabel/!svn/ver/4049/openbabel/trunk/test/files/ghemicalresults.txt
+END
+aromatics.smi
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/3429/openbabel/trunk/test/files/aromatics.smi
+END
+invalid-smarts.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/invalid-smarts.txt
+END
+cantest.sdf
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/3912/openbabel/trunk/test/files/cantest.sdf
+END
+more-mmff94.sdf
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/4136/openbabel/trunk/test/files/more-mmff94.sdf
+END
+unitcell_results.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openbabel/!svn/ver/3645/openbabel/trunk/test/files/unitcell_results.txt
+END
+3d.head.2.cml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/3d.head.2.cml
+END
+random
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/1463/openbabel/trunk/test/files/random
+END
+octane.cml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/3961/openbabel/trunk/test/files/octane.cml
+END
+3G61.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/3G61.pdb
+END
+hao_xu_1.mol
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/3853/openbabel/trunk/test/files/hao_xu_1.mol
+END
+hao_xu_2.mol
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/3853/openbabel/trunk/test/files/hao_xu_2.mol
+END
+formalchargeresults.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/formalchargeresults.txt
+END
+dipole-mmff94.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openbabel/!svn/ver/4106/openbabel/trunk/test/files/dipole-mmff94.txt
+END
+hao_xu_3.mol
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/3853/openbabel/trunk/test/files/hao_xu_3.mol
+END
+hao_xu_4.mol
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/3853/openbabel/trunk/test/files/hao_xu_4.mol
+END
+FormulaTest.smi
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/FormulaTest.smi
+END
+ziptest.sdf.gz
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/3205/openbabel/trunk/test/files/ziptest.sdf.gz
+END
+hao_xu_5.mol
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/3853/openbabel/trunk/test/files/hao_xu_5.mol
+END
+invalid-smiles.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/invalid-smiles.txt
+END
+hao_xu_6.mol
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/3853/openbabel/trunk/test/files/hao_xu_6.mol
+END
+test2d.xyz
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/test2d.xyz
+END
+hao_xu_7.mol
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/3853/openbabel/trunk/test/files/hao_xu_7.mol
+END
+hao_xu_8.mol
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/3853/openbabel/trunk/test/files/hao_xu_8.mol
+END
+nci.smi
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/nci.smi
+END
+hao_xu_9.mol
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/3853/openbabel/trunk/test/files/hao_xu_9.mol
+END
+stripresults.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/stripresults.txt
+END
+dipole-gasteiger.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openbabel/!svn/ver/4106/openbabel/trunk/test/files/dipole-gasteiger.txt
+END
+more-mmff94results.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openbabel/!svn/ver/4136/openbabel/trunk/test/files/more-mmff94results.txt
+END
+random2
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/1463/openbabel/trunk/test/files/random2
+END
+random3
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/1463/openbabel/trunk/test/files/random3
+END
+validsmarts.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/4110/openbabel/trunk/test/files/validsmarts.txt
+END
+smartsresults.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openbabel/!svn/ver/3539/openbabel/trunk/test/files/smartsresults.txt
+END
+attype.00.smi
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/1509/openbabel/trunk/test/files/attype.00.smi
+END
+filterset.sdf
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/filterset.sdf
+END
+forcefield.sdf
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/4049/openbabel/trunk/test/files/forcefield.sdf
+END
+CFGB09.CONFIG
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/4021/openbabel/trunk/test/files/CFGB09.CONFIG
+END

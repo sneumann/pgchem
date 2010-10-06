@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 30
+*.dll
+*.cs
+*.cpp
+*.so
+*.dylib
+
+END

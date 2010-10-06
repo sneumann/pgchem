@@ -1,0 +1,30 @@
+K 10
+svn:ignore
+V 204
+.deps
+.libs
+Makefile
+babel
+obfit
+obgrep
+obrotate
+obprop
+obprobe
+obtanimoto
+obchiral
+obsym
+obdoc
+obxyz
+obgen
+obrotamer
+obseq
+obmm
+.gdb_history
+obminimize
+obenergy
+obfragment
+obconformer
+*.cmake
+CMakeFiles
+
+END

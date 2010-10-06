@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/openbabel/!svn/ver/4118/openbabel/trunk/tools
+END
+obspectrophore.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/4118/openbabel/trunk/tools/obspectrophore.cpp
+END
+obprop.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obprop.cpp
+END
+obminimize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obminimize.cpp
+END
+getopt.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/4022/openbabel/trunk/tools/getopt.c
+END
+obfit.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obfit.cpp
+END
+babel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/4094/openbabel/trunk/tools/babel.cpp
+END
+getopt.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/3835/openbabel/trunk/tools/getopt.h
+END
+obseq.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obseq.cpp
+END
+obenergy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obenergy.cpp
+END
+obconformer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obconformer.cpp
+END
+obxyz.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obxyz.cpp
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openbabel/!svn/ver/1662/openbabel/trunk/tools/README
+END
+obgrep.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3880/openbabel/trunk/tools/obgrep.cpp
+END
+obrotate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obrotate.cpp
+END
+obchiral.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/3243/openbabel/trunk/tools/obchiral.cpp
+END
+obfragment.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obfragment.cpp
+END
+obabel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3991/openbabel/trunk/tools/obabel.cpp
+END
+obdoc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/2670/openbabel/trunk/tools/obdoc.cpp
+END
+obprobe.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/2577/openbabel/trunk/tools/obprobe.cpp
+END
+static_plugins.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/4094/openbabel/trunk/tools/static_plugins.cpp
+END
+svgdepict.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/3471/openbabel/trunk/tools/svgdepict.cpp
+END
+obsym.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/2670/openbabel/trunk/tools/obsym.cpp
+END
+obmm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obmm.cpp
+END
+obgen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/2738/openbabel/trunk/tools/obgen.cpp
+END
+obrotamer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obrotamer.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/4094/openbabel/trunk/tools/CMakeLists.txt
+END

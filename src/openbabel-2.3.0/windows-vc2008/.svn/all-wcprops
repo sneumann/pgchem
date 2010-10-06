@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/4005/openbabel/trunk/windows-vc2008
+END
+sdf.bat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/3777/openbabel/trunk/windows-vc2008/sdf.bat
+END
+default_build.bat
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openbabel/!svn/ver/3892/openbabel/trunk/windows-vc2008/default_build.bat
+END
+x64_default_build.bat
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openbabel/!svn/ver/3781/openbabel/trunk/windows-vc2008/x64_default_build.bat
+END
+minimal_build.bat
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openbabel/!svn/ver/3777/openbabel/trunk/windows-vc2008/minimal_build.bat
+END
+obdepict.bat
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/3777/openbabel/trunk/windows-vc2008/obdepict.bat
+END

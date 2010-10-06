@@ -1,0 +1,359 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/openbabel/!svn/ver/4133/openbabel/trunk/data
+END
+torlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/data/torlib.h
+END
+types.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/2334/openbabel/trunk/data/types.txt
+END
+mmffoop.par
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmffoop.par
+END
+space-groups.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/space-groups.txt
+END
+mmffchg.par
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmffchg.par
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/data/types.h
+END
+mmfftor.par
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmfftor.par
+END
+mmffang.par
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmffang.par
+END
+mr.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mr.txt
+END
+bondtyp.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3432/openbabel/trunk/data/bondtyp.txt
+END
+resdata.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/2334/openbabel/trunk/data/resdata.txt
+END
+fragments.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/fragments.txt
+END
+mmffpbci.par
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmffpbci.par
+END
+mmffdfsb.par
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmffdfsb.par
+END
+bondtyp.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/3432/openbabel/trunk/data/bondtyp.h
+END
+element.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3705/openbabel/trunk/data/element.txt
+END
+phmodeldata.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/4120/openbabel/trunk/data/phmodeldata.h
+END
+resdata.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/data/resdata.h
+END
+templates.sdf
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/templates.sdf
+END
+atomtyp.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/4019/openbabel/trunk/data/atomtyp.txt
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/3815/openbabel/trunk/data/CMakeLists.txt
+END
+UFF.prm
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openbabel/!svn/ver/3829/openbabel/trunk/data/UFF.prm
+END
+aromatic.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/2334/openbabel/trunk/data/aromatic.txt
+END
+space-groups.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/space-groups.xsl
+END
+patterns.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/2571/openbabel/trunk/data/patterns.txt
+END
+mmff94s.ff
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmff94s.ff
+END
+logp.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/logp.txt
+END
+element.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/4120/openbabel/trunk/data/element.h
+END
+atomtyp.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/4120/openbabel/trunk/data/atomtyp.h
+END
+mmffdef.par
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmffdef.par
+END
+SMARTS_InteLigand.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/2035/openbabel/trunk/data/SMARTS_InteLigand.txt
+END
+aromatic.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/data/aromatic.h
+END
+mmffvdw.par
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmffvdw.par
+END
+mm2.prm
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mm2.prm
+END
+mmff94.ff
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmff94.ff
+END
+mmffstbn.par
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmffstbn.par
+END
+superatom.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/4133/openbabel/trunk/data/superatom.txt
+END
+isotope.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3707/openbabel/trunk/data/isotope.txt
+END
+gaff.prm
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/gaff.prm
+END
+babel_povray3.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/3895/openbabel/trunk/data/babel_povray3.inc
+END
+psa.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/psa.txt
+END
+MACCS.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/MACCS.txt
+END
+qeq.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openbabel/!svn/ver/3815/openbabel/trunk/data/qeq.txt
+END
+mmffbndk.par
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmffbndk.par
+END
+isotope-small.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/2334/openbabel/trunk/data/isotope-small.txt
+END
+ghemical.prm
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/ghemical.prm
+END
+mmffs_oop.par
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmffs_oop.par
+END
+phmodel.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/4113/openbabel/trunk/data/phmodel.txt
+END
+mmffprop.par
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmffprop.par
+END
+isotope.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/data/isotope.h
+END
+mmffbond.par
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmffbond.par
+END
+bin2hex.pl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/3207/openbabel/trunk/data/bin2hex.pl
+END
+torlib.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/2079/openbabel/trunk/data/torlib.txt
+END
+gaff.dat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openbabel/!svn/ver/3220/openbabel/trunk/data/gaff.dat
+END
+plugindefines.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/plugindefines.txt
+END
+ringtyp.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/ringtyp.txt
+END
+svgformat.script
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/3922/openbabel/trunk/data/svgformat.script
+END
+mmffs_tor.par
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmffs_tor.par
+END
+genheaders.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/4120/openbabel/trunk/data/genheaders.sh
+END

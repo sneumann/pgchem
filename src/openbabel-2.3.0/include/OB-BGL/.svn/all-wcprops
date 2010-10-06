@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/OB-BGL
+END
+example.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/OB-BGL/example.cpp
+END
+verbose_visitors.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/OB-BGL/verbose_visitors.h
+END
+mol_graph.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/OB-BGL/mol_graph.h
+END

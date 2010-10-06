@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/scripts/ruby/examples
+END
+canonical_smiles.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/scripts/ruby/examples/canonical_smiles.rb
+END
+load_benzene.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/scripts/ruby/examples/load_benzene.rb
+END

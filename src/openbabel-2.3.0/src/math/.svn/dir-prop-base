@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 36
+Makefile
+.deps
+.libs
+*.lo
+libmath.la
+END

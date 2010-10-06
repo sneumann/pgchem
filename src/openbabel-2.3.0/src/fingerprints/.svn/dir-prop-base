@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 44
+Makefile
+.deps
+.libs
+*.lo
+libfingerprints.la
+END

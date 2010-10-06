@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/descriptors
+END
+filters.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/descriptors/filters.cpp
+END
+cansmidescriptor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/descriptors/cansmidescriptor.cpp
+END
+cmpdfilter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/descriptors/cmpdfilter.cpp
+END
+inchidescriptor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/descriptors/inchidescriptor.cpp
+END
+smartsdescriptors.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/descriptors/smartsdescriptors.cpp
+END
+groupcontrib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/descriptors/groupcontrib.cpp
+END

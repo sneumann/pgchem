@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openbabel/!svn/ver/3692/openbabel/trunk/cmake/modules
+END
+MacroEnsureVersion.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openbabel/!svn/ver/2396/openbabel/trunk/cmake/modules/MacroEnsureVersion.cmake
+END
+FindEigen2.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openbabel/!svn/ver/3692/openbabel/trunk/cmake/modules/FindEigen2.cmake
+END
+UsePythonTest.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openbabel/!svn/ver/3546/openbabel/trunk/cmake/modules/UsePythonTest.cmake
+END

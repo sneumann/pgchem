@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/4056/openbabel/trunk/include/openbabel/depict
+END
+painter.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openbabel/!svn/ver/4056/openbabel/trunk/include/openbabel/depict/painter.h
+END
+svgpainter.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/depict/svgpainter.h
+END
+depict.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/depict/depict.h
+END

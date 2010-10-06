@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/openbabel/!svn/ver/4115/openbabel/trunk/include
+END
+chemdrawcdx.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/chemdrawcdx.h
+END
+iconv.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/2922/openbabel/trunk/include/iconv.h
+END
+zconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/zconf.h
+END
+zlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/zlib.h
+END
+RDKitConv.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/include/RDKitConv.h
+END
+inchi_api.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/include/inchi_api.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/4103/openbabel/trunk/include/CMakeLists.txt
+END

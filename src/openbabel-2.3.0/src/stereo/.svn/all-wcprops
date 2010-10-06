@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openbabel/!svn/ver/4124/openbabel/trunk/src/stereo
+END
+squareplanar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/stereo/squareplanar.cpp
+END
+stereoutil.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/4084/openbabel/trunk/src/stereo/stereoutil.cpp
+END
+tetrahedral.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/stereo/tetrahedral.cpp
+END
+stereo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/stereo/stereo.cpp
+END
+facade.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/4034/openbabel/trunk/src/stereo/facade.cpp
+END
+stereoutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/4063/openbabel/trunk/src/stereo/stereoutil.h
+END
+cistrans.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/stereo/cistrans.cpp
+END
+perception.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openbabel/!svn/ver/4124/openbabel/trunk/src/stereo/perception.cpp
+END
+tetranonplanar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/stereo/tetranonplanar.cpp
+END
+tetraplanar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/stereo/tetraplanar.cpp
+END

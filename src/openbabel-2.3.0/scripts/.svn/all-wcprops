@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/openbabel/!svn/ver/4131/openbabel/trunk/scripts
+END
+openbabel-mono.i
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/scripts/openbabel-mono.i
+END
+openbabel-csharp.i
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/3938/openbabel/trunk/scripts/openbabel-csharp.i
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/4082/openbabel/trunk/scripts/CMakeLists.txt
+END
+openbabel-java.i
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/scripts/openbabel-java.i
+END
+openbabel-python.i
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/3977/openbabel/trunk/scripts/openbabel-python.i
+END
+openbabel-ruby.i
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/3771/openbabel/trunk/scripts/openbabel-ruby.i
+END
+openbabel-perl.i
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/4115/openbabel/trunk/scripts/openbabel-perl.i
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openbabel/!svn/ver/4131/openbabel/trunk/scripts/python/examples
+END
+energy.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/scripts/python/examples/energy.py
+END
+findcoverage.bat
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/scripts/python/examples/findcoverage.bat
+END
+testpybel.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openbabel/!svn/ver/4131/openbabel/trunk/scripts/python/examples/testpybel.py
+END
+minSimple.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/scripts/python/examples/minSimple.py
+END
+examples.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openbabel/!svn/ver/1937/openbabel/trunk/scripts/python/examples/examples.py
+END
+head.sdf
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/scripts/python/examples/head.sdf
+END
+hashizume.cif
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/scripts/python/examples/hashizume.cif
+END
+wgtRotorSrch.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/scripts/python/examples/wgtRotorSrch.py
+END

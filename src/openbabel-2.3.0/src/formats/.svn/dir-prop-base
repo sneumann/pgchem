@@ -1,0 +1,14 @@
+K 10
+svn:ignore
+V 67
+*.lo
+Makefile
+*.la
+.libs
+.deps
+all.h.gch
+libxml
+*.cmake
+CMakeFiles
+
+END

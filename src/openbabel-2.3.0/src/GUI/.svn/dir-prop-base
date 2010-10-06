@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 38
+Makefile
+.deps
+.libs
+*.lo
+.gdb_history
+END

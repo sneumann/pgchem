@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/inchi
+END
+Samples.sdf
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/inchi/Samples.sdf
+END
+SamplesTechMan.sdf
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/inchi/SamplesTechMan.sdf
+END
+Samples.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/inchi/Samples.txt
+END
+SamplesTechMan.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/inchi/SamplesTechMan.txt
+END
+SamplesFail.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/3650/openbabel/trunk/test/inchi/SamplesFail.txt
+END
+SamplesTechManFail.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openbabel/!svn/ver/3650/openbabel/trunk/test/inchi/SamplesTechManFail.txt
+END

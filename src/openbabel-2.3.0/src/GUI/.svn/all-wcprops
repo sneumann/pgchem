@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/GUI
+END
+stdwx.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/src/GUI/stdwx.h
+END
+babel2.ico
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/1217/openbabel/trunk/src/GUI/babel2.ico
+END
+optswx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/GUI/optswx.cpp
+END
+selformats.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/GUI/selformats.h
+END
+OBGUI.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/GUI/OBGUI.cpp
+END
+OBGUI.rc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/1217/openbabel/trunk/src/GUI/OBGUI.rc
+END
+babel.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/3416/openbabel/trunk/src/GUI/babel.xpm
+END
+optswx.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/GUI/optswx.h
+END
+stdwx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/src/GUI/stdwx.cpp
+END
+OBGUI.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/GUI/OBGUI.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/src/GUI/CMakeLists.txt
+END

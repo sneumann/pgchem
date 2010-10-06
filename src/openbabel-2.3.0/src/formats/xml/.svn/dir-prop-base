@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 30
+*.lo
+Makefile
+*.la
+.libs
+.deps
+END
