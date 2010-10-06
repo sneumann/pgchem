@@ -30,11 +30,11 @@
 #include <iostream.h>
 #endif
 
-#include <mol.h>
-#include <fingerprint.h>
-#include <obconversion.h>
+#include <openbabel/mol.h>
+#include <openbabel/fingerprint.h>
+#include <openbabel/obconversion.h>
 #include <openbabel/groupcontrib.h>
-#include <obiter.h>
+#include <openbabel/obiter.h>
 //#include <vf2/vf2.h>
 #include "obwrapper.h"
 
@@ -1648,7 +1648,7 @@ ob_logP (char *smiles)
 
   conv.Read (&mol, &molstream);
   mol.AddHydrogens (false, false);
-
+ 
   //LOGP = logP.Predict (mol);
   if(pDescr)
     LOGP = pDescr->Predict(&mol);
