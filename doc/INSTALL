@@ -1,19 +1,18 @@
 READ THE IF_YOU_LIKE_THIS DOCUMENT!
 
 1.) install postgresql > 8.x as Source and put pgchem/ under the contrib/ directory
-2.) OpenBabel 2.3.3 is now included 
+2.) OpenBabel 2.2.3 is now included 
 
-With Openbabel 2.3.3 the build process has become less complicated but still no fun.  On x86_32 all needed Openbabel parts are now linked into libpgchem.dll/.so, so we recommend, that you use the binary distributions, if possible and continue with step 6!!! For x86_64 you also need libinchi.so and libopenbabel.so.
+With Openbabel 2.2.3 the build process has become less complicated but still no fun.  On x86_32 all needed Openbabel parts are now linked into libpgchem.dll/.so, so we recommend, that you use the binary distributions, if possible and continue with step 6!!! For x86_64 you also need libinchi.so and libopenbabel.so.
 
 IF YOU COMPILE YOURSELF: 
+cd src/openbabel-2.3.0
+mkdir build 
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=/usr/lib/postgresql/9.0 ..
+make 
+cd ../..
 
-On Windows:
-OpenBabel must be compiled with static libraries: configure --disable-dynamic-modules --enable-static=yes 
-
-On Linux:
-OpenBabel must be compiled with static libraries: configure --disable-dynamic-modules --enable-static=yes
-
-After successful compiliation of OpenBabel you _must_ rename the file openbabel-2.3.3/include/openbabel/locale.h to _locale.h otherwise the compiler will barf when compiling pgchem!
 
 3.) make. Windows and Linux 32 Bit now have a single makefile without suffix!
 4.) On Windows copy or link libbarsoi.dll and libpgchem.dll into the postgresql lib/ directory. 
