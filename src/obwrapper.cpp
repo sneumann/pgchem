@@ -35,12 +35,11 @@
 #include <openbabel/obconversion.h>
 #include <openbabel/groupcontrib.h>
 #include <openbabel/obiter.h>
-//#include <vf2/vf2.h>
+
 #include "obwrapper.h"
 
 using namespace OpenBabel;
 using namespace std;
-//using namespace XchemTigress;
 
 static const int popcount_counts[] = {
     0,1,1,2,1,2,2,3,1,2,2,3,2,3,3,4,1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,
@@ -52,6 +51,7 @@ static const int popcount_counts[] = {
     2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,
     3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,4,5,5,6,5,6,6,7,5,6,6,7,6,7,7,8,
 };
+
 
 static bool ob_rehydrate_molecule(OBBase* pOb, char *serializedInput);
 
@@ -1589,7 +1589,7 @@ ob_MR (char *smiles)
   OBMol mol;
   OBConversion conv;
   //OBMR mr; //2.1.1
-  OBGroupContrib theMR("MR", "mr.txt", "molar refractivity"); 
+  //  OBGroupContrib theMR("MR", "mr.txt", "molar refractivity"); 
   OBDescriptor* pDescr = OBDescriptor::FindType("MR");
   string tmpStr (smiles);
   istringstream molstream (tmpStr);
@@ -1614,7 +1614,7 @@ ob_PSA (char *smiles)
   OBMol mol;
   OBConversion conv;
   //OBPSA psa; //2.1.1
-  OBGroupContrib theTPSA("TPSA", "psa.txt", "topological polar surface area"); 
+  //  OBGroupContrib theTPSA("TPSA", "psa.txt", "topological polar surface area"); 
   OBDescriptor* pDescr = OBDescriptor::FindType("TPSA");
   string tmpStr (smiles);
   istringstream molstream (tmpStr);
@@ -1638,7 +1638,7 @@ ob_logP (char *smiles)
   OBMol mol;
   OBConversion conv;
   //OBLogP logP; //2.1.1
-  OBGroupContrib theLOGP("LOGP", "logp.txt", "log P"); 
+  //  OBGroupContrib theLOGP("LOGP", "logp.txt", "log P"); 
   OBDescriptor* pDescr = OBDescriptor::FindType("LOGP");
   string tmpStr (smiles);
   istringstream molstream (tmpStr);
