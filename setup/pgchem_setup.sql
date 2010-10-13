@@ -746,7 +746,7 @@ EXECUTE 'UPDATE '||t_sel_name||' SET weight = _x';
 
 EXECUTE 'CREATE TABLE '||t_h_name||' AS SELECT "SMARTS", expansion from '||t_sel_name||','|| t_dict_name||'  where id=pattern_id and pattern_id IN (SELECT pattern_id FROM '||t_sel_name||' ORDER BY weight ASC LIMIT '||p_limit||')' ;
 
-EXECUTE 'COPY (SELECT ''#Comments after SMARTS'' UNION SELECT * from (SELECT "SMARTS" FROM '||t_h_name||') t) TO '||quote_literal('c:/tigress/obdata/dictionary.txt');
+EXECUTE 'COPY (SELECT ''#Comments after SMARTS'' UNION SELECT * from (SELECT "SMARTS" FROM '||t_h_name||') t) TO '||quote_literal('/usr/lib/postgresql/9.0/share/dictionary.txt');
 
 EXECUTE 'DROP TABLE IF EXISTS '||t_h_name;
 
