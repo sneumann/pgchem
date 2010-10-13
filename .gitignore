@@ -4,3 +4,5 @@
 *.Po
 *.so
 *.la
+*~
+src/openbabel-2.3.0/build/
