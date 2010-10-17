@@ -1,4 +1,3 @@
-if(BUILD_SHARED)
 
 set(formats_common
   smilesformat
@@ -109,26 +108,27 @@ endif(MSVC90 OR Boost_FOUND)
 
 set(ADD_INCHI_FORMAT FALSE)
 if(WITH_INCHI)
-  if (NOT MSVC)
+  if(NOT MSVC AND NOT OPENBABEL_USE_SYSTEM_INCHI)
     set(ADD_INCHI_FORMAT TRUE)
-  else (NOT MSVC)
+  else()
     if (EXISTS ${INCHI_LIBRARY})
       set(ADD_INCHI_FORMAT TRUE)
     else (EXISTS ${INCHI_LIBRARY})
       message("WARNING: INCHI_LIBRARY not set, or does not exist.\n....InChI format will NOT be compiled.")
-    endif (EXISTS ${INCHI_LIBRARY})
-  endif (NOT MSVC)
-endif(WITH_INCHI)
+    endif()
+  endif()
+endif()
 
 if(ADD_INCHI_FORMAT)
   add_definitions(-DINCHI_LINK_AS_DLL)
-  if(NOT MSVC)
+  if(NOT MSVC AND NOT OPENBABEL_USE_SYSTEM_INCHI)
     add_subdirectory(inchi103)
     include_directories(${CMAKE_SOURCE_DIR}/include/inchi103)
     set(libs ${libs} inchi)
-  else(NOT MSVC)
+  else()
+    include_directories(${INCHI_INCLUDE_DIR})
     set(libs ${libs} ${INCHI_LIBRARY})
-  endif(NOT MSVC)
+  endif()
   set(inchiformat_additional_sources getinchi.cpp ../ops/unique.cpp)
   set(formats_common
     ${formats_common}
@@ -211,8 +211,7 @@ if(MSVC)
     set_target_properties(${formatgroup} PROPERTIES
                   OUTPUT_NAME ${formatgroup}
                   PREFIX ""
-                  SUFFIX ${MODULE_EXTENSION}
-                  LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+                  SUFFIX ${MODULE_EXTENSION})
   endforeach(formatgroup)
 else(MSVC)
 foreach(format ${formats})
@@ -246,8 +245,7 @@ if(MSVC)
   set_target_properties(formats_xml PROPERTIES
                   OUTPUT_NAME formats_xml
                   PREFIX ""
-                  SUFFIX ${MODULE_EXTENSION}
-                  LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+                  SUFFIX ${MODULE_EXTENSION})
 else(MSVC)
 foreach(format ${formats_xml})
   add_library(${format} ${PLUGIN_TYPE} xml/${format}.cpp xml/xml.cpp)
@@ -263,5 +261,3 @@ foreach(format ${formats_xml})
 endforeach(format)
 endif(MSVC)
 endif(NOT MINIMAL_BUILD)
-
-endif(BUILD_SHARED)

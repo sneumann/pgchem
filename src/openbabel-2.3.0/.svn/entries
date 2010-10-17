@@ -1,15 +1,15 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-10-05T18:42:20.649225Z
-4136
-ghutchis
+2010-10-17T15:47:27.712870Z
+4219
+timvdm
 has-props
 
 
@@ -109,11 +109,11 @@ file
 
 
 
-2010-10-06T05:58:45.301726Z
-58ae764ceee422955add45a8413a1dc1
-2010-09-30T20:55:14.574710Z
-4122
-chrismorl
+2010-10-15T07:41:47.891735Z
+8bbc29e0e3c5e75c66899de75439b56f
+2010-10-14T18:39:14.692099Z
+4197
+jiahao
 has-props
 
 
@@ -135,7 +135,7 @@ has-props
 
 
 
-477497
+478418
 
 CTestConfig.cmake
 file
@@ -501,10 +501,10 @@ file
 
 
 
-2010-10-06T05:58:45.421722Z
-6c922360bfc0ca9267d881ceebdff1a6
-2010-09-25T17:00:20.534129Z
-4104
+2010-10-17T20:15:24.861725Z
+680c48e1c21ad5c6b9b94bc7a09970e1
+2010-10-16T15:43:32.294547Z
+4208
 timvdm
 has-props
 
@@ -527,5 +527,5 @@ has-props
 
 
 
-16612
+16897
 

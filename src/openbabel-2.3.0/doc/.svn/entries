@@ -1,15 +1,15 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/doc
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-08-16T13:03:38.444619Z
-3979
-chrismorl
+2010-10-16T16:15:34.137724Z
+4210
+timvdm
 has-props
 
 
@@ -406,11 +406,11 @@ file
 
 
 
-2010-10-06T05:58:24.911726Z
-ca587729e7bf04bdc6f939ec5b4df013
-2010-08-16T13:03:38.444619Z
-3979
-chrismorl
+2010-10-15T07:41:47.161722Z
+0d57e37f366caa6e376fed6e56a4038e
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -432,7 +432,7 @@ has-props
 
 
 
-7111
+7099
 
 api-header.html
 file

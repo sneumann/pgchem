@@ -1,15 +1,15 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/scripts
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-10-04T12:37:06.541073Z
-4131
-baoilleach
+2010-10-15T04:19:09.457687Z
+4201
+cryosuk
 has-props
 
 
@@ -115,11 +115,11 @@ file
 
 
 
-2010-10-06T05:58:22.061739Z
-a88c7fe02caeea12a4e0d6d5722f4655
-2010-09-23T15:15:35.803377Z
-4082
-baoilleach
+2010-10-15T07:41:46.411728Z
+2a62714af3626faa8f1a072a74942674
+2010-10-15T04:19:09.457687Z
+4201
+cryosuk
 has-props
 
 
@@ -141,7 +141,7 @@ has-props
 
 
 
-17330
+16912
 
 openbabel-java.i
 file

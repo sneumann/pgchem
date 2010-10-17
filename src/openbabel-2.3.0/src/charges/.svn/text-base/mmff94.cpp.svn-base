@@ -4,7 +4,7 @@ mmff94.cpp - A OBChargeModel to assign MMFF94 partial charges
 Copyright (C) 2010 by Geoffrey R. Hutchison
 
 This file is part of the Open Babel project.
-For more information, see <http://openbabel.sourceforge.net/>
+For more information, see <http://openbabel.org/>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -33,7 +33,7 @@ public:
   /// \return whether partial charges were successfully assigned to this molecule
   bool ComputeCharges(OBMol &mol);
 
-  double DipoleScalingFactor() { return 2.778; } // fit from regression across MMFF94 validation set
+  double DipoleScalingFactor() { return 3.8558; } // fit from regression across MMFF94 validation set
 };
 
 /////////////////////////////////////////////////////////////////

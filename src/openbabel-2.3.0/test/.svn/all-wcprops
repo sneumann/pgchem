@@ -1,19 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/svnroot/openbabel/!svn/ver/4136/openbabel/trunk/test
+/svnroot/openbabel/!svn/ver/4213/openbabel/trunk/test
 END
 aromatest.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svnroot/openbabel/!svn/ver/3520/openbabel/trunk/test/aromatest.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/aromatest.cpp
 END
 residue.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/openbabel/!svn/ver/3520/openbabel/trunk/test/residue.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/residue.cpp
 END
 testexample.py
 K 25
@@ -25,7 +25,7 @@ invalidsmiles.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svnroot/openbabel/!svn/ver/3521/openbabel/trunk/test/invalidsmiles.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/invalidsmiles.cpp
 END
 cml.sh
 K 25
@@ -49,7 +49,7 @@ inchiwrite.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/svnroot/openbabel/!svn/ver/3597/openbabel/trunk/test/inchiwrite.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/inchiwrite.cpp
 END
 inchi2.pl
 K 25
@@ -61,7 +61,7 @@ mmff94validate.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/test/mmff94validate.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/mmff94validate.cpp
 END
 testunique.py
 K 25
@@ -85,25 +85,25 @@ ffmmff94.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svnroot/openbabel/!svn/ver/4136/openbabel/trunk/test/ffmmff94.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/ffmmff94.cpp
 END
 testsym.py
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/4121/openbabel/trunk/test/testsym.py
+/svnroot/openbabel/!svn/ver/4180/openbabel/trunk/test/testsym.py
 END
 roundtrip.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/test/roundtrip.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/roundtrip.cpp
 END
 testkekule.py
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svnroot/openbabel/!svn/ver/4076/openbabel/trunk/test/testkekule.py
+/svnroot/openbabel/!svn/ver/4189/openbabel/trunk/test/testkekule.py
 END
 automorphismtest.cpp
 K 25
@@ -115,7 +115,7 @@ phmodel.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/openbabel/!svn/ver/3520/openbabel/trunk/test/phmodel.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/phmodel.cpp
 END
 aromatic.pl
 K 25
@@ -127,7 +127,7 @@ canonstabletest.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svnroot/openbabel/!svn/ver/4092/openbabel/trunk/test/canonstabletest.cpp
+/svnroot/openbabel/!svn/ver/4193/openbabel/trunk/test/canonstabletest.cpp
 END
 testfastsearch.py
 K 25
@@ -139,7 +139,7 @@ formalcharge.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/svnroot/openbabel/!svn/ver/3523/openbabel/trunk/test/formalcharge.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/formalcharge.cpp
 END
 tetrahedraltest.cpp
 K 25
@@ -169,7 +169,7 @@ smartstest.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/svnroot/openbabel/!svn/ver/3521/openbabel/trunk/test/smartstest.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/smartstest.cpp
 END
 isomorphismtest.cpp
 K 25
@@ -181,7 +181,7 @@ datatest.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svnroot/openbabel/!svn/ver/3438/openbabel/trunk/test/datatest.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/datatest.cpp
 END
 testbabel.py
 K 25
@@ -193,19 +193,25 @@ zipstream.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/zipstream.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/zipstream.cpp
 END
 ffgaff.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/4107/openbabel/trunk/test/ffgaff.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/ffgaff.cpp
 END
 unitcell.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svnroot/openbabel/!svn/ver/3645/openbabel/trunk/test/unitcell.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/unitcell.cpp
+END
+implicitHtest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/4145/openbabel/trunk/test/implicitHtest.cpp
 END
 lssrtest.cpp
 K 25
@@ -223,13 +229,13 @@ conversion.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/svnroot/openbabel/!svn/ver/3532/openbabel/trunk/test/conversion.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/conversion.cpp
 END
 ffghemical.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/svnroot/openbabel/!svn/ver/3523/openbabel/trunk/test/ffghemical.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/ffghemical.cpp
 END
 cistranstest.cpp
 K 25
@@ -241,7 +247,7 @@ math.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/svnroot/openbabel/!svn/ver/3212/openbabel/trunk/test/math.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/math.cpp
 END
 charge-mmff94.cpp
 K 25
@@ -265,25 +271,25 @@ shuffletest.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svnroot/openbabel/!svn/ver/4092/openbabel/trunk/test/shuffletest.cpp
+/svnroot/openbabel/!svn/ver/4152/openbabel/trunk/test/shuffletest.cpp
 END
 ffuff.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svnroot/openbabel/!svn/ver/3523/openbabel/trunk/test/ffuff.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/ffuff.cpp
 END
 ringtest.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svnroot/openbabel/!svn/ver/3521/openbabel/trunk/test/ringtest.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/ringtest.cpp
 END
 strip.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/strip.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/strip.cpp
 END
 stereotest.cpp
 K 25
@@ -295,19 +301,19 @@ smilesmatch.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svnroot/openbabel/!svn/ver/3521/openbabel/trunk/test/smilesmatch.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/smilesmatch.cpp
 END
 iterators.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svnroot/openbabel/!svn/ver/3521/openbabel/trunk/test/iterators.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/iterators.cpp
 END
 bond.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/svnroot/openbabel/!svn/ver/3161/openbabel/trunk/test/bond.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/bond.cpp
 END
 obmolbenchmark.cpp
 K 25
@@ -319,13 +325,13 @@ mol.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/svnroot/openbabel/!svn/ver/3585/openbabel/trunk/test/mol.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/mol.cpp
 END
 format.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/3520/openbabel/trunk/test/format.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/format.cpp
 END
 graphsymtest.cpp
 K 25
@@ -337,7 +343,7 @@ CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/svnroot/openbabel/!svn/ver/4107/openbabel/trunk/test/CMakeLists.txt
+/svnroot/openbabel/!svn/ver/4213/openbabel/trunk/test/CMakeLists.txt
 END
 squareplanartest.cpp
 K 25
@@ -355,7 +361,7 @@ atom.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/test/atom.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/atom.cpp
 END
 charge-gasteiger.cpp
 K 25
@@ -367,37 +373,37 @@ internalcoord.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/test/internalcoord.cpp
-END
-logp_psa.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/svnroot/openbabel/!svn/ver/3520/openbabel/trunk/test/logp_psa.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/internalcoord.cpp
 END
 smartsparse.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/smartsparse.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/smartsparse.cpp
+END
+logp_psa.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/logp_psa.cpp
 END
 formula.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/openbabel/!svn/ver/3523/openbabel/trunk/test/formula.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/formula.cpp
 END
 cmlreadfile.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svnroot/openbabel/!svn/ver/3520/openbabel/trunk/test/cmlreadfile.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/cmlreadfile.cpp
 END
 cansmi.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/3520/openbabel/trunk/test/cansmi.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/cansmi.cpp
 END
 README
 K 25
@@ -409,7 +415,7 @@ invalidsmarts.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svnroot/openbabel/!svn/ver/3521/openbabel/trunk/test/invalidsmarts.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/invalidsmarts.cpp
 END
 test_pybel.py
 K 25

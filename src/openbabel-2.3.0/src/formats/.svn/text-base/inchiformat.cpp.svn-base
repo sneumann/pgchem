@@ -24,6 +24,7 @@ GNU General Public License for more details.
 #include <sstream>
 #include <set>
 #include <vector>
+#include <iterator>
 #include <openbabel/inchiformat.h>
 #include <openbabel/stereo/tetrahedral.h>
 #include <openbabel/stereo/cistrans.h>
@@ -265,7 +266,7 @@ bool InChIFormat::WriteMolecule(OBBase* pOb, OBConversion* pConv)
   map<OBBond*, OBStereo::Ref> from;
   map<OBBond*, OBStereo::Ref>::const_iterator from_cit;
   if (mol.GetDimension() != 0)
-    TetStereoTo0D(mol, updown, from);
+    TetStereoToWedgeHash(mol, updown, from);
   set<OBBond*> unspec_ctstereo = GetUnspecifiedCisTrans(mol);
 
   OBAtom* patom;

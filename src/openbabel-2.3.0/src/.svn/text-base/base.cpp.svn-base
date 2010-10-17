@@ -5,7 +5,7 @@ Copyright (C) 1998-2001 by OpenEye Scientific Software, Inc.
 Some portions Copyright (C) 2001-2006 by Geoffrey R. Hutchison
 
 This file is part of the Open Babel project.
-For more information, see <http://openbabel.sourceforge.net/>
+For more information, see <http://openbabel.org/>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -512,8 +512,10 @@ namespace OpenBabel
   - OBDepict - 2D depiction
 
   In addition, a wide variety of new plugins are available, including
-  MMFF94, QEq, and QTPIE partial charges, "diverse" conformer
-  searching, etc.
+  
+  - computation of partial charges using GasteigerCharges, MMFF94Charges, QEqCharges, and QTPIECharges
+  - "diverse" conformer searching
+  - etc.
 
   \page changes22 What's New in Version 2.2
 

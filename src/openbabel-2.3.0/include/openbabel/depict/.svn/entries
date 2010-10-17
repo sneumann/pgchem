@@ -1,14 +1,14 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/include/openbabel/depict
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-09-19T11:01:25.135402Z
-4056
+2010-10-16T20:27:13.321162Z
+4211
 chrismorl
 
 
@@ -32,10 +32,78 @@ file
 
 
 
-2010-10-06T05:58:02.361725Z
-663c2982349262788c5697d4637b9231
-2010-09-19T11:01:25.135402Z
-4056
+2010-10-15T07:41:35.671726Z
+ffca2da9b0fb341bb71529452cfc9351
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5039
+
+svgpainter.h
+file
+
+
+
+
+2010-10-15T07:41:35.681726Z
+b4d00d8b282c53606e9afb1174143126
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2286
+
+depict.h
+file
+
+
+
+
+2010-10-17T20:15:23.561740Z
+acc09c9b28561db860c716821d62a6f8
+2010-10-16T20:27:13.321162Z
+4211
 chrismorl
 has-props
 
@@ -58,73 +126,5 @@ has-props
 
 
 
-5051
-
-svgpainter.h
-file
-
-
-
-
-2010-10-06T05:58:02.371727Z
-a2d84d720ee0b7570d7e9cac9b781901
-2010-09-07T17:26:18.131028Z
-4026
-ghutchis
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2298
-
-depict.h
-file
-
-
-
-
-2010-10-06T05:58:02.381726Z
-d30d693691f6c7d53d29737657ab4006
-2010-09-07T17:26:18.131028Z
-4026
-ghutchis
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2791
+2809
 

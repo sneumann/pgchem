@@ -1,15 +1,15 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/scripts/ruby
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-06-06T14:33:53.535263Z
-3769
-baoilleach
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -66,11 +66,11 @@ file
 
 
 
-2010-10-06T05:58:21.001729Z
-8268740195309daf311d0ef3e9f5b945
-2010-06-03T14:29:31.336642Z
-3765
-baoilleach
+2010-10-15T07:41:46.311725Z
+c057c908b18899303592fd48aff02b79
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -92,7 +92,7 @@ has-props
 
 
 
-3850
+3826
 
 examples
 dir

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/scripts/java
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/scripts/java
 END
 OBTest.java
 K 25
@@ -13,5 +13,5 @@ README
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/scripts/java/README
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/scripts/java/README
 END

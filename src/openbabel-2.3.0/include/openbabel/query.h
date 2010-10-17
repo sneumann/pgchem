@@ -4,7 +4,7 @@
   Copyright (C) 2010 by Tim Vandermeersch
 
   This file is part of the Open Babel project.
-  For more information, see <http://openbabel.sourceforge.net/>
+  For more information, see <http://openbabel.org/>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -55,6 +55,9 @@ namespace OpenBabel {
        */
       OBQueryAtom(int atomicNum = 6, bool isInRing = false, bool isAromatic = false) :
         m_atomicNum(atomicNum), m_isInRing(isInRing), m_isAromatic(isAromatic) {}
+
+      virtual ~OBQueryAtom() {}
+
       /**
        * Get the index for this query atom. Atoms are indexed starting from 0.
        * This method is used by OBIsomorphismMapper implementations.
@@ -131,6 +134,9 @@ namespace OpenBabel {
         m_begin->m_nbrs.push_back(m_end);
         m_end->m_nbrs.push_back(m_begin);
       }
+
+      virtual ~OBQueryBond() {}
+
       /**
        * Get the index for this query bonds. Query bonds are indexed starting from 0.
        */

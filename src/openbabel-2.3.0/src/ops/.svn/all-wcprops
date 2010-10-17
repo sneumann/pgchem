@@ -1,85 +1,85 @@
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/svnroot/openbabel/!svn/ver/4111/openbabel/trunk/src/ops
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops
 END
 addpolarh.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/ops/addpolarh.cpp
-END
-opisomorph.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 71
-/svnroot/openbabel/!svn/ver/4063/openbabel/trunk/src/ops/opisomorph.cpp
-END
-gen2D.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/ops/gen2D.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/addpolarh.cpp
 END
 xout.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/ops/xout.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/xout.cpp
+END
+gen2D.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/gen2D.cpp
+END
+opisomorph.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openbabel/!svn/ver/4145/openbabel/trunk/src/ops/opisomorph.cpp
 END
 gen3d.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/ops/gen3d.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/gen3d.cpp
 END
 forcefield.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/ops/forcefield.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/forcefield.cpp
 END
 op2d.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/ops/op2d.cpp
-END
-loader.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 67
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/ops/loader.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/op2d.cpp
 END
 unique.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/ops/unique.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/unique.cpp
+END
+loader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/loader.cpp
 END
 addinindex.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svnroot/openbabel/!svn/ver/4055/openbabel/trunk/src/ops/addinindex.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/addinindex.cpp
 END
 readconformers.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/ops/readconformers.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/readconformers.cpp
 END
 optransform.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/ops/optransform.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/optransform.cpp
 END
 fillUC.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/ops/fillUC.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/fillUC.cpp
 END
 deferred.h
 K 25
@@ -91,23 +91,23 @@ sort.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/ops/sort.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/sort.cpp
 END
 canonical.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/svnroot/openbabel/!svn/ver/4097/openbabel/trunk/src/ops/canonical.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/canonical.cpp
 END
 partialcharges.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/openbabel/!svn/ver/4111/openbabel/trunk/src/ops/partialcharges.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/partialcharges.cpp
 END
 conformer.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/ops/conformer.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/conformer.cpp
 END

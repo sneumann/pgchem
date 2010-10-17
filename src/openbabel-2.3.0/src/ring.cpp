@@ -5,7 +5,7 @@ Copyright (C) 1998-2001 by OpenEye Scientific Software, Inc.
 Some portions Copyright (C) 2001-2006 by Geoffrey R. Hutchison
 
 This file is part of the Open Babel project.
-For more information, see <http://openbabel.sourceforge.net/>
+For more information, see <http://openbabel.org/>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -273,7 +273,7 @@ namespace OpenBabel
             rs.SortRings();
             rs.RemoveRedundant(-1); // -1 means LSSR
 
-            //store the SSSR set
+            //store the LSSR set
 
             for (j = rs.BeginRings();j != rs.EndRings();++j)
               {
@@ -338,6 +338,9 @@ namespace OpenBabel
             _rlist.erase(_rlist.begin()+i);
             break;
           }
+
+    if (_rlist.size() == 0)
+      return; // nothing to do
 
     // handle LSSR
     if (frj < 0) {
@@ -493,7 +496,7 @@ namespace OpenBabel
 
   bool CompareRingSize(const OBRing *a,const OBRing *b)
   {
-    return(a->Size() < b->Size());
+    return(a->Size() == b->Size() ? a->ring_id < b->ring_id : a->Size() < b->Size()); // ensure stable sort
   }
 
   void OBRingSearch::WriteRings()

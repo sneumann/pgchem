@@ -14,10 +14,10 @@ if (RUN_SWIG)
     return()
   endif (NOT SWIG_FOUND)
   message(STATUS "SWIG version is ${SWIG_VERSION}")
-  if (NOT ${SWIG_VERSION} STREQUAL "2.0.0")
+  if (NOT ${SWIG_VERSION} STREQUAL "2.0.0" AND NOT ${SWIG_VERSION} STREQUAL "2.0.1")
     message(STATUS "SWIG version 2.0.0 exactly is required")
     return()
-  endif (NOT ${SWIG_VERSION} STREQUAL "2.0.0")
+  endif (NOT ${SWIG_VERSION} STREQUAL "2.0.0" AND NOT ${SWIG_VERSION} STREQUAL "2.0.1")
 endif (RUN_SWIG)
 
 ###################
@@ -97,7 +97,6 @@ if (DO_PYTHON_BINDINGS)
         add_library(bindings_python MODULE ${openbabel_SOURCE_DIR}/scripts/python/openbabel-python.cpp)
         target_link_libraries(bindings_python ${PYTHON_LIBRARIES} ${BABEL_LIBRARY})
         set_target_properties(bindings_python PROPERTIES
-            LIBRARY_OUTPUT_DIRECTORY ${openbabel_BINARY_DIR}
             OUTPUT_NAME _openbabel
             PREFIX ""
             SUFFIX .pyd )
@@ -159,10 +158,6 @@ if (DO_JAVA_BINDINGS)
     target_link_libraries(bindings_java ${JNI_LIBRARIES} ${BABEL_LIBRARY})
     set_target_properties(bindings_java PROPERTIES
         OUTPUT_NAME openbabel_java )
-    if(MSVC)
-        set_target_properties(bindings_java PROPERTIES
-            LIBRARY_OUTPUT_DIRECTORY ${openbabel_BINARY_DIR})
-    endif(MSVC)
 
 endif (DO_JAVA_BINDINGS)
 
@@ -239,7 +234,6 @@ if (DO_PERL_BINDINGS)
       add_library(bindings_perl MODULE ${openbabel_SOURCE_DIR}/scripts/perl/openbabel-perl.cpp)
       target_link_libraries(bindings_perl ${PERL_LIBRARY} ${BABEL_LIBRARY})
       set_target_properties(bindings_perl PROPERTIES
-          LIBRARY_OUTPUT_DIRECTORY ${openbabel_BINARY_DIR}
           OUTPUT_NAME openbabel_perl )
     endif(NOT MSVC)
 
@@ -308,8 +302,6 @@ if (DO_RUBY_BINDINGS)
       target_link_libraries(bindings_ruby ${RUBY_LIBRARY} ${BABEL_LIBRARY})
       set_target_properties(bindings_ruby PROPERTIES
           OUTPUT_NAME openbabel_ruby )
-          set_target_properties(bindings_ruby PROPERTIES
-              LIBRARY_OUTPUT_DIRECTORY ${openbabel_BINARY_DIR})
     endif(NOT MSVC)
 
 endif (DO_RUBY_BINDINGS)
@@ -324,10 +316,10 @@ if (CSHARP_BINDINGS)
       message(STATUS "CSHARP_EXECUTABLE NOT defined. .NET bindings will NOT be created.")
     endif (NOT CSHARP_EXECUTABLE)
 
-    if (CSHARP_LIBRARY)
+    if (CSHARP_EXECUTABLE)
       set(DO_CSHARP_BINDINGS ON BOOL)
       message(STATUS "CSharp bindings will be compiled")
-    endif (CSHARP_LIBRARY)
+    endif (CSHARP_EXECUTABLE)
 
   else (EXISTS ${openbabel_SOURCE_DIR}/scripts/csharp/openbabel-csharp.cpp OR RUN_SWIG)
     message(STATUS "Warning: Csharp bindings NOT found. Generate using -DRUN_SWIG.")
@@ -352,8 +344,6 @@ if (DO_CSHARP_BINDINGS)
     target_link_libraries(bindings_csharp ${BABEL_LIBRARY})
     set_target_properties(bindings_csharp PROPERTIES
         OUTPUT_NAME openbabel_csharp )
-        set_target_properties(bindings_csharp PROPERTIES
-            LIBRARY_OUTPUT_DIRECTORY ${openbabel_BINARY_DIR})
 
 endif (DO_CSHARP_BINDINGS)
 

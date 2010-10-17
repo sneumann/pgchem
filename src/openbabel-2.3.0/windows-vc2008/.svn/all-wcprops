@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svnroot/openbabel/!svn/ver/4005/openbabel/trunk/windows-vc2008
+/svnroot/openbabel/!svn/ver/4218/openbabel/trunk/windows-vc2008
 END
 sdf.bat
 K 25
@@ -13,7 +13,7 @@ default_build.bat
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/svnroot/openbabel/!svn/ver/3892/openbabel/trunk/windows-vc2008/default_build.bat
+/svnroot/openbabel/!svn/ver/4218/openbabel/trunk/windows-vc2008/default_build.bat
 END
 x64_default_build.bat
 K 25

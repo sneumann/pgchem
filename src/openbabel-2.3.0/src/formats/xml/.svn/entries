@@ -1,15 +1,15 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/src/formats/xml
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-09-30T13:38:41.495708Z
-4119
-baoilleach
+2010-10-17T14:50:17.620020Z
+4217
+chrismorl
 has-props
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2010-10-06T05:58:13.881763Z
-28c380697c8c59902eabb252adc538ac
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:44.631735Z
+f9c37e7f2da6e8f5886294efb8207e34
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-11209
+11197
 
 xml.cpp
 file
@@ -66,11 +66,11 @@ file
 
 
 
-2010-10-06T05:58:13.891762Z
-16a591504dc81568433dd2041bf21b23
-2010-09-07T17:26:18.131028Z
-4026
-ghutchis
+2010-10-17T20:15:24.311723Z
+c8fe0b347beb68aee60ebcf9507bfd6f
+2010-10-17T14:50:17.620020Z
+4217
+chrismorl
 has-props
 
 
@@ -92,7 +92,7 @@ has-props
 
 
 
-16192
+16214
 
 cmlreactformat.cpp
 file
@@ -168,10 +168,10 @@ file
 
 
 
-2010-10-06T05:58:14.001984Z
-a0b929b0c87e4392a84ca6993031689b
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:44.641725Z
+b01198b262ffc82085ccd110e43d1d17
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -194,7 +194,7 @@ has-props
 
 
 
-5429
+5417
 
 cmlformat.cpp
 file
@@ -202,11 +202,11 @@ file
 
 
 
-2010-10-06T05:58:14.121762Z
-252d2c5b4f3e06912e54bbaa1601d56b
-2010-09-30T13:38:41.495708Z
-4119
-baoilleach
+2010-10-17T20:15:24.331720Z
+db3b676cd278d57c7fa98a3ad05b90b7
+2010-10-16T16:15:34.137724Z
+4210
+timvdm
 has-props
 
 
@@ -228,7 +228,7 @@ has-props
 
 
 
-94427
+94501
 
 xmlformat.cpp
 file

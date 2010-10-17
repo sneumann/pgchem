@@ -1,65 +1,65 @@
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/4136/openbabel/trunk/src/forcefields
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/forcefields
 END
 forcefieldmm2.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/forcefields/forcefieldmm2.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/forcefields/forcefieldmm2.cpp
 END
 forcefieldghemical.h
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/forcefields/forcefieldghemical.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/forcefields/forcefieldghemical.h
 END
 forcefieldmm2.h
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/forcefields/forcefieldmm2.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/forcefields/forcefieldmm2.h
 END
 forcefielduff.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/forcefields/forcefielduff.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/forcefields/forcefielduff.cpp
 END
 forcefieldmmff94.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/openbabel/!svn/ver/4136/openbabel/trunk/src/forcefields/forcefieldmmff94.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/forcefields/forcefieldmmff94.cpp
 END
 forcefieldgaff.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/forcefields/forcefieldgaff.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/forcefields/forcefieldgaff.cpp
 END
 forcefielduff.h
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/forcefields/forcefielduff.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/forcefields/forcefielduff.h
 END
 forcefieldmmff94.h
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/forcefields/forcefieldmmff94.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/forcefields/forcefieldmmff94.h
 END
 forcefieldgaff.h
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/forcefields/forcefieldgaff.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/forcefields/forcefieldgaff.h
 END
 forcefieldghemical.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/forcefields/forcefieldghemical.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/forcefields/forcefieldghemical.cpp
 END

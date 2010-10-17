@@ -15,6 +15,7 @@ set(tests
     canonstable
     cistrans
     graphsym
+    implicitH
     lssr
     isomorphism
     rotor
@@ -48,13 +49,10 @@ foreach(test ${tests})
     add_test(${test}_Test ${TEST_PATH}/test_${test})
   endif(MSVC)
   set_tests_properties(${test}_Test PROPERTIES
-    FAIL_REGULAR_EXPRESSION "ERROR;FAIL;Test failed")
-  if(MSVC)
-    set_target_properties(test_${test} PROPERTIES
-      RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
-  endif(MSVC)
+    FAIL_REGULAR_EXPRESSION "ERROR;FAIL;Test failed"
+    ENVIRONMENT "BABEL_LIBDIR=${CMAKE_BINARY_DIR}/lib"
+    ENVIRONMENT "BABEL_DATADIR=${CMAKE_SOURCE_DIR}/data")
 endforeach(test ${tests})
-
 
 ############################################################
 #  old-style tests using "not ok"
@@ -67,7 +65,6 @@ set(old_tests
     cansmi
     charge-mmff94
     charge-gasteiger
-    cmlreadfile
     conversion
     datatest
     ffgaff
@@ -92,16 +89,13 @@ set(old_tests
     smilesmatch
     unitcell
    )
+if(LIBXML2_FOUND)
+  set(oldtests ${oldtests} cmlreadfile)
+endif(LIBXML2_FOUND)
 
-# TODO: forgot that inchiwrite requires arguments -- it compiles now, but
-#   doesn't run a test
 if(WITH_INCHI)
   add_executable(test_inchiwrite inchiwrite.cpp ../src/formats/getinchi.cpp)
   target_link_libraries(test_inchiwrite ${BABEL_LIBRARY})
-  if(MSVC)
-    set_target_properties(test_inchiwrite PROPERTIES
-      RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
-  endif(MSVC)
   # files in test/inchi -- both .sdf and .txt
   set(inchitests Samples SamplesTechMan)
   set(inchidata ${CMAKE_SOURCE_DIR}/test/inchi)
@@ -116,6 +110,7 @@ if(WITH_INCHI)
 
     set_tests_properties(inchi${test}_Test PROPERTIES
                          FAIL_REGULAR_EXPRESSION "Not ok"
+                         ENVIRONMENT "BABEL_LIBDIR=${CMAKE_BINARY_DIR}/lib"
                          ENVIRONMENT "BABEL_DATADIR=${CMAKE_SOURCE_DIR}/data"
 	 	        )
   endforeach(test ${inchitests})
@@ -131,12 +126,9 @@ foreach(test ${old_tests})
   endif(MSVC)
   set_tests_properties(${test}_Test PROPERTIES
     FAIL_REGULAR_EXPRESSION "not ok"
+    ENVIRONMENT "BABEL_LIBDIR=${CMAKE_BINARY_DIR}/lib"
     ENVIRONMENT "BABEL_DATADIR=${CMAKE_SOURCE_DIR}/data"
  )
-  if(MSVC)
-    set_target_properties(test_${test} PROPERTIES
-      RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
-  endif(MSVC)
 endforeach(test ${old_tests})
 
 ############################################################  
@@ -155,16 +147,24 @@ install(TARGETS roundtrip
 # Tests wrapped in Python #
 ###########################
 
-include(UsePythonTest)
-set(pytests
-    babel sym fastsearch unique kekule)
-foreach(pytest ${pytests})
-  ADD_PYTHON_TEST(pytest_${pytest} test${pytest}.py)
-  set_tests_properties(pytest_${pytest} PROPERTIES
-       FAIL_REGULAR_EXPRESSION "ERROR;FAIL;Test failed"
-       ENVIRONMENT "BABEL_LIBDIR=${CMAKE_BINARY_DIR}/lib"
-  )
-endforeach(pytest ${pytests})
+# The following tests should work okay in MinGW, it's just that the calling
+# script needs some work. On Cygwin, there's some weird DLL problems when
+# calling from Python.
+if(NOT MINGW AND NOT CYGWIN)
+  include(UsePythonTest)
+  if(PYTHON_EXECUTABLE)
+    set(pytests
+        babel sym fastsearch unique kekule)
+    foreach(pytest ${pytests})
+      ADD_PYTHON_TEST(pytest_${pytest} test${pytest}.py)
+      set_tests_properties(pytest_${pytest} PROPERTIES
+           FAIL_REGULAR_EXPRESSION "ERROR;FAIL;Test failed"
+           ENVIRONMENT "BABEL_LIBDIR=${CMAKE_BINARY_DIR}/lib"
+           ENVIRONMENT "BABEL_DATADIR=${CMAKE_SOURCE_DIR}/data"
+      )
+    endforeach(pytest ${pytests})
+  endif(PYTHON_EXECUTABLE)
+endif(NOT MINGW AND NOT CYGWIN)
 
 ###############################
 # Tests using Python bindings #
@@ -178,6 +178,7 @@ if (PYTHON_BINDINGS)
     set_tests_properties(pybindtest_${pybindtest} PROPERTIES
          FAIL_REGULAR_EXPRESSION "ERROR;FAIL;Test failed"
          ENVIRONMENT "BABEL_LIBDIR=${CMAKE_BINARY_DIR}/lib"
+         ENVIRONMENT "BABEL_DATADIR=${CMAKE_SOURCE_DIR}/data"
     )
   endforeach(pybindtest ${pybindtests})
 endif (PYTHON_BINDINGS)

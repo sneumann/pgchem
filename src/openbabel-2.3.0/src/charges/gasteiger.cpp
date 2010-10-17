@@ -4,7 +4,7 @@ gasteiger.cpp - A OBChargeModel to handle Gasteiger sigma charges
 Copyright (C) 2010 by Geoffrey R. Hutchison
 
 This file is part of the Open Babel project.
-For more information, see <http://openbabel.sourceforge.net/>
+For more information, see <http://openbabel.org/>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -33,7 +33,7 @@ public:
   /// \return whether partial charges were successfully assigned to this molecule
   bool ComputeCharges(OBMol &mol);
 
-  double DipoleScalingFactor() { return 3.490; } // fit from regression
+  double DipoleScalingFactor() { return 3.4927; } // fit from regression
 };
 
 /////////////////////////////////////////////////////////////////

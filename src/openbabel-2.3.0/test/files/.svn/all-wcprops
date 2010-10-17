@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/svnroot/openbabel/!svn/ver/4136/openbabel/trunk/test/files
+/svnroot/openbabel/!svn/ver/4206/openbabel/trunk/test/files
 END
 alias.mol
 K 25
@@ -39,6 +39,12 @@ svn:wc:ra_dav:version-url
 V 74
 /svnroot/openbabel/!svn/ver/1881/openbabel/trunk/test/files/smartstest.txt
 END
+canonstable.can
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/4193/openbabel/trunk/test/files/canonstable.can
+END
 testsym_2Dtests.sdf
 K 25
 svn:wc:ra_dav:version-url
@@ -50,6 +56,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 72
 /svnroot/openbabel/!svn/ver/3645/openbabel/trunk/test/files/unitcell.txt
+END
+implicitH.sdf
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/4143/openbabel/trunk/test/files/implicitH.sdf
 END
 ringresults.txt
 K 25
@@ -79,7 +91,7 @@ mmff94results.txt
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svnroot/openbabel/!svn/ver/4049/openbabel/trunk/test/files/mmff94results.txt
+/svnroot/openbabel/!svn/ver/4138/openbabel/trunk/test/files/mmff94results.txt
 END
 gaffresults.txt
 K 25
@@ -97,13 +109,13 @@ formularesults.txt
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/formularesults.txt
+/svnroot/openbabel/!svn/ver/4186/openbabel/trunk/test/files/formularesults.txt
 END
 charge-mmff94.txt
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svnroot/openbabel/!svn/ver/4106/openbabel/trunk/test/files/charge-mmff94.txt
+/svnroot/openbabel/!svn/ver/4138/openbabel/trunk/test/files/charge-mmff94.txt
 END
 ghemicalresults.txt
 K 25
@@ -171,11 +183,11 @@ svn:wc:ra_dav:version-url
 V 72
 /svnroot/openbabel/!svn/ver/3853/openbabel/trunk/test/files/hao_xu_1.mol
 END
-hao_xu_2.mol
+dipole-mmff94.txt
 K 25
 svn:wc:ra_dav:version-url
-V 72
-/svnroot/openbabel/!svn/ver/3853/openbabel/trunk/test/files/hao_xu_2.mol
+V 77
+/svnroot/openbabel/!svn/ver/4206/openbabel/trunk/test/files/dipole-mmff94.txt
 END
 formalchargeresults.txt
 K 25
@@ -183,11 +195,11 @@ svn:wc:ra_dav:version-url
 V 83
 /svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/formalchargeresults.txt
 END
-dipole-mmff94.txt
+hao_xu_2.mol
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/svnroot/openbabel/!svn/ver/4106/openbabel/trunk/test/files/dipole-mmff94.txt
+V 72
+/svnroot/openbabel/!svn/ver/3853/openbabel/trunk/test/files/hao_xu_2.mol
 END
 hao_xu_3.mol
 K 25
@@ -301,7 +313,7 @@ smartsresults.txt
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svnroot/openbabel/!svn/ver/3539/openbabel/trunk/test/files/smartsresults.txt
+/svnroot/openbabel/!svn/ver/4205/openbabel/trunk/test/files/smartsresults.txt
 END
 attype.00.smi
 K 25

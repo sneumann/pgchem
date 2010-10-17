@@ -1,15 +1,15 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/doc/examples
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-08-02T09:32:22.282011Z
-3923
-chrismorl
+2010-10-16T16:15:34.137724Z
+4210
+timvdm
 
 
 
@@ -128,6 +128,9 @@ timvdm
 
 2248
 
+static_executable
+dir
+
 obconversion_readstring.cpp
 file
 
@@ -168,11 +171,11 @@ file
 
 
 
-2010-10-06T05:58:24.771860Z
-e16892dbdb483dd37b5146601458a866
-2010-07-12T12:22:39.877171Z
-3861
-timvdm
+2010-10-15T07:41:47.131723Z
+ca2fd3038817d5f74c08c73ba64f52c6
+2010-10-15T04:19:09.457687Z
+4201
+cryosuk
 
 
 
@@ -194,7 +197,7 @@ timvdm
 
 
 
-504
+333
 
 obforcefield_energy.cpp
 file

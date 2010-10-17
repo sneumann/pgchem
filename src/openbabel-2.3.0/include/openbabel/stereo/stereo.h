@@ -4,7 +4,7 @@
   Copyright (C) 2009-2010 by Tim Vandermeersch
 
   This file is part of the Open Babel project.
-  For more information, see <http://openbabel.sourceforge.net/>
+  For more information, see <http://openbabel.org/>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -761,7 +761,7 @@ namespace OpenBabel {
    * @return True or False depending on whether the conversion was successful
    * @since version 2.3
    */
-  OBAPI bool TetStereoTo0D(OBMol &mol,
+  OBAPI bool TetStereoToWedgeHash(OBMol &mol,
       std::map<OBBond*, enum OBStereo::BondDirection> &updown,
       std::map<OBBond*, OBStereo::Ref> &from);
   /**

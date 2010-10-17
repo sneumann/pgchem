@@ -1,15 +1,15 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/include/openbabel/stereo
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-09-12T23:08:55.813627Z
-4034
-timvdm
+2010-10-11T19:00:45.345960Z
+4171
+baoilleach
 
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2010-10-06T05:58:03.121728Z
-5c2ce34e8cace2d7cfbd3cad195d140d
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:36.631724Z
+ae5f2a0dcfb39f380f4f52fc82c37c8e
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-5432
+5420
 
 squareplanar.h
 file
@@ -100,10 +100,10 @@ file
 
 
 
-2010-10-06T05:58:03.141727Z
-c7e54dc9a46e7dc5476d499195274fca
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:36.691725Z
+ceda00f1025183277134d113e71e9597
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -126,7 +126,7 @@ has-props
 
 
 
-10962
+10950
 
 stereo.h
 file
@@ -134,11 +134,11 @@ file
 
 
 
-2010-10-06T05:58:03.161731Z
-e597a60c1eadfea2f7325417006afdb9
-2010-09-12T23:08:55.813627Z
-4034
-timvdm
+2010-10-15T07:41:36.711725Z
+45aaca049161cd419a645ac78b2553af
+2010-10-11T19:00:45.345960Z
+4171
+baoilleach
 has-props
 
 
@@ -160,7 +160,7 @@ has-props
 
 
 
-46879
+46874
 
 cistrans.h
 file
@@ -202,10 +202,10 @@ file
 
 
 
-2010-10-06T05:58:03.181727Z
-f002710a80f762d037ae0609b1261dbf
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:36.721722Z
+1b78371918255578abacadeb0f67a967
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -228,5 +228,5 @@ has-props
 
 
 
-7944
+7932
 

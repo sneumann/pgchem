@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/svnroot/openbabel/!svn/ver/4133/openbabel/trunk/data
+/svnroot/openbabel/!svn/ver/4194/openbabel/trunk/data
 END
 torlib.h
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/data/torlib.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/data/torlib.h
 END
 types.txt
 K 25
@@ -37,7 +37,7 @@ types.h
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/data/types.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/data/types.h
 END
 mmfftor.par
 K 25
@@ -91,7 +91,7 @@ bondtyp.h
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svnroot/openbabel/!svn/ver/3432/openbabel/trunk/data/bondtyp.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/data/bondtyp.h
 END
 element.txt
 K 25
@@ -103,13 +103,7 @@ phmodeldata.h
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svnroot/openbabel/!svn/ver/4120/openbabel/trunk/data/phmodeldata.h
-END
-resdata.h
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/data/resdata.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/data/phmodeldata.h
 END
 templates.sdf
 K 25
@@ -117,29 +111,17 @@ svn:wc:ra_dav:version-url
 V 67
 /svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/templates.sdf
 END
+resdata.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/data/resdata.h
+END
 atomtyp.txt
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/openbabel/!svn/ver/4019/openbabel/trunk/data/atomtyp.txt
-END
-CMakeLists.txt
-K 25
-svn:wc:ra_dav:version-url
-V 68
-/svnroot/openbabel/!svn/ver/3815/openbabel/trunk/data/CMakeLists.txt
-END
-UFF.prm
-K 25
-svn:wc:ra_dav:version-url
-V 61
-/svnroot/openbabel/!svn/ver/3829/openbabel/trunk/data/UFF.prm
-END
-aromatic.txt
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/svnroot/openbabel/!svn/ver/2334/openbabel/trunk/data/aromatic.txt
+/svnroot/openbabel/!svn/ver/4186/openbabel/trunk/data/atomtyp.txt
 END
 space-groups.xsl
 K 25
@@ -147,17 +129,35 @@ svn:wc:ra_dav:version-url
 V 70
 /svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/space-groups.xsl
 END
+aromatic.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/2334/openbabel/trunk/data/aromatic.txt
+END
+UFF.prm
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openbabel/!svn/ver/3829/openbabel/trunk/data/UFF.prm
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openbabel/!svn/ver/3815/openbabel/trunk/data/CMakeLists.txt
+END
 patterns.txt
 K 25
 svn:wc:ra_dav:version-url
 V 66
 /svnroot/openbabel/!svn/ver/2571/openbabel/trunk/data/patterns.txt
 END
-mmff94s.ff
+element.h
 K 25
 svn:wc:ra_dav:version-url
-V 64
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmff94s.ff
+V 63
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/data/element.h
 END
 logp.txt
 K 25
@@ -165,23 +165,17 @@ svn:wc:ra_dav:version-url
 V 62
 /svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/logp.txt
 END
-element.h
+mmff94s.ff
 K 25
 svn:wc:ra_dav:version-url
-V 63
-/svnroot/openbabel/!svn/ver/4120/openbabel/trunk/data/element.h
+V 64
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmff94s.ff
 END
 atomtyp.h
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svnroot/openbabel/!svn/ver/4120/openbabel/trunk/data/atomtyp.h
-END
-mmffdef.par
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmffdef.par
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/data/atomtyp.h
 END
 SMARTS_InteLigand.txt
 K 25
@@ -189,11 +183,17 @@ svn:wc:ra_dav:version-url
 V 75
 /svnroot/openbabel/!svn/ver/2035/openbabel/trunk/data/SMARTS_InteLigand.txt
 END
+mmffdef.par
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmffdef.par
+END
 aromatic.h
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/data/aromatic.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/data/aromatic.h
 END
 mmffvdw.par
 K 25
@@ -259,7 +259,7 @@ qeq.txt
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/svnroot/openbabel/!svn/ver/3815/openbabel/trunk/data/qeq.txt
+/svnroot/openbabel/!svn/ver/4194/openbabel/trunk/data/qeq.txt
 END
 mmffbndk.par
 K 25
@@ -301,7 +301,7 @@ isotope.h
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/data/isotope.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/data/isotope.h
 END
 mmffbond.par
 K 25
@@ -313,7 +313,7 @@ bin2hex.pl
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/3207/openbabel/trunk/data/bin2hex.pl
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/data/bin2hex.pl
 END
 torlib.txt
 K 25

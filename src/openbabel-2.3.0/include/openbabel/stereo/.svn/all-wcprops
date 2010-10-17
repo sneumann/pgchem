@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svnroot/openbabel/!svn/ver/4034/openbabel/trunk/include/openbabel/stereo
+/svnroot/openbabel/!svn/ver/4171/openbabel/trunk/include/openbabel/stereo
 END
 tetraplanar.h
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/stereo/tetraplanar.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/stereo/tetraplanar.h
 END
 squareplanar.h
 K 25
@@ -19,13 +19,13 @@ tetrahedral.h
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/stereo/tetrahedral.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/stereo/tetrahedral.h
 END
 stereo.h
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/openbabel/!svn/ver/4034/openbabel/trunk/include/openbabel/stereo/stereo.h
+/svnroot/openbabel/!svn/ver/4171/openbabel/trunk/include/openbabel/stereo/stereo.h
 END
 cistrans.h
 K 25
@@ -37,5 +37,5 @@ tetranonplanar.h
 K 25
 svn:wc:ra_dav:version-url
 V 90
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/stereo/tetranonplanar.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/stereo/tetranonplanar.h
 END

@@ -1,15 +1,15 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/data
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-10-05T12:20:42.181285Z
-4133
-chrismorl
+2010-10-14T18:08:45.343155Z
+4194
+jiahao
 has-props
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2010-10-06T05:58:28.141726Z
-cf1d58fb42df6c812ca83c95bec7c7af
-2008-06-20T07:19:35.693331Z
-2608
-baoilleach
+2010-10-15T07:41:47.521729Z
+8ac3ce07b135d0c3ea204ae37b7e8326
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-35868
+35856
 
 types.txt
 file
@@ -202,11 +202,11 @@ file
 
 
 
-2010-10-06T05:58:28.211727Z
-5f5d181abef7bd565f646b7585effbdf
-2008-06-20T07:19:35.693331Z
-2608
-baoilleach
+2010-10-15T07:41:47.541726Z
+458f45a12cb6971ac30cdea22d08e9c3
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -228,7 +228,7 @@ has-props
 
 
 
-53599
+53587
 
 mmfftor.par
 file
@@ -508,11 +508,11 @@ file
 
 
 
-2010-10-06T05:58:28.391727Z
-eb9ce942496c52c5117432ddaefedd37
-2009-10-01T11:48:34.592971Z
-3432
-baoilleach
+2010-10-15T07:41:47.551723Z
+424bcfd63d7ca0ec7e16eedd9d60940e
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -534,7 +534,7 @@ has-props
 
 
 
-9134
+9122
 
 element.txt
 file
@@ -576,10 +576,10 @@ file
 
 
 
-2010-10-06T05:58:28.421725Z
-7c905bda6ddbe1f38ff34d671024f663
-2010-09-30T14:39:10.913183Z
-4120
+2010-10-15T07:41:47.561726Z
+33a6c2b6547e4b6647d79452c4b22eb9
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -602,7 +602,7 @@ has-props
 
 
 
-18112
+18100
 
 resdata.h
 file
@@ -610,11 +610,11 @@ file
 
 
 
-2010-10-06T05:58:28.441736Z
-1c9122f36c35239a7781f58e54c44da4
-2008-06-20T07:19:35.693331Z
-2608
-baoilleach
+2010-10-15T07:41:47.591722Z
+29a9e135e206639dff565f6d3c3d2529
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -636,7 +636,7 @@ has-props
 
 
 
-69799
+69787
 
 templates.sdf
 file
@@ -678,10 +678,10 @@ file
 
 
 
-2010-10-06T05:58:28.461725Z
-86851baf736a44011387e6b10a390d32
-2010-09-02T19:46:45.297828Z
-4019
+2010-10-15T07:41:47.601725Z
+210721be5a845a7c620be5f9a199f6c7
+2010-10-13T13:04:35.702292Z
+4186
 chrismorl
 has-props
 
@@ -704,7 +704,7 @@ has-props
 
 
 
-9227
+9464
 
 CMakeLists.txt
 file
@@ -950,10 +950,10 @@ file
 
 
 
-2010-10-06T05:58:28.521731Z
-dd423898ba565ff6fbdac3657e018156
-2010-09-30T14:39:10.913183Z
-4120
+2010-10-15T07:41:47.611725Z
+781f035ed9672a7343d568c7a01f0063
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -976,7 +976,7 @@ has-props
 
 
 
-46380
+46368
 
 atomtyp.h
 file
@@ -984,10 +984,10 @@ file
 
 
 
-2010-10-06T05:58:28.551725Z
-1839911ab6f15df3ee5d89c272e12eac
-2010-09-30T14:39:10.913183Z
-4120
+2010-10-15T07:41:47.621723Z
+f079670ce9f32ec7830dd8d4c9ba94e7
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -1010,7 +1010,7 @@ has-props
 
 
 
-21792
+22406
 
 SMARTS_InteLigand.txt
 file
@@ -1052,11 +1052,11 @@ file
 
 
 
-2010-10-06T05:58:28.561720Z
-fec06e07ed2fdc79a8f1315bd3dce55f
-2008-06-20T07:19:35.693331Z
-2608
-baoilleach
+2010-10-15T07:41:47.631727Z
+ec4cfb3d38a928d847ce862ecc8f73ef
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -1078,7 +1078,7 @@ has-props
 
 
 
-2319
+2307
 
 mmffdef.par
 file
@@ -1460,11 +1460,11 @@ file
 
 
 
-2010-10-06T05:58:28.741726Z
-76c84a681996dc55c6f7fc51e2c5e686
-2010-06-29T18:25:12.844291Z
-3815
-ghutchis
+2010-10-15T07:41:47.641723Z
+1a5a5b850c3fbbe8cac3e41fa6e56ea5
+2010-10-14T18:08:45.343155Z
+4194
+jiahao
 has-props
 
 
@@ -1486,7 +1486,7 @@ has-props
 
 
 
-4480
+3097
 
 mmffbndk.par
 file
@@ -1698,11 +1698,11 @@ file
 
 
 
-2010-10-06T05:58:28.821725Z
-e308018521c5575624a008b7c9cd27d2
-2008-06-20T07:19:35.693331Z
-2608
-baoilleach
+2010-10-15T07:41:47.661725Z
+4184c4c5a30cd4f8df2fe1b766153edf
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -1724,7 +1724,7 @@ has-props
 
 
 
-195401
+195389
 
 mmffbond.par
 file
@@ -1766,11 +1766,11 @@ file
 
 
 
-2010-10-06T05:58:28.851721Z
-d5dd1bcc2838bf958bca186f05ffce08
-2009-07-18T10:35:09.607936Z
-3207
-timvdm
+2010-10-15T07:41:47.681733Z
+b3ed39af82f7e6e505508d4b8569f13e
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -1792,7 +1792,7 @@ has-props
 
 
 
-3924
+3900
 
 torlib.txt
 file

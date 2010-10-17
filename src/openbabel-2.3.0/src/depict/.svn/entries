@@ -1,14 +1,14 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/src/depict
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-09-19T11:01:25.135402Z
-4056
+2010-10-16T20:27:13.321162Z
+4211
 chrismorl
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2010-10-06T05:58:06.821723Z
-ef8302759c6911bc95f1c15130778da8
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:39.971723Z
+56e510a9ffbb8adae54a01998c09e7ed
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-4991
+4979
 
 depict.cpp
 file
@@ -66,10 +66,10 @@ file
 
 
 
-2010-10-06T05:58:06.831726Z
-ed8c213553bc60b35b9b7c442b789e68
-2010-09-19T11:01:25.135402Z
-4056
+2010-10-17T20:15:23.721722Z
+79f42fcfb9505fb6323eec79e5ad632f
+2010-10-16T20:27:13.321162Z
+4211
 chrismorl
 has-props
 
@@ -92,5 +92,5 @@ has-props
 
 
 
-22070
+22101
 

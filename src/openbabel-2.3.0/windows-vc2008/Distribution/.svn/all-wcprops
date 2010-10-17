@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/openbabel/!svn/ver/4005/openbabel/trunk/windows-vc2008/Distribution
+/svnroot/openbabel/!svn/ver/4218/openbabel/trunk/windows-vc2008/Distribution
 END
 logo_small.bmp
 K 25
@@ -25,7 +25,7 @@ NSISScriptToCreateInstaller.nsi
 K 25
 svn:wc:ra_dav:version-url
 V 108
-/svnroot/openbabel/!svn/ver/4005/openbabel/trunk/windows-vc2008/Distribution/NSISScriptToCreateInstaller.nsi
+/svnroot/openbabel/!svn/ver/4218/openbabel/trunk/windows-vc2008/Distribution/NSISScriptToCreateInstaller.nsi
 END
 OBDotNetAssemblyInfo.cs
 K 25

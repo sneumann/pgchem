@@ -3,7 +3,7 @@ Copyright (C) 2005 by Chris Morley
 Some portions Copyright (C) 2006 by Geoffrey R. Hutchison
 
 This file is part of the Open Babel project.
-For more information, see <http://openbabel.sourceforge.net/>
+For more information, see <http://openbabel.org/>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -2206,6 +2206,15 @@ namespace OpenBabel
     xmlTextWriterEndElement(writer());//property
   }
 
+  std::string getSeparator()
+  {
+#ifdef WIN32
+    return "\\";
+#else
+    return "/";
+#endif
+  }
+
   ///Returns molecule title or molecule number if there is no title together with the file name
   string CMLFormat::GetMolID()
   {
@@ -2217,7 +2226,7 @@ namespace OpenBabel
 
     string fn(_pxmlConv->GetInFilename());
     //Get file name: remove path
-    string::size_type pos = fn.rfind(DLHandler::getSeparator());
+    string::size_type pos = fn.rfind(getSeparator());
     if(pos!=string::npos)
       fn.erase(0,pos+1);
     molID << " (in " << fn << ')';

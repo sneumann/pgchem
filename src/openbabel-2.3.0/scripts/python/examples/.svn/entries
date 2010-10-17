@@ -1,14 +1,14 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/scripts/python/examples
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-10-04T12:37:06.541073Z
-4131
+2010-10-07T19:03:48.361272Z
+4144
 baoilleach
 
 
@@ -100,10 +100,10 @@ file
 
 
 
-2010-10-06T05:58:20.541730Z
-d37eb48969b2490f7244ed7b4f38fa5e
-2010-10-04T12:37:06.541073Z
-4131
+2010-10-15T07:41:46.231723Z
+074f2df4e4e3d46d9ed133e4d83a40fe
+2010-10-07T19:03:48.361272Z
+4144
 baoilleach
 has-props
 
@@ -126,7 +126,7 @@ has-props
 
 
 
-17345
+17348
 
 minSimple.py
 file

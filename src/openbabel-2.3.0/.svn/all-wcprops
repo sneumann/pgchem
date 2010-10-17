@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 48
-/svnroot/openbabel/!svn/ver/4136/openbabel/trunk
+/svnroot/openbabel/!svn/ver/4219/openbabel/trunk
 END
 OpenBabel2Config.cmake.in
 K 25
@@ -43,7 +43,7 @@ ChangeLog
 K 25
 svn:wc:ra_dav:version-url
 V 58
-/svnroot/openbabel/!svn/ver/4122/openbabel/trunk/ChangeLog
+/svnroot/openbabel/!svn/ver/4197/openbabel/trunk/ChangeLog
 END
 THANKS
 K 25
@@ -85,5 +85,5 @@ CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svnroot/openbabel/!svn/ver/4104/openbabel/trunk/CMakeLists.txt
+/svnroot/openbabel/!svn/ver/4208/openbabel/trunk/CMakeLists.txt
 END

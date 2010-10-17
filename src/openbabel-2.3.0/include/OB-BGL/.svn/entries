@@ -1,15 +1,15 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/include/OB-BGL
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2008-06-20T07:19:35.693331Z
-2608
-baoilleach
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2010-10-06T05:57:59.191727Z
-983c4581f8e0eedb789b58d954f80508
-2008-06-20T07:19:35.693331Z
-2608
-baoilleach
+2010-10-15T07:41:34.691727Z
+4b4d73d7cec5ac543b0d4f867da85d5f
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-5586
+5574
 
 verbose_visitors.h
 file
@@ -66,11 +66,11 @@ file
 
 
 
-2010-10-06T05:57:59.201726Z
-3fc8624e5e9e3071a5fe46ac72db3938
-2008-06-20T07:19:35.693331Z
-2608
-baoilleach
+2010-10-15T07:41:34.701726Z
+385d33713a6a71adf708bde4bc65453d
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -92,7 +92,7 @@ has-props
 
 
 
-4444
+4432
 
 mol_graph.h
 file
@@ -100,11 +100,11 @@ file
 
 
 
-2010-10-06T05:57:59.211727Z
-3dfccddf1c366bf4a368342955983568
-2008-06-20T07:19:35.693331Z
-2608
-baoilleach
+2010-10-15T07:41:34.711729Z
+f016cfd1d180cee35c1191e4fa0aa684
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -126,5 +126,5 @@ has-props
 
 
 
-11273
+11261
 

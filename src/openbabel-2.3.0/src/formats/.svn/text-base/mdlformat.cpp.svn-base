@@ -4,7 +4,7 @@ Some portions Copyright (C) 2001-2006 by Geoffrey Hutchison
 Portions Copyright (C) 2004-2006 by Chris Morley
 
 This file is part of the Open Babel project.
-For more information, see <http://openbabel.sourceforge.net/>
+For more information, see <http://openbabel.org/>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -114,7 +114,6 @@ namespace OpenBabel
       string GetTimeDate();
       void GetParity(OBMol& mol, map<OBAtom*, Parity> &parity);
       void TetStereoFromParity(OBMol& mol, vector<MDLFormat::Parity> &parity);
-      double TriangleSign(const vector3 &a, const vector3 &b, const vector3 &c);
       int ReadIntField(const char *s);
       unsigned int ReadUIntField(const char *s);
       map<int,int> indexmap; //relates index in file to index in OBMol
@@ -719,7 +718,7 @@ namespace OpenBabel
       map<OBBond*, OBStereo::Ref>::const_iterator from_cit;
       GetParity(mol, parity);
       if (mol.GetDimension() == 3 || (mol.GetDimension()==2 && pConv->IsOption("w", pConv->OUTOPTIONS)!=NULL))
-        TetStereoTo0D(mol, updown, from);
+        TetStereoToWedgeHash(mol, updown, from);
 
       // The counts line:
       // aaabbblllfffcccsssxxxrrrpppiiimmmvvvvvv
@@ -973,7 +972,8 @@ namespace OpenBabel
         //      if(abs(atof(vs[4].c_str()))>0)is2D=true;
         //      if(abs(atof(vs[5].c_str()))>0)is2D=true;
         char type[5];
-        strncpy(type,vs[3].c_str(),4);
+        strncpy(type,vs[3].c_str(),5);
+        type[4] = '\0'; // ensure it's always null-terminated
         if(!strcmp(type, "R#"))
           {
           obErrorLog.ThrowError(__FUNCTION__,
@@ -1386,11 +1386,4 @@ namespace OpenBabel
     }
   }
 
-  //! Calculate the "sign of a triangle" given by a set of 3 2D coordinates
-  // Taken from perception.cpp
-  double MDLFormat::TriangleSign(const vector3 &a, const vector3 &b, const vector3 &c)
-  {
-    // equation 6 from [1]
-    return (a.x() - c.x()) * (b.y() - c.y()) - (a.y() - c.y()) * (b.x() - c.x());
-  }
 }

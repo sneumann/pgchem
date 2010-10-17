@@ -1,15 +1,15 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/cmake/modules
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-04-21T03:04:30.103021Z
-3692
-ghutchis
+2010-10-17T01:14:21.995322Z
+4213
+timvdm
 
 
 
@@ -94,17 +94,51 @@ ghutchis
 
 774
 
+FindInchi.cmake
+file
+
+
+
+
+2010-10-15T07:41:34.501721Z
+43197b8aa25b06b56a8d6659ec14562d
+2010-10-13T00:21:59.113541Z
+4181
+cryosuk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+772
+
 UsePythonTest.cmake
 file
 
 
 
 
-2010-10-06T05:57:58.991728Z
-fad3850f0b80265ea69848c9b2983581
-2010-02-22T22:29:48.987419Z
-3546
-baoilleach
+2010-10-17T20:15:23.351726Z
+db45eeec28e7189c32be5acb62b6b94f
+2010-10-17T01:14:21.995322Z
+4213
+timvdm
 
 
 
@@ -126,5 +160,5 @@ baoilleach
 
 
 
-3060
+3173
 

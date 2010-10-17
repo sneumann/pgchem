@@ -1,15 +1,15 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/src/GUI
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-09-07T17:26:18.131028Z
-4026
-ghutchis
+2010-10-15T04:19:09.457687Z
+4201
+cryosuk
 has-props
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2010-10-06T05:58:07.981721Z
-9113c3fa3050149f1cebcf33d5314225
-2008-06-20T07:19:35.693331Z
-2608
-baoilleach
+2010-10-15T07:41:41.641725Z
+1eec39cc4dd804cd2ada344fb741385a
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-1740
+1728
 
 babel2.ico
 file
@@ -100,10 +100,10 @@ file
 
 
 
-2010-10-06T05:58:08.001725Z
-f7d712022167c306934edbd11800001f
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:41.651725Z
+149732bdf0d4b979afda64718b750e06
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -126,7 +126,7 @@ has-props
 
 
 
-13896
+13884
 
 selformats.h
 file
@@ -168,10 +168,10 @@ file
 
 
 
-2010-10-06T05:58:08.021845Z
-d1d94b2827e0f72d42bb6e986b18896f
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:41.671725Z
+19bd1939ce825a2e7838ecb65f08b63e
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -194,7 +194,7 @@ has-props
 
 
 
-40766
+40730
 
 OBGUI.rc
 file
@@ -270,10 +270,10 @@ file
 
 
 
-2010-10-06T05:58:08.051727Z
-42f9e1ec24113b09e38be9da051fb3c6
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:41.671725Z
+5a662c1169ab6cca2bbe2bd684dc97f6
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -296,7 +296,7 @@ has-props
 
 
 
-1446
+1434
 
 stdwx.cpp
 file
@@ -338,10 +338,10 @@ file
 
 
 
-2010-10-06T05:58:08.101725Z
-d3a1ae9b4936a767d630c29500263c7d
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:41.681726Z
+33c698e80704f64654458272e68b8b60
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -364,7 +364,7 @@ has-props
 
 
 
-6476
+6464
 
 CMakeLists.txt
 file
@@ -372,11 +372,11 @@ file
 
 
 
-2010-10-06T05:58:08.111726Z
-d06c30d23e0261dc49470afacaf2bbea
-2010-06-03T14:29:31.336642Z
-3765
-baoilleach
+2010-10-15T07:41:41.691722Z
+134bd332c6ca84a7c33f0cbc9060da69
+2010-10-15T04:19:09.457687Z
+4201
+cryosuk
 has-props
 
 
@@ -398,5 +398,5 @@ has-props
 
 
 
-474
+384
 

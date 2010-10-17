@@ -5,7 +5,7 @@ Copyright (C) 1998-2001 by OpenEye Scientific Software, Inc.
 Some portions Copyright (C) 2001-2006 by Geoffrey R. Hutchison
 
 This file is part of the Open Babel project.
-For more information, see <http://openbabel.sourceforge.net/>
+For more information, see <http://openbabel.org/>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -29,7 +29,7 @@ GNU General Public License for more details.
 #include <openbabel/tokenst.h>
 
 #ifdef UNUSED
-#elif defined(__GNUC__)
+#elif (__GNUC__ == 4)
 # define UNUSED(x) UNUSED_ ## x __attribute__((unused))
 #elif defined(__LCLINT__)
 # define UNUSED(x) /*@unused@*/ x

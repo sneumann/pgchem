@@ -1,15 +1,15 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/src/fingerprints
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-09-23T23:05:57.721233Z
-4089
-timvdm
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2010-10-06T05:58:07.151727Z
-887a9c6dff18ebdfc5746686235ef733
-2010-09-23T23:05:57.721233Z
-4089
-timvdm
+2010-10-15T07:41:40.081726Z
+105f7afb87e73779ec2d6e4fe2d2dc6f
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-8612
+8600
 
 finger3.cpp
 file
@@ -66,11 +66,11 @@ file
 
 
 
-2010-10-06T05:58:07.161725Z
-8aba03d4a06bc3962c7dc8302e86bde0
-2010-09-23T10:53:59.172469Z
-4078
-chrismorl
+2010-10-15T07:41:40.091742Z
+f5ddb826b8385d760351527d9d81b113
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -92,5 +92,5 @@ has-props
 
 
 
-10269
+10257
 

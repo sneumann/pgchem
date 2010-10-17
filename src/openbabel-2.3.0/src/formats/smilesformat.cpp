@@ -800,11 +800,15 @@ namespace OpenBabel {
       {
         int j = depth-1;
         bond=mol.GetBond(_path[j--]);
-        bond->SetBO(5);
+        if (bond->GetBO() != 2) { // don't rewrite explicit double bonds
+          bond->SetBO(5);
+        }
         while( j >= 0 )
           {
             bond=mol.GetBond(_path[j--]);
-            bond->SetBO(5);
+            if (bond->GetBO() != 2) { // don't rewrite explicit double bonds
+              bond->SetBO(5);
+            }
             if(bond->GetBeginAtom() == atom || bond->GetEndAtom() == atom)
               break;
           }
@@ -833,13 +837,13 @@ namespace OpenBabel {
         return;
       if (insertpos < 0) {
         if (ChiralSearch->second->from != OBStereo::NoRef)
-          obErrorLog.ThrowError(__FUNCTION__, "Error: Overwriting previous from reference id.", obError);
+          obErrorLog.ThrowError(__FUNCTION__, "Warning: Overwriting previous from reference id.", obWarning);
 
         (ChiralSearch->second)->from = id;
         // cerr << "Adding " << id << " at Config.from to " << ChiralSearch->second << endl;
       } else {
         if (ChiralSearch->second->refs[insertpos] != OBStereo::NoRef)
-          obErrorLog.ThrowError(__FUNCTION__, "Error: Overwriting previously set reference id.", obError);
+          obErrorLog.ThrowError(__FUNCTION__, "Warning: Overwriting previously set reference id.", obWarning);
 
         (ChiralSearch->second)->refs[insertpos] = id;
         // cerr << "Adding " << id << " at " << insertpos << " to " << ChiralSearch->second << endl;
@@ -856,13 +860,13 @@ namespace OpenBabel {
       int insertpos = NumConnections(ChiralSearch->first) - 1;
       if (insertpos < 0) {
         if (ChiralSearch->second->refs[0] != OBStereo::NoRef)
-          obErrorLog.ThrowError(__FUNCTION__, "Error: Overwriting previous from reference id.", obError);
+          obErrorLog.ThrowError(__FUNCTION__, "Warning: Overwriting previous from reference id.", obWarning);
 
         (ChiralSearch->second)->refs[0] = id;
         //cerr << "Adding " << id << " at Config.refs[0] to " << ChiralSearch->second << endl;
       } else {
         if (ChiralSearch->second->refs[insertpos] != OBStereo::NoRef)
-          obErrorLog.ThrowError(__FUNCTION__, "Error: Overwriting previously set reference id.", obError);
+          obErrorLog.ThrowError(__FUNCTION__, "Warning: Overwriting previously set reference id.", obWarning);
 
         (ChiralSearch->second)->refs[insertpos] = id;
         //cerr << "Adding " << id << " at " << insertpos << " to " << ChiralSearch->second << endl;
@@ -1023,7 +1027,7 @@ namespace OpenBabel {
         assert(prevatom);
         if(arom && prevatom->IsAromatic())
           {
-            _order=5; //Potential aromatic bond
+            if (_order != 2) _order=5; //Potential aromatic bond -- but flag explicit double bonds
 
             if (prevatom->GetSpinMultiplicity())
               {
@@ -1809,6 +1813,9 @@ namespace OpenBabel {
     int clval=0;
     char tmpc[2];
     tmpc[1] = '\0';
+
+    stringstream errorMsg;
+
     for (_ptr++;*_ptr && *_ptr != ']';_ptr++)
       {
         switch(*_ptr)
@@ -1846,31 +1853,20 @@ namespace OpenBabel {
             break;
           case '-':
             _ptr++;
-            if (isdigit(*_ptr))
-              {
-                tmpc[0] = *_ptr;
-                charge = -atoi(tmpc);
-              }
-            else
-              {
-                charge--;
-                _ptr--;
-              }
+            if (!isdigit(*_ptr))
+              charge--;
+            while( isdigit(*_ptr) ) // go number by number
+              charge = charge*10 - ((*_ptr++)-'0');
+            _ptr--;
             break;
           case '+':
             _ptr++;
-            if (isdigit(*_ptr))
-              {
-                tmpc[0] = *_ptr;
-                charge = atoi(tmpc);
-              }
-            else
-              {
-                charge++;
-                _ptr--;
-              }
+            if (!isdigit(*_ptr))
+              charge++;
+            while( isdigit(*_ptr) ) // go number by number
+              charge = charge*10 + ((*_ptr++)-'0');
+            _ptr--;
             break;
-
           case 'H':
             _ptr++;
             if (isdigit(*_ptr))
@@ -1895,7 +1891,7 @@ namespace OpenBabel {
           case ':':
             if(!isdigit(*(++_ptr)))
               {
-                obErrorLog.ThrowError(__FUNCTION__,"The atom class following : must be a number", obError);
+                obErrorLog.ThrowError(__FUNCTION__,"The atom class following : must be a number", obWarning);
                 return false;
               }
             while( isdigit(*_ptr) )
@@ -1912,8 +1908,14 @@ namespace OpenBabel {
     if (!*_ptr || *_ptr != ']')
       return(false); // we should have a trailing ']' now
 
-    if (charge)
+    if (charge) {
       atom->SetFormalCharge(charge);
+      if (abs(charge) > 10 || charge > element) { // if the charge is +/- 10 or more than the number of electrons
+        errorMsg << "Atom " << atom->GetIdx() << " had an unrealistic charge of " << charge 
+                 << "." << endl;
+        obErrorLog.ThrowError(__FUNCTION__, errorMsg.str(), obWarning);
+      }
+    }
     if (rad)
       atom->SetSpinMultiplicity(rad);
     atom->SetAtomicNum(element);
@@ -2196,13 +2198,13 @@ namespace OpenBabel {
           int insertpos = bond->numConnections - 1;
           if (insertpos < 0) {
             if (ChiralSearch->second->from != OBStereo::NoRef)
-              obErrorLog.ThrowError(__FUNCTION__, "Error: Overwriting previous from reference id.", obError);
+              obErrorLog.ThrowError(__FUNCTION__, "Warning: Overwriting previous from reference id.", obWarning);
 
             (ChiralSearch->second)->from = mol.GetAtom(_prev)->GetId();
             // cerr << "Adding " << mol.GetAtom(_prev)->GetId() << " at Config.from to " << ChiralSearch->second << endl;
           } else {
             if (ChiralSearch->second->refs[insertpos] != OBStereo::NoRef)
-              obErrorLog.ThrowError(__FUNCTION__, "Error: Overwriting previously set reference id.", obError);
+              obErrorLog.ThrowError(__FUNCTION__, "Warning: Overwriting previously set reference id.", obWarning);
 
             (ChiralSearch->second)->refs[insertpos] = mol.GetAtom(_prev)->GetId();
             // cerr << "Adding " << mol.GetAtom(_prev)->GetId() << " at "
@@ -2232,7 +2234,7 @@ namespace OpenBabel {
 
     OBAtom* atom = mol.GetAtom(_prev);
     if (!atom) {
-      obErrorLog.ThrowError(__FUNCTION__,"Number not parsed correctly as a ring bond", obError);
+      obErrorLog.ThrowError(__FUNCTION__,"Number not parsed correctly as a ring bond", obWarning);
       return false;
     }
 
@@ -3843,7 +3845,7 @@ namespace OpenBabel {
         "SMILES Conversion failed: Molecule is too large to convert."
         "Open Babel is currently limited to 1000 atoms." << endl;
       errorMsg << "  Molecule size: " << mol.NumAtoms() << " atoms " << endl;
-      obErrorLog.ThrowError(__FUNCTION__, errorMsg.str(), obWarning);
+      obErrorLog.ThrowError(__FUNCTION__, errorMsg.str(), obError);
       return;
     }
 
@@ -3923,7 +3925,7 @@ namespace OpenBabel {
         "SMILES Conversion failed: Molecule is too large to convert."
         "Open Babel is currently limited to 1000 atoms." << endl;
       errorMsg << "  Molecule size: " << mol.NumAtoms() << " atoms " << endl;
-      obErrorLog.ThrowError(__FUNCTION__, errorMsg.str(), obWarning);
+      obErrorLog.ThrowError(__FUNCTION__, errorMsg.str(), obError);
       return(false);
     }
 
@@ -4038,7 +4040,7 @@ namespace OpenBabel {
         stringstream errorMsg;
         errorMsg << "SMILES Conversion failed: Molecule is too large to convert. Open Babel is currently limited to 1000 atoms." << endl;
         errorMsg << "  Molecule size: " << mol.NumAtoms() << " atoms " << endl;
-        obErrorLog.ThrowError(__FUNCTION__, errorMsg.str(), obInfo);
+        obErrorLog.ThrowError(__FUNCTION__, errorMsg.str(), obWarning);
         return(false);
       }
 

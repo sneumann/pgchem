@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svnroot/openbabel/!svn/ver/4131/openbabel/trunk/scripts/python/examples
+/svnroot/openbabel/!svn/ver/4144/openbabel/trunk/scripts/python/examples
 END
 energy.py
 K 25
@@ -19,7 +19,7 @@ testpybel.py
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svnroot/openbabel/!svn/ver/4131/openbabel/trunk/scripts/python/examples/testpybel.py
+/svnroot/openbabel/!svn/ver/4144/openbabel/trunk/scripts/python/examples/testpybel.py
 END
 minSimple.py
 K 25

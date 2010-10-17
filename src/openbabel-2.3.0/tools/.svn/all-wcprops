@@ -1,25 +1,25 @@
 K 25
 svn:wc:ra_dav:version-url
 V 54
-/svnroot/openbabel/!svn/ver/4118/openbabel/trunk/tools
+/svnroot/openbabel/!svn/ver/4216/openbabel/trunk/tools
 END
 obspectrophore.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svnroot/openbabel/!svn/ver/4118/openbabel/trunk/tools/obspectrophore.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obspectrophore.cpp
 END
 obprop.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obprop.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obprop.cpp
 END
 obminimize.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obminimize.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obminimize.cpp
 END
 getopt.c
 K 25
@@ -31,13 +31,13 @@ obfit.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obfit.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obfit.cpp
 END
 babel.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/4094/openbabel/trunk/tools/babel.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/babel.cpp
 END
 getopt.h
 K 25
@@ -49,25 +49,25 @@ obseq.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obseq.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obseq.cpp
 END
 obenergy.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obenergy.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obenergy.cpp
 END
 obconformer.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obconformer.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obconformer.cpp
 END
 obxyz.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obxyz.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obxyz.cpp
 END
 README
 K 25
@@ -79,43 +79,43 @@ obgrep.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/openbabel/!svn/ver/3880/openbabel/trunk/tools/obgrep.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obgrep.cpp
 END
 obrotate.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obrotate.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obrotate.cpp
 END
 obchiral.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svnroot/openbabel/!svn/ver/3243/openbabel/trunk/tools/obchiral.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obchiral.cpp
 END
 obfragment.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obfragment.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obfragment.cpp
 END
 obabel.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/openbabel/!svn/ver/3991/openbabel/trunk/tools/obabel.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obabel.cpp
 END
 obdoc.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/2670/openbabel/trunk/tools/obdoc.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obdoc.cpp
 END
 obprobe.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svnroot/openbabel/!svn/ver/2577/openbabel/trunk/tools/obprobe.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obprobe.cpp
 END
 static_plugins.cpp
 K 25
@@ -133,29 +133,29 @@ obsym.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/2670/openbabel/trunk/tools/obsym.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obsym.cpp
 END
 obmm.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obmm.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obmm.cpp
 END
 obgen.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/2738/openbabel/trunk/tools/obgen.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obgen.cpp
 END
 obrotamer.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/tools/obrotamer.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/tools/obrotamer.cpp
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svnroot/openbabel/!svn/ver/4094/openbabel/trunk/tools/CMakeLists.txt
+/svnroot/openbabel/!svn/ver/4216/openbabel/trunk/tools/CMakeLists.txt
 END

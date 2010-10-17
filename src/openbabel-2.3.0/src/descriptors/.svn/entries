@@ -1,14 +1,14 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/src/descriptors
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -32,10 +32,10 @@ file
 
 
 
-2010-10-06T05:58:06.111725Z
-b670646c345edf10042fc28dd1fb7f61
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:38.131725Z
+a77ed47098b3a443c001c0be0c330dfc
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-6026
+6014
 
 cansmidescriptor.cpp
 file
@@ -66,10 +66,10 @@ file
 
 
 
-2010-10-06T05:58:06.121726Z
-afca41fdb4e52ba745b8373a3b7d16db
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:38.141725Z
+d62eee82278629e51b246112ae6e620b
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -92,7 +92,7 @@ has-props
 
 
 
-2221
+2209
 
 cmpdfilter.cpp
 file
@@ -100,10 +100,10 @@ file
 
 
 
-2010-10-06T05:58:06.131725Z
-b4abb0a5658f79d44b8ebce8d72be296
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:38.151726Z
+8d9c40a2868e52e8fd16c6b78020169c
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -126,7 +126,7 @@ has-props
 
 
 
-3329
+3317
 
 inchidescriptor.cpp
 file
@@ -134,10 +134,10 @@ file
 
 
 
-2010-10-06T05:58:06.141725Z
-62712ff82cb1684cadcdb1466b12a63b
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:38.161727Z
+556547752e0918c668c2b903ae312697
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -160,7 +160,7 @@ has-props
 
 
 
-3775
+3763
 
 smartsdescriptors.cpp
 file
@@ -168,10 +168,10 @@ file
 
 
 
-2010-10-06T05:58:06.151725Z
-f0a04db97db86f788e07fc5e66db5127
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:38.161727Z
+041dcbc4f165cac1a6c3e4147c931537
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -194,7 +194,7 @@ has-props
 
 
 
-2991
+2979
 
 groupcontrib.cpp
 file
@@ -202,10 +202,10 @@ file
 
 
 
-2010-10-06T05:58:06.161724Z
-b7d01acd8d01b4e33d1edd19303de89e
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:38.171726Z
+ccb8b1cb516b2cce1e72bed4c7ced639
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -228,5 +228,5 @@ has-props
 
 
 
-6178
+6166
 

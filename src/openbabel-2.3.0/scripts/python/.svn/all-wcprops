@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svnroot/openbabel/!svn/ver/4131/openbabel/trunk/scripts/python
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/scripts/python
 END
 Examples.html
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svnroot/openbabel/!svn/ver/1077/openbabel/trunk/scripts/python/Examples.html
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/scripts/python/Examples.html
 END
 pybel_py2x.py
 K 25
@@ -43,5 +43,5 @@ README
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/svnroot/openbabel/!svn/ver/3197/openbabel/trunk/scripts/python/README
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/scripts/python/README
 END

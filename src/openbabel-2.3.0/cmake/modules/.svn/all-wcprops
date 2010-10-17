@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/svnroot/openbabel/!svn/ver/3692/openbabel/trunk/cmake/modules
+/svnroot/openbabel/!svn/ver/4213/openbabel/trunk/cmake/modules
 END
 MacroEnsureVersion.cmake
 K 25
@@ -15,9 +15,15 @@ svn:wc:ra_dav:version-url
 V 79
 /svnroot/openbabel/!svn/ver/3692/openbabel/trunk/cmake/modules/FindEigen2.cmake
 END
+FindInchi.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openbabel/!svn/ver/4181/openbabel/trunk/cmake/modules/FindInchi.cmake
+END
 UsePythonTest.cmake
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/openbabel/!svn/ver/3546/openbabel/trunk/cmake/modules/UsePythonTest.cmake
+/svnroot/openbabel/!svn/ver/4213/openbabel/trunk/cmake/modules/UsePythonTest.cmake
 END

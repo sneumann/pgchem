@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svnroot/openbabel/!svn/ver/4115/openbabel/trunk/include/openbabel
+/svnroot/openbabel/!svn/ver/4215/openbabel/trunk/include/openbabel
 END
 alias.h
 K 25
@@ -13,7 +13,7 @@ molchrg.h
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/molchrg.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/molchrg.h
 END
 shared_ptr.h
 K 25
@@ -25,25 +25,25 @@ dlhandler.h
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/dlhandler.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/dlhandler.h
 END
 obutil.h
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/openbabel/!svn/ver/4115/openbabel/trunk/include/openbabel/obutil.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/obutil.h
 END
 ring.h
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/ring.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/ring.h
 END
 atom.h
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/atom.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/atom.h
 END
 xml.h
 K 25
@@ -55,7 +55,7 @@ internalcoord.h
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/internalcoord.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/internalcoord.h
 END
 inchiformat.h
 K 25
@@ -67,85 +67,85 @@ typer.h
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/typer.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/typer.h
 END
 chains.h
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/chains.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/chains.h
 END
 rotor.h
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svnroot/openbabel/!svn/ver/4067/openbabel/trunk/include/openbabel/rotor.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/rotor.h
 END
 bondtyper.h
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/bondtyper.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/bondtyper.h
 END
 obconversion.h
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/svnroot/openbabel/!svn/ver/4055/openbabel/trunk/include/openbabel/obconversion.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/obconversion.h
 END
 base.h
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/base.h
+/svnroot/openbabel/!svn/ver/4215/openbabel/trunk/include/openbabel/base.h
 END
 optransform.h
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/optransform.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/optransform.h
 END
 generic.h
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/generic.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/generic.h
 END
 mcdlutil.h
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/mcdlutil.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/mcdlutil.h
 END
 spectrophore.h
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/spectrophore.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/spectrophore.h
 END
 descriptor.h
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/descriptor.h
+/svnroot/openbabel/!svn/ver/4163/openbabel/trunk/include/openbabel/descriptor.h
 END
 op.h
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/op.h
+/svnroot/openbabel/!svn/ver/4164/openbabel/trunk/include/openbabel/op.h
 END
 griddata.h
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svnroot/openbabel/!svn/ver/2682/openbabel/trunk/include/openbabel/griddata.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/griddata.h
 END
 text.h
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/text.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/text.h
 END
 atomclass.h
 K 25
@@ -157,139 +157,139 @@ obmolecformat.h
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/obmolecformat.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/obmolecformat.h
 END
 parsmart.h
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/parsmart.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/parsmart.h
 END
 graphsym.h
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svnroot/openbabel/!svn/ver/4088/openbabel/trunk/include/openbabel/graphsym.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/graphsym.h
 END
 canon.h
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svnroot/openbabel/!svn/ver/4088/openbabel/trunk/include/openbabel/canon.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/canon.h
 END
 plugin.h
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/plugin.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/plugin.h
 END
 locale.h
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/locale.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/locale.h
 END
 residue.h
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/residue.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/residue.h
 END
 patty.h
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/patty.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/patty.h
 END
 forcefield.h
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/forcefield.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/forcefield.h
 END
 chiral.h
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/chiral.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/chiral.h
 END
 matrix.h
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/matrix.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/matrix.h
 END
 reaction.h
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/reaction.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/reaction.h
 END
 query.h
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svnroot/openbabel/!svn/ver/3982/openbabel/trunk/include/openbabel/query.h
+/svnroot/openbabel/!svn/ver/4185/openbabel/trunk/include/openbabel/query.h
 END
 pointgroup.h
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/pointgroup.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/pointgroup.h
 END
 kinetics.h
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/kinetics.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/kinetics.h
 END
 isomorphism.h
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/svnroot/openbabel/!svn/ver/4071/openbabel/trunk/include/openbabel/isomorphism.h
+/svnroot/openbabel/!svn/ver/4207/openbabel/trunk/include/openbabel/isomorphism.h
 END
 data.h
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/data.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/data.h
 END
 rotamer.h
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/rotamer.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/rotamer.h
 END
 chargemodel.h
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/chargemodel.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/chargemodel.h
 END
 oberror.h
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/oberror.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/oberror.h
 END
 bitvec.h
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/bitvec.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/bitvec.h
 END
 groupcontrib.h
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/groupcontrib.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/groupcontrib.h
 END
 lineend.h
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/lineend.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/lineend.h
 END
 conformersearch.h
 K 25
@@ -301,59 +301,59 @@ bond.h
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/bond.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/bond.h
 END
 obiter.h
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/obiter.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/obiter.h
 END
 rand.h
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/rand.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/rand.h
 END
 grid.h
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svnroot/openbabel/!svn/ver/3182/openbabel/trunk/include/openbabel/grid.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/grid.h
 END
 builder.h
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/builder.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/builder.h
 END
 fingerprint.h
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/svnroot/openbabel/!svn/ver/4078/openbabel/trunk/include/openbabel/fingerprint.h
+/svnroot/openbabel/!svn/ver/4164/openbabel/trunk/include/openbabel/fingerprint.h
 END
 mol.h
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svnroot/openbabel/!svn/ver/4060/openbabel/trunk/include/openbabel/mol.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/mol.h
 END
 tokenst.h
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/tokenst.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/tokenst.h
 END
 format.h
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/format.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/format.h
 END
 phmodel.h
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/include/openbabel/phmodel.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/include/openbabel/phmodel.h
 END

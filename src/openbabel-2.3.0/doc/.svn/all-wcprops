@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/svnroot/openbabel/!svn/ver/3979/openbabel/trunk/doc
+/svnroot/openbabel/!svn/ver/4210/openbabel/trunk/doc
 END
 obgrep.html
 K 25
@@ -73,7 +73,7 @@ OpenBabelGUI.html
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/svnroot/openbabel/!svn/ver/3979/openbabel/trunk/doc/OpenBabelGUI.html
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/doc/OpenBabelGUI.html
 END
 obfit.1
 K 25

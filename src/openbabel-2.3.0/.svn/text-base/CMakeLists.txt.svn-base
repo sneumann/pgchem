@@ -1,15 +1,20 @@
 # Please ensure that any changes remain compliant with 2.4.8.
-if (NOT EMBED_OPENBABEL)
+if(NOT EMBED_OPENBABEL)
   cmake_minimum_required(VERSION 2.4.8)
-endif (NOT EMBED_OPENBABEL)
+endif()
 
 project(openbabel)
 set(CMAKE_MODULE_PATH ${openbabel_SOURCE_DIR}/cmake/modules)
 
+# Allow loose loop constructs, i.e. no matching in if/else/endif or loops.
+# Note that this is true by default in CMake 2.6.0, but we currently only
+# require CMake 2.4.8 - remove this when the CMake requirement is bumped.
+set(CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS 1)
+
 if(COMMAND cmake_policy)
   cmake_policy(SET CMP0003 NEW)
   cmake_policy(SET CMP0005 OLD) # add_definitions need updating to set to NEW
-endif(COMMAND cmake_policy)
+endif()
 
 include (CheckCXXCompilerFlag)
 include (MacroEnsureVersion)
@@ -25,9 +30,9 @@ set(BABEL_LIBRARY openbabel)
 # This would be better handled with external projects...
 if(EMBED_OPENBABEL)
   set(BABEL_VERSION  "${BABEL_MAJ_VER}.${BABEL_MIN_VER}.${BABEL_PATCH_VER}" PARENT_SCOPE)
-else(EMBED_OPENBABEL)
+else()
   set(BABEL_VERSION  "${BABEL_MAJ_VER}.${BABEL_MIN_VER}.${BABEL_PATCH_VER}")
-endif(EMBED_OPENBABEL)
+endif()
 set(BABEL_DATADIR  "${CMAKE_INSTALL_PREFIX}/share/openbabel")
 
 option(ENABLE_VERSIONED_FORMATS
@@ -35,25 +40,25 @@ option(ENABLE_VERSIONED_FORMATS
 
 # Set up our path handling, inspired by the path handling used in KDE
 set(BIN_INSTALL_DIR      "bin"
-    CACHE PATH "Install dir for binaries")
+  CACHE PATH "Install dir for binaries")
 set(LIB_SUFFIX "" CACHE STRING "Suffix of the directory name, e.g. 64 for lib64")
 if(UNIX)
   set(LIB_INSTALL_DIR    "lib${LIB_SUFFIX}"
-      CACHE PATH "Install dir for libraries")
+    CACHE PATH "Install dir for libraries")
   if(ENABLE_VERSIONED_FORMATS)
     set(OB_PLUGIN_INSTALL_DIR "${LIB_INSTALL_DIR}/openbabel/${BABEL_VERSION}"
       CACHE PATH "Install dir for plugins")
-  else(ENABLE_VERSIONED_FORMATS)
+  else()
     set(OB_PLUGIN_INSTALL_DIR "${LIB_INSTALL_DIR}/openbabel"
       CACHE PATH "Install dir for plugins")
-  endif(ENABLE_VERSIONED_FORMATS)
-else(UNIX) # Windows - bin dir = lib dir to load libraries
+  endif()
+else() # Windows - bin dir = lib dir to load libraries
   set(LIB_INSTALL_DIR "${BIN_INSTALL_DIR}"
       CACHE PATH "Install dir for libraries")
   if(MSVC)
     set(OB_PLUGIN_INSTALL_DIR "${BIN_INSTALL_DIR}"
       CACHE PATH "Install dir for plugins")
-  else(MSVC)
+  else()
     if(ENABLE_VERSIONED_FORMATS)
       set(OB_PLUGIN_INSTALL_DIR "lib${LIB_SUFFIX}/openbabel/${BABEL_VERSION}"
         CACHE PATH "Install dir for plugins")
@@ -61,8 +66,8 @@ else(UNIX) # Windows - bin dir = lib dir to load libraries
       set(OB_PLUGIN_INSTALL_DIR "lib${LIB_SUFFIX}/openbabel"
         CACHE PATH "Install dir for plugins")
     endif(ENABLE_VERSIONED_FORMATS)
-  endif(MSVC)
-endif(UNIX)
+  endif()
+endif()
 set(OB_INCLUDE_DIRS "include/openbabel-2.0")
 set(OB_EXPORTS_FILE "${openbabel_BINARY_DIR}/OpenBabel2_EXPORTS.cmake")
 # Ensure a fresh file is made each time CMake is run
@@ -71,40 +76,63 @@ file(REMOVE "${OB_EXPORTS_FILE}")
 # Place binaries and libraries in the root of the build directory
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
   CACHE STRING "Binary build output directory")
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib${LIB_SUFFIX}"
-  CACHE STRING "Library build output directory")
+if(UNIX)
+  set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib${LIB_SUFFIX}"
+    CACHE STRING "Library build output directory")
+else() # This is preferable on WIndows for example - bin = lib directory.
+  set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
+    CACHE STRING "Library build output directory")
+endif()
+
 mark_as_advanced(CMAKE_LIBRARY_OUTPUT_DIRECTORY
   CMAKE_RUNTIME_OUTPUT_DIRECTORY)
 
-option(WITH_INCHI   "build inchi lib" ON)
 option(BUILD_SHARED "enable shared build support" ON)
+option(BUILD_MIXED "enable linux relocatable binaries support" OFF)
+# Static building
 if(BUILD_SHARED)
   set(BUILD_TYPE SHARED)
   set(PLUGIN_TYPE MODULE)
   add_definitions(-DUSING_DYNAMIC_LIBS)
-else(BUILD_SHARED)
+else()
   set(BUILD_TYPE STATIC)
   set(PLUGIN_TYPE STATIC)
 
   if(MSVC)
     # set cl flags for static compiling
-    set(CMAKE_CXX_FLAGS_RELEASE
-	"/MT /O2 /Ob2 /D NDEBUG")
-    set(CMAKE_EXE_LINKER_FLAGS_RELEASE
-	"/INCREMENTAL:NO /NODEFAULTLIB:MSVCRT")
-  endif(MSVC)
-endif(BUILD_SHARED)
+    set(CMAKE_CXX_FLAGS_DEBUG "/MTd")
+    set(CMAKE_EXE_LINKER_FLAGS_DEBUG "/INCREMENTAL:NO /NODEFAULTLIB:MSVCRT")
+    set(CMAKE_CXX_FLAGS_RELEASE	"/MT /O2 /Ob2 /D NDEBUG")
+    set(CMAKE_EXE_LINKER_FLAGS_RELEASE "/INCREMENTAL:NO /NODEFAULTLIB:MSVCRT")
+    # note: static libraries are specified when running cmake
+  else()
+    set(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
+  endif()
+endif()
+
+# Should we attempt to use the system inchi library?
+option(WITH_INCHI   "Build inchi support" ON)
+option(OPENBABEL_USE_SYSTEM_INCHI
+  "Use the system inchi library." OFF)
+if(OPENBABEL_USE_SYSTEM_INCHI)
+  find_package(Inchi REQUIRED)
+  if (NOT INCHI_FOUND)
+    message(FATAL_ERROR "Inchi library not found.")
+  endif()
+else()
+  message("Using included inchi library.")
+  set(INCHI_LIBRARIES inchi)
+endif()
 
 if(WIN32)
   # FIXME: not used on windows... - inconsistency
   set(MODULE_EXTENSION ".obf")
-else(WIN32)
+else()
   set(MODULE_EXTENSION ".so")
-endif(WIN32)
+endif()
 
 # configure checks
 find_package(LibXml2)
-
 
 find_package(ZLIB)
 if(ZLIB_FOUND)
@@ -113,14 +141,9 @@ if(ZLIB_FOUND)
   # Longstanding unsolved problem with compression under Windows
   if(WIN32)
     add_definitions(-DDISABLE_WRITE_COMPRESSION)
-  endif(WIN32)
+  endif()
+endif()
 
-  # static build
-  if(NOT BUILD_SHARED)
-    set(STATIC_ZLIB_NAMES z.a zlib.a zdll.a libz.a)
-    find_library(ZLIB_LIBRARY NAMES ${STATIC_ZLIB_NAMES} )
-  endif(NOT BUILD_SHARED)
-endif(ZLIB_FOUND)
 # wxWidgets instructions based on http://wiki.wxwidgets.org/CMake
 #find_package(wxWidgets COMPONENTS base core REQUIRED)
 find_package(wxWidgets COMPONENTS base core)
@@ -128,13 +151,13 @@ if(wxWidgets_FOUND)
   include(${wxWidgets_USE_FILE})
   add_definitions(-DHAVE_WXWIDGETS)
   include_directories(${wxWidgets_INCLUDE_DIRS})
-endif(wxWidgets_FOUND)
+endif()
 
 if(MSVC)
   include_directories(${openbabel_SOURCE_DIR}/windows-vc2008/include)
   # The following line is required for check_include_file(rpc/xdr.h ...) below
   set(CMAKE_REQUIRED_INCLUDES ${openbabel_SOURCE_DIR}/windows-vc2008/include)
-endif(MSVC)
+endif()
 
 include(CheckIncludeFile)
 include(CheckIncludeFileCXX)
@@ -163,20 +186,19 @@ check_library_exists(dl dlopen "" HAVE_LIBDL)
 set(CMAKE_EXTRA_INCLUDE_FILES time.h)
 check_type_size(clock_t CLOCK_T)
 
-
 # Get the GCC version - from KDE4 cmake files
 if(CMAKE_COMPILER_IS_GNUCXX)
-    exec_program(${CMAKE_C_COMPILER} ARGS --version OUTPUT_VARIABLE _gcc_version_info)
-    string (REGEX MATCH "[345]\\.[0-9]\\.[0-9]" _gcc_version "${_gcc_version_info}")
-    # gcc on mac just reports: "gcc (GCC) 3.3 20030304 ..." without the
-    # patch level, handle this here:
-    if (NOT _gcc_version)
-      string (REGEX REPLACE ".*\\(GCC\\).* ([34]\\.[0-9]) .*" "\\1.0" _gcc_version "${_gcc_version_info}")
-    endif (NOT _gcc_version)
-    macro_ensure_version("4.0.0" "${_gcc_version}" GCC_IS_NEWER_THAN_4_0)
-    macro_ensure_version("4.1.0" "${_gcc_version}" GCC_IS_NEWER_THAN_4_1)
-    macro_ensure_version("4.2.0" "${_gcc_version}" GCC_IS_NEWER_THAN_4_2)
-endif(CMAKE_COMPILER_IS_GNUCXX)
+  exec_program(${CMAKE_C_COMPILER} ARGS --version OUTPUT_VARIABLE _gcc_version_info)
+  string(REGEX MATCH "[345]\\.[0-9]\\.[0-9]" _gcc_version "${_gcc_version_info}")
+  # gcc on mac just reports: "gcc (GCC) 3.3 20030304 ..." without the
+  # patch level, handle this here:
+  if (NOT _gcc_version)
+    string (REGEX REPLACE ".*\\(GCC\\).* ([34]\\.[0-9]) .*" "\\1.0" _gcc_version "${_gcc_version_info}")
+  endif ()
+  macro_ensure_version("4.0.0" "${_gcc_version}" GCC_IS_NEWER_THAN_4_0)
+  macro_ensure_version("4.1.0" "${_gcc_version}" GCC_IS_NEWER_THAN_4_1)
+  macro_ensure_version("4.2.0" "${_gcc_version}" GCC_IS_NEWER_THAN_4_2)
+endif()
 
 if(NOT MSVC)
   SET(CMAKE_REQUIRED_FLAGS -Werror)
@@ -196,37 +218,39 @@ if(NOT MSVC)
 
   # Add some visibility support when using GCC
   # note: Altough MinGW g++ 4.4 passes this test, visibility can't be used
-  if (CMAKE_COMPILER_IS_GNUCXX AND NOT APPLE)
-    if (CMAKE_SYSTEM_NAME MATCHES Linux)
+  if(CMAKE_COMPILER_IS_GNUCXX AND NOT APPLE)
+    if(CMAKE_SYSTEM_NAME MATCHES Linux)
       set (CMAKE_SHARED_LINKER_FLAGS "-Wl,--fatal-warnings -Wl,--no-undefined -lc ${CMAKE_SHARED_LINKER_FLAGS}")
       set (CMAKE_SHARED_LINKER_FLAGS "-Wl,--enable-new-dtags ${CMAKE_SHARED_LINKER_FLAGS}")
       set (CMAKE_MODULE_LINKER_FLAGS "-Wl,--fatal-warnings -Wl,--no-undefined -lc ${CMAKE_SHARED_LINKER_FLAGS}")
       set (CMAKE_MODULE_LINKER_FLAGS "-Wl,--enable-new-dtags ${CMAKE_SHARED_LINKER_FLAGS}")
-      set (CMAKE_EXE_LINKER_FLAGS "-Wl,--fatal-warnings -Wl,--no-undefined -lc ${CMAKE_SHARED_LINKER_FLAGS}")
-      set (CMAKE_EXE_LINKER_FLAGS "-Wl,--enable-new-dtags ${CMAKE_EXE_LINKER_FLAGS}")
-    endif (CMAKE_SYSTEM_NAME MATCHES Linux)
+      if(BUILD_SHARED)
+        set (CMAKE_EXE_LINKER_FLAGS "-Wl,--fatal-warnings -Wl,--no-undefined -lc ${CMAKE_SHARED_LINKER_FLAGS}")
+        set (CMAKE_EXE_LINKER_FLAGS "-Wl,--enable-new-dtags ${CMAKE_EXE_LINKER_FLAGS}")
+      endif()
+    endif ()
     # Now check if we can use visibility to selectively export symbols
     check_cxx_compiler_flag(-fvisibility=hidden HAVE_GCC_VISIBILITY)
     set(HAVE_GCC_VISIBILITY ${HAVE_GCC_VISIBILITY} CACHE BOOL "GCC support for hidden visibility")
     set(_GCC_COMPILED_WITH_BAD_ALLOCATOR FALSE)
-    if (GCC_IS_NEWER_THAN_4_1)
+    if(GCC_IS_NEWER_THAN_4_1)
       exec_program(${CMAKE_C_COMPILER} ARGS -v OUTPUT_VARIABLE _gcc_alloc_info)
       string(REGEX MATCH "(--enable-libstdcxx-allocator=mt)" _GCC_COMPILED_WITH_BAD_ALLOCATOR "${_gcc_alloc_info}")
-    endif (GCC_IS_NEWER_THAN_4_1)
-    if (HAVE_GCC_VISIBILITY AND GCC_IS_NEWER_THAN_4_2 AND NOT _GCC_COMPILED_WITH_BAD_ALLOCATOR)
+    endif()
+    if(HAVE_GCC_VISIBILITY AND GCC_IS_NEWER_THAN_4_2 AND NOT _GCC_COMPILED_WITH_BAD_ALLOCATOR)
       # We have all the parts necessary - use visibility support
       add_definitions(-DHAVE_GCC_VISIBILITY)
       set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fvisibility=hidden")
       set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fvisibility-inlines-hidden")
-    endif (HAVE_GCC_VISIBILITY AND GCC_IS_NEWER_THAN_4_2 AND NOT _GCC_COMPILED_WITH_BAD_ALLOCATOR)
-  endif (CMAKE_COMPILER_IS_GNUCXX AND NOT APPLE)
-endif(NOT MSVC)
+    endif()
+  endif()
+endif()
 
 # To avoid warnings when linking the plugins and exes
 if(MINGW)
   set (CMAKE_MODULE_LINKER_FLAGS "-Wl,--enable-auto-import ${CMAKE_MODULE_LINKER_FLAGS}")
   set (CMAKE_EXE_LINKER_FLAGS "-Wl,--enable-auto-import ${CMAKE_EXE_LINKER_FLAGS}")
-endif(MINGW)
+endif()
 
 if(CMAKE_COMPILER_IS_GNUCXX)
   if(NOT GCC_IS_NEWER_THAN_4_0) # GCC 3.x
@@ -235,13 +259,13 @@ if(CMAKE_COMPILER_IS_GNUCXX)
       include_directories(${Boost_INCLUDE_DIRS} ${Boost_INCLUDE_DIR})
       add_definitions(-DUSE_BOOST -DHAVE_SHARED_POINTER)
       set(SHARED_POINTER true)
-    else(Boost_FOUND)
+    else()
       message(FATAL_ERROR "Boost is required to compile OpenBabel with GCC 3.x")
-    endif(Boost_FOUND)
-  else(NOT GCC_IS_NEWER_THAN_4_0)
+    endif()
+  else()
     set(SHARED_POINTER true)
-  endif(NOT GCC_IS_NEWER_THAN_4_0)
-endif(CMAKE_COMPILER_IS_GNUCXX)
+  endif()
+endif()
 
 # Intel C++ Compiler
 # Note: Windows version uses different options!
@@ -283,35 +307,35 @@ if(MSVC90)
   # To be added: AND SP1  OR gcc>4.0
   add_definitions(-DHAVE_SHARED_POINTER)
   set(SHARED_POINTER true)
-endif(MSVC90)
+endif()
 
 # Some rpath handling for Linux and Mac
-if(UNIX)
+if(UNIX AND BUILD_SHARED)
   if(APPLE)
     set(CMAKE_INSTALL_NAME_DIR ${CMAKE_INSTALL_PREFIX}/${LIB_INSTALL_DIR})
-  else(APPLE)
+  else()
     set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/${LIB_INSTALL_DIR}")
     set(CMAKE_SKIP_BUILD_RPATH FALSE)
     set(CMAKE_BUILD_WITH_INSTALL_RPATH FALSE)
     set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
-  endif(APPLE)
-endif(UNIX)
+  endif()
+endif()
 
 # this is adapted from KDE's FindKDE4Internal.cmake : default the build type to
 # "release with debug info".
 #
 # We will define two other build types: Debug and Release.
 # These names are case-insensitive i.e. you can do -DCMAKE_BUILD_TYPE=debug
-if (NOT CMAKE_BUILD_TYPE)
+if(NOT CMAKE_BUILD_TYPE)
    set(CMAKE_BUILD_TYPE RelWithDebInfo)
-endif (NOT CMAKE_BUILD_TYPE)
+endif()
 
 #define various build types
-if (CMAKE_COMPILER_IS_GNUCXX)
+if(CMAKE_COMPILER_IS_GNUCXX)
   set (CMAKE_CXX_FLAGS_RELEASE        "${CMAKE_CXX_FLAGS_RELEASE} -O2 -DNDEBUG")
   set (CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO} -O2 -g")
   set (CMAKE_CXX_FLAGS_DEBUG          "${CMAKE_CXX_FLAGS_DEBUG} -g3 -fno-inline")
-endif (CMAKE_COMPILER_IS_GNUCXX)
+endif()
 
 file(GLOB_RECURSE headers include/openbabel/*.h)
 configure_file(${openbabel_SOURCE_DIR}/src/config.h.cmake
@@ -323,19 +347,19 @@ if(NOT MSVC)
     ${openbabel_BINARY_DIR}/openbabel-2.0.pc @ONLY)
   install(FILES ${openbabel_BINARY_DIR}/openbabel-2.0.pc
     DESTINATION ${LIB_INSTALL_DIR}/pkgconfig)
-endif(NOT MSVC)
+endif()
 
 include_directories(${openbabel_BINARY_DIR}/include
-                    ${openbabel_SOURCE_DIR}/data
-                    ${openbabel_SOURCE_DIR}/include
+  ${openbabel_SOURCE_DIR}/data
+  ${openbabel_SOURCE_DIR}/include
 )
 
 #cjh
 find_package(Eigen2) # find and setup Eigen2
-if (EIGEN2_FOUND)
-add_definitions (-DHAVE_EIGEN2)
-include_directories(${EIGEN2_INCLUDE_DIR})
-endif(EIGEN2_FOUND)
+if(EIGEN2_FOUND)
+  add_definitions (-DHAVE_EIGEN2)
+  include_directories(${EIGEN2_INCLUDE_DIR})
+endif()
 #cjh
 
 add_subdirectory(include)
@@ -345,23 +369,23 @@ add_subdirectory(src)
 add_subdirectory(tools)
 
 # Should we build the GUI? Default is yes on Linux or Windows, not Mac.
-if (APPLE)
-option(BUILD_GUI "Build the GUI" OFF)
-elseif (APPLE)
-option(BUILD_GUI "Build the GUI" ON)
-endif(APPLE)
+if (APPLE OR NOT BUILD_SHARED)
+  option(BUILD_GUI "Build the GUI" OFF)
+else ()
+  option(BUILD_GUI "Build the GUI" ON)
+endif()
 
 if(BUILD_GUI)
   message("Attempting to build the GUI")
   if(wxWidgets_FOUND)
     message("   wxWidgets found => GUI will be built")
     add_subdirectory(src/GUI)
-  else(wxWidgets_FOUND)
+  else()
     message("   wxWidgets not found => GUI will not be built")
-  endif(wxWidgets_FOUND)
-elseif(BUILD_GUI)
+  endif()
+else()
   message("GUI will not be built")
-endif(BUILD_GUI)
+endif()
 
 # Do we want to build the tests?
 option(ENABLE_TESTS "Enable unit tests" ON)
@@ -392,13 +416,13 @@ option(JAVA_BINDINGS "Build Java bindings" OFF)
 # Should CSharp bindings be built?
 option(CSHARP_BINDINGS "Build Csharp bindings" OFF)
 
-if (ALL_BINDINGS)
+if(ALL_BINDINGS)
   set(PYTHON_BINDINGS ON)
   set(RUBY_BINDINGS ON)
   set(PERL_BINDINGS ON)
   set(JAVA_BINDINGS ON)
   set(CSHARP_BINDINGS ON)
-endif (ALL_BINDINGS)
+endif()
 
 add_subdirectory(scripts)
 
@@ -424,7 +448,7 @@ set(OB_EXPORTS_FILE
 set(REL_REF)
 if(NOT WIN32)
   set(REL_REF "/../..")
-endif(NOT WIN32)
+endif()
 configure_file("${openbabel_SOURCE_DIR}/OpenBabel2Config.cmake.in"
   "${openbabel_BINARY_DIR}/OpenBabel2ConfigInstall.cmake" @ONLY)
 

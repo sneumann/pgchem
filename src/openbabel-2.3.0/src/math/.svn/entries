@@ -1,14 +1,14 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/src/math
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-09-28T01:23:13.500872Z
-4112
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -32,10 +32,10 @@ file
 
 
 
-2010-10-06T05:58:08.331724Z
-ae5389d113855b7f9d92148f5a00e670
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:41.891731Z
+30046df4eec9d32d271d5f667d2a1866
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-22342
+22330
 
 transform3d.cpp
 file
@@ -66,10 +66,10 @@ file
 
 
 
-2010-10-06T05:58:08.341739Z
-79a3079d37bc68040307f603ab8dc61f
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:41.901725Z
+776dbac7f20f8ae87217909e3679a9aa
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -92,7 +92,7 @@ has-props
 
 
 
-4231
+4219
 
 vector3.cpp
 file
@@ -100,10 +100,10 @@ file
 
 
 
-2010-10-06T05:58:08.351724Z
-e32c005ea43cefb3bde148867786df03
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:41.911727Z
+914ff2475cc7560c2a97c72a88802ed3
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -126,7 +126,7 @@ has-props
 
 
 
-10747
+10735
 
 spacegroup.cpp
 file
@@ -134,10 +134,10 @@ file
 
 
 
-2010-10-06T05:58:08.361724Z
-99b1544d199dbe8cdbed20c580d422e6
-2010-09-28T01:23:13.500872Z
-4112
+2010-10-15T07:41:41.921725Z
+a28baa40af028be1987f39270dcf095f
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -160,7 +160,7 @@ has-props
 
 
 
-16543
+17210
 
 align.cpp
 file
@@ -168,11 +168,11 @@ file
 
 
 
-2010-10-06T05:58:08.371724Z
-0491c9fcb3b1f21e7abc227c629702aa
-2010-09-23T13:04:53.190828Z
-4079
-baoilleach
+2010-10-15T07:41:41.971724Z
+61f9976fd7d3fb68b0eac4fa8a43abfe
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -194,5 +194,5 @@ has-props
 
 
 
-9051
+9039
 

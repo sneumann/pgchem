@@ -4,7 +4,7 @@ descriptor.cpp - Implementation of the base class for molecular descriptors
 Copyright (C) 2007 by Chris Morley
 
 This file is part of the Open Babel project.
-For more information, see <http://openbabel.sourceforge.net/>
+For more information, see <http://openbabel.org/>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -286,7 +286,6 @@ double OBDescriptor::ParsePredicate(istream& optionText, char& ch1, char& ch2, s
  **/
 bool OBDescriptor::ReadStringFromFilter(istream& optionText, string& result)
 {
-  bool error=false;
   bool ret=true;
   char ch;
 
@@ -310,7 +309,6 @@ bool OBDescriptor::ReadStringFromFilter(istream& optionText, string& result)
     else // not quoted; get string up to next space or ')'
     {
       optionText.unget();
-      char ch;
       result.clear();
       optionText >> ch; //ignore leading white space
       optionText.unsetf(ios::skipws);
@@ -366,7 +364,7 @@ double OBDescriptor::GetStringValue(OBBase* pOb, string& svalue, string* param)
   return val;
 }
 
-bool OBDescriptor::CompareStringWithFilter(istream& optionText, string& sval, bool noEval, bool NoCompOK)
+bool OBDescriptor::CompareStringWithFilter(istream& optionText, string& sval, bool, bool NoCompOK)
 {
   char ch1=0, ch2=0;
   string sfilterval;
@@ -423,7 +421,7 @@ void OBDescriptor::AddProperties(OBBase* pOb, const string& DescrList)
   while(ss)
   {
     pair<string,string> spair = GetIdentifier(ss);
-    if(pDescr = OBDescriptor::FindType(spair.first.c_str()))
+    if( (pDescr = OBDescriptor::FindType(spair.first.c_str())) ) // extra parentheses to indicate assignment as truth value
       pDescr->PredictAndSave(pOb, &spair.second);
     else
       obErrorLog.ThrowError(__FUNCTION__, spair.first + " not recognized as a descriptor", obError, onceOnly);
@@ -467,7 +465,7 @@ void OBDescriptor::DeleteProperties(OBBase* pOb, const string& DescrList)
         thisvalue = pOb->GetData(spair.first)->GetValue();
       else
       {
-        if(pDescr = OBDescriptor::FindType(spair.first.c_str()))
+        if( (pDescr = OBDescriptor::FindType(spair.first.c_str())) ) // extra parentheses to indicate truth value
           pDescr->GetStringValue(pOb, thisvalue, &spair.second);
         else
         {

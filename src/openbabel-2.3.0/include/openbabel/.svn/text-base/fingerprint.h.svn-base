@@ -4,7 +4,7 @@ fingerprint.h - Base class for fingerprints and fast searching
 Copyright (C) 2005 by Chris Morley
 
 This file is part of the Open Babel project.
-For more information, see <http://openbabel.sourceforge.net/>
+For more information, see <http://openbabel.org/>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -72,7 +72,8 @@ public:
 
   /// \return a description of each bit that is set (or unset, if bSet=false)
   /// \since version 2.2
-  virtual std::string DescribeBits(const std::  vector<unsigned int> fp, bool bSet=true)
+  virtual std::string DescribeBits(const std::vector<unsigned int> /* fp */,
+                                   bool /* bSet */ =true)
   {
     std::string txt("");
     return txt;

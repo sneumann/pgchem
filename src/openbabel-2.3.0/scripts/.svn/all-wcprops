@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/svnroot/openbabel/!svn/ver/4131/openbabel/trunk/scripts
+/svnroot/openbabel/!svn/ver/4201/openbabel/trunk/scripts
 END
 openbabel-mono.i
 K 25
@@ -19,7 +19,7 @@ CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svnroot/openbabel/!svn/ver/4082/openbabel/trunk/scripts/CMakeLists.txt
+/svnroot/openbabel/!svn/ver/4201/openbabel/trunk/scripts/CMakeLists.txt
 END
 openbabel-java.i
 K 25

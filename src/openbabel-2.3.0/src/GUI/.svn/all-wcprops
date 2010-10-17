@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/GUI
+/svnroot/openbabel/!svn/ver/4201/openbabel/trunk/src/GUI
 END
 stdwx.h
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/src/GUI/stdwx.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/GUI/stdwx.h
 END
 babel2.ico
 K 25
@@ -19,7 +19,7 @@ optswx.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/GUI/optswx.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/GUI/optswx.cpp
 END
 selformats.h
 K 25
@@ -31,7 +31,7 @@ OBGUI.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/GUI/OBGUI.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/GUI/OBGUI.cpp
 END
 OBGUI.rc
 K 25
@@ -49,7 +49,7 @@ optswx.h
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/GUI/optswx.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/GUI/optswx.h
 END
 stdwx.cpp
 K 25
@@ -61,11 +61,11 @@ OBGUI.h
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/GUI/OBGUI.h
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/GUI/OBGUI.h
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/src/GUI/CMakeLists.txt
+/svnroot/openbabel/!svn/ver/4201/openbabel/trunk/src/GUI/CMakeLists.txt
 END

@@ -4,7 +4,7 @@
   Copyright (C) 2009-2010 by Tim Vandermeersch
 
   This file is part of the Open Babel project.
-  For more information, see <http://openbabel.sourceforge.net/>
+  For more information, see <http://openbabel.org/>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -34,6 +34,7 @@
 
 #include <limits>
 #include <set>
+#include <iterator>
 
 #define DEBUG 0
 #define DEBUG_INVERSIONS 0
@@ -551,7 +552,8 @@ namespace OpenBabel {
           //cout << "OK: " << __LINE__ << endl;
           return true;
         } else {
-          assert(paraBond.outsideNbrs.size() == 2);
+          if (paraBond.outsideNbrs.size() != 2)
+            continue;
           // two ring substituents, need to check for topological difference
           if (symmetry_classes[paraBond.outsideNbrs[0]->GetIndex()] != symmetry_classes[paraBond.outsideNbrs[1]->GetIndex()]) {
             // they are different
@@ -888,7 +890,8 @@ namespace OpenBabel {
           }
 
           //cout << "  ParaAtom(idx = " << ring.paraAtoms.back().inIdx << ", outside = " << ring.paraAtoms.back().outsideNbrs.size() << ")" << endl;
-          assert( ring.paraAtoms.back().insideNbrs.size() == 2 );
+          if (ring.paraAtoms.back().insideNbrs.size() != 2)
+            ring.paraAtoms.pop_back();
         }
       }
 
@@ -912,7 +915,8 @@ namespace OpenBabel {
           }
 
           //cout << "  ParaBond(inIdx = " << beginIdx << ", outIdx = " << endIdx << ", outside = " << ring.paraBonds.back().outsideNbrs.size() << ")" << endl;
-          assert( ring.paraBonds.back().insideNbrs.size() == 2 );
+          if (ring.paraBonds.back().insideNbrs.size() != 2)
+            ring.paraBonds.pop_back();
         }
 
         if (lssr[i]->_pathset.BitIsSet(endIdx)) {
@@ -930,7 +934,8 @@ namespace OpenBabel {
           }
 
           //cout << "  ParaBond(inIdx = " << endIdx << ", outIdx = " << beginIdx << ", outside = " << ring.paraBonds.back().outsideNbrs.size() << ")" << endl;
-          assert( ring.paraBonds.back().insideNbrs.size() == 2 );
+          if (ring.paraBonds.back().insideNbrs.size() != 2)
+            ring.paraBonds.pop_back();
         }
 
       }
@@ -2236,14 +2241,25 @@ namespace OpenBabel {
     CisTransFrom2D(mol, stereogenicUnits, updown);
     mol->SetChiralityPerceived();
   }
-
   //! Calculate the "sign of a triangle" given by a set of 3 2D coordinates
   double TriangleSign(const vector3 &a, const vector3 &b, const vector3 &c)
   {
     // equation 6 from [1]
     return (a.x() - c.x()) * (b.y() - c.y()) - (a.y() - c.y()) * (b.x() - c.x());
   }
-
+  //! Calculate whether three vectors are arranged in order of increasing
+  //! angle anticlockwise (true) or clockwise (false) relative to a central point.
+  bool AngleOrder(const vector3 &a, const vector3 &b, const vector3 &c, const vector3 &center)
+  {
+    vector3 t, u, v; 
+    t = a - center;
+    t.normalize();
+    u = b - center;
+    u.normalize();
+    v = c - center;
+    v.normalize();
+    return TriangleSign(t, u, v) > 0;
+  }
   std::vector<OBTetrahedralStereo*> TetrahedralFrom2D(OBMol *mol,
       const OBStereoUnitSet &stereoUnits, bool addToMol)
   {
@@ -2327,9 +2343,9 @@ namespace OpenBabel {
           config.refs[0] = planeAtoms[0]->GetId();
           config.refs[1] = planeAtoms[1]->GetId();
           config.refs[2] = hashAtoms[0]->GetId();
-          double sign = TriangleSign(planeAtoms[0]->GetVector(),
-              planeAtoms[1]->GetVector(), hashAtoms[0]->GetVector());
-          if (sign > 0.0)
+          bool anticlockwise_order = AngleOrder(planeAtoms[0]->GetVector(),
+              planeAtoms[1]->GetVector(), hashAtoms[0]->GetVector(), center->GetVector());
+          if (anticlockwise_order)
             config.winding = OBStereo::AntiClockwise;
         } else if ((hashAtoms.size() + wedgeAtoms.size()) == 1) {
           // Either: plane1 + plane2 + hash *or* plane1 + plane2 + wedge
@@ -2348,9 +2364,9 @@ namespace OpenBabel {
           config.refs[0] = planeAtoms[0]->GetId();
           config.refs[1] = planeAtoms[1]->GetId();
           config.refs[2] = stereoAtom->GetId();
-          double sign = TriangleSign(planeAtoms[0]->GetVector(),
-              planeAtoms[1]->GetVector(), stereoAtom->GetVector());
-          if (sign > 0.0)
+          bool anticlockwise_order = AngleOrder(planeAtoms[0]->GetVector(),
+              planeAtoms[1]->GetVector(), stereoAtom->GetVector(), center->GetVector());
+          if (anticlockwise_order)
             config.winding = OBStereo::AntiClockwise;
         } else {
           success = false;
@@ -2371,9 +2387,9 @@ namespace OpenBabel {
           config.refs[0] = planeAtoms[0]->GetId();
           config.refs[1] = planeAtoms[1]->GetId();
           config.refs[2] = planeAtoms[2]->GetId();
-          double sign = TriangleSign(planeAtoms[0]->GetVector(),
-              planeAtoms[1]->GetVector(), planeAtoms[2]->GetVector());
-          if (sign > 0.0)
+          bool anticlockwise_order = AngleOrder(planeAtoms[0]->GetVector(),
+              planeAtoms[1]->GetVector(), planeAtoms[2]->GetVector(), center->GetVector());
+          if (anticlockwise_order)
             config.winding = OBStereo::AntiClockwise;
         } else {
           success = false;
@@ -2496,7 +2512,7 @@ namespace OpenBabel {
     return configs;
   }
 
-  bool TetStereoTo0D(OBMol &mol,
+  bool TetStereoToWedgeHash(OBMol &mol,
       std::map<OBBond*, enum OBStereo::BondDirection> &updown,
       std::map<OBBond*, OBStereo::Ref> &from)
   {
@@ -2574,14 +2590,15 @@ namespace OpenBabel {
               implicit = false;
             }
           }
-          // -ve sign implies clockwise
-          double sign = TriangleSign(mol.GetAtomById(test_cfg.refs[0])->GetVector(),
-              mol.GetAtomById(test_cfg.refs[1])->GetVector(), mol.GetAtomById(test_cfg.refs[2])->GetVector());
+          
+          bool anticlockwise_order = AngleOrder(mol.GetAtomById(test_cfg.refs[0])->GetVector(),
+              mol.GetAtomById(test_cfg.refs[1])->GetVector(), mol.GetAtomById(test_cfg.refs[2])->GetVector(),
+              center->GetVector());
 
           // Things are inverted from the point of view of the ImplicitH which we
           // assume to be of opposite stereochemistry to the wedge/hash
           bool useup = !implicit;
-          if (sign > 0) useup = !useup;
+          if (anticlockwise_order) useup = !useup;
           // Set to UpBond (filled wedge from cfg.center to chosen_nbr) or DownBond
           bonddir = useup ? OBStereo::UpBond : OBStereo::DownBond;
         }

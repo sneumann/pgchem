@@ -5,7 +5,7 @@ Copyright (C) 2009 by Tim Vandermeersch
 Some portions Copyright (C) 2009 by Chris Morley
 
 This file is part of the Open Babel project.
-For more information, see <http://openbabel.sourceforge.net/>
+For more information, see <http://openbabel.org/>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -321,7 +321,8 @@ namespace OpenBabel
     d->painter->NewCanvas(width, height);
     
     // draw bonds
-    d->SetWedgeAndHash(mol);
+    if(d->options & genWedgeHash)
+      d->SetWedgeAndHash(mol);
     for (OBBond *bond = mol->BeginBond(j); bond; bond = mol->NextBond(j)) {
       OBAtom *begin = bond->GetBeginAtom();
       OBAtom *end = bond->GetEndAtom();
@@ -693,7 +694,7 @@ namespace OpenBabel
     std::map<OBBond*, enum OBStereo::BondDirection> updown;
     std::map<OBBond*, OBStereo::Ref> from;
     std::map<OBBond*, OBStereo::Ref>::const_iterator from_cit;
-    TetStereoTo0D(*mol, updown, from);
+    TetStereoToWedgeHash(*mol, updown, from);
 
     for(from_cit=from.begin();from_cit!=from.end();++from_cit) {
       OBBond* pbond = from_cit->first;

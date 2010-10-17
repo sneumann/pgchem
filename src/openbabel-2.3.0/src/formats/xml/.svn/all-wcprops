@@ -1,19 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/4119/openbabel/trunk/src/formats/xml
+/svnroot/openbabel/!svn/ver/4217/openbabel/trunk/src/formats/xml
 END
 cdxmlformat.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/formats/xml/cdxmlformat.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/formats/xml/cdxmlformat.cpp
 END
 xml.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/formats/xml/xml.cpp
+/svnroot/openbabel/!svn/ver/4217/openbabel/trunk/src/formats/xml/xml.cpp
 END
 cmlreactformat.cpp
 K 25
@@ -31,13 +31,13 @@ pubchem.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/formats/xml/pubchem.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/formats/xml/pubchem.cpp
 END
 cmlformat.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/svnroot/openbabel/!svn/ver/4119/openbabel/trunk/src/formats/xml/cmlformat.cpp
+/svnroot/openbabel/!svn/ver/4210/openbabel/trunk/src/formats/xml/cmlformat.cpp
 END
 xmlformat.cpp
 K 25

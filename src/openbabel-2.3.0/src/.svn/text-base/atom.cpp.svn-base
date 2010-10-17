@@ -6,7 +6,7 @@ Some portions Copyright (C) 2001-2008 by Geoffrey R. Hutchison
 Some portions Copyright (C) 2003 by Michael Banck
 
 This file is part of the Open Babel project.
-For more information, see <http://openbabel.sourceforge.net/>
+For more information, see <http://openbabel.org/>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -27,11 +27,6 @@ GNU General Public License for more details.
 #include <openbabel/builder.h>
 
 #include <openbabel/math/matrix3x3.h>
-
-// jiahao@mit.edu
-//#include <charges/qeq.h>
-//#include <charges/qtpie.h>
-// end jiahao
 
 #if !HAVE_STRNCASECMP
 extern "C" int strncasecmp(const char *s1, const char *s2, size_t n);
@@ -391,15 +386,15 @@ namespace OpenBabel
       }
   }
 
-  void OBAtom::SetVector(const double x,const double y,const double z)
+  void OBAtom::SetVector(const double v_x,const double v_y,const double v_z)
   {
     if (!_c)
-      _v.Set(x,y,z);
+      _v.Set(v_x,v_y,v_z);
     else
       {
-        (*_c)[_cidx  ] = x;
-        (*_c)[_cidx+1] = y;
-        (*_c)[_cidx+2] = z;
+        (*_c)[_cidx  ] = v_x;
+        (*_c)[_cidx+1] = v_y;
+        (*_c)[_cidx+2] = v_z;
       }
   }
 
@@ -570,12 +565,6 @@ namespace OpenBabel
         phmodel.AssignSeedPartialCharge(*((OBMol*)GetParent()));
         OBGastChrg gc;
         gc.AssignPartialCharges(*((OBMol*)GetParent()));
-
-	/* jiahao@mit.edu - force use of QTPIE
-	obErrorLog.ThrowError(__FUNCTION__, "Force use of QTPIE", obInfo);
-	QTPIECharges charge;
-	charge.AssignPartialCharges(*mol);
-	/* end jiahao */
       }
 
     return(_pcharge);
@@ -817,7 +806,7 @@ namespace OpenBabel
 
     rlist = mol->GetSSSR();
     for (i = rlist.begin();i != rlist.end();++i)
-      if ((*i)->IsInRing(GetIdx()) && (*i)->PathSize() == size)
+      if ((*i)->IsInRing(GetIdx()) && static_cast<int>((*i)->PathSize()) == size)
         return(true);
 
     return(false);

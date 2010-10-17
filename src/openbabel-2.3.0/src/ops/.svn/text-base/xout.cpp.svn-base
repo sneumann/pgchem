@@ -4,7 +4,7 @@ xout.cpp - OpExtraOut to write a OBBase object additionally to a file
 Copyright (C) 2009 by Chris Morley
 
 This file is part of the Open Babel project.
-For more information, see <http://openbabel.sourceforge.net/>
+For more information, see <http://openbabel.org/>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -143,7 +143,7 @@ bool OpExtraOut::Do(OBBase* pOb, const char* OptionText, OpMap* pmap, OBConversi
   {
     OBConversion* pExtraConv = new OBConversion(*pConv); //copy ensures OBConversion::Index>-1
     std::ofstream* ofs;
-    if(ofs = new std::ofstream(OptionText))
+    if( (ofs = new std::ofstream(OptionText)) ) // extra parens to indicate truth value
       pExtraConv->SetOutStream(ofs);
     if(!ofs || !pExtraConv->SetOutFormat(OBConversion::FormatFromExt(OptionText)))
     {

@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/svnroot/openbabel/!svn/ver/4056/openbabel/trunk/src/depict
+/svnroot/openbabel/!svn/ver/4211/openbabel/trunk/src/depict
 END
 svgpainter.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/depict/svgpainter.cpp
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/depict/svgpainter.cpp
 END
 depict.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/svnroot/openbabel/!svn/ver/4056/openbabel/trunk/src/depict/depict.cpp
+/svnroot/openbabel/!svn/ver/4211/openbabel/trunk/src/depict/depict.cpp
 END

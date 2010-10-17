@@ -1,14 +1,14 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/src/stereo
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-10-01T01:21:21.150993Z
-4124
+2010-10-17T01:14:35.726428Z
+4214
 timvdm
 
 
@@ -60,50 +60,16 @@ has-props
 
 7647
 
-stereoutil.cpp
-file
-
-
-
-
-2010-10-06T05:58:09.731727Z
-79d554c7385ee8f3320ff581ba5f435b
-2010-09-23T23:04:34.144886Z
-4084
-timvdm
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-11269
-
 tetrahedral.cpp
 file
 
 
 
 
-2010-10-06T05:58:09.741801Z
-1004aa23728fff7c436118356592414a
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:43.221725Z
+51cab598f993649d5ac3cbba9a442eed
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -126,7 +92,7 @@ has-props
 
 
 
-7771
+7759
 
 stereo.cpp
 file
@@ -134,10 +100,10 @@ file
 
 
 
-2010-10-06T05:58:09.751725Z
-162859eb4b01e7324167f19777fd4fa6
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:43.241730Z
+9fa11e19bf24bd6097334047d8d79ce3
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -160,7 +126,7 @@ has-props
 
 
 
-2834
+2822
 
 facade.cpp
 file
@@ -168,11 +134,11 @@ file
 
 
 
-2010-10-06T05:58:09.761932Z
-acc2f1598f38e443292f24582484a3b7
-2010-09-12T23:08:55.813627Z
-4034
-timvdm
+2010-10-15T07:41:43.251721Z
+2bc79a32f4561f0dc55961130e549b0f
+2010-10-10T01:24:39.947636Z
+4162
+ghutchis
 has-props
 
 
@@ -194,7 +160,7 @@ has-props
 
 
 
-5194
+5182
 
 stereoutil.h
 file
@@ -202,11 +168,11 @@ file
 
 
 
-2010-10-06T05:58:09.761932Z
-2b6660a7f5dccb580fea37ffb6cac3e3
-2010-09-20T03:29:37.854439Z
-4063
-timvdm
+2010-10-15T07:41:43.251721Z
+aa839e6def70fbbc7e7f29c205d90c82
+2010-10-07T19:58:06.704815Z
+4145
+ghutchis
 
 
 
@@ -228,7 +194,7 @@ timvdm
 
 
 
-5458
+5465
 
 cistrans.cpp
 file
@@ -270,10 +236,10 @@ file
 
 
 
-2010-10-06T05:58:09.791723Z
-643fcfc4c85fc62e0dff1a6d7d06838c
-2010-10-01T01:21:21.150993Z
-4124
+2010-10-15T07:41:43.271728Z
+f5e742e03f568e9216f49ece63ff1ab3
+2010-10-14T15:12:46.191143Z
+4192
 timvdm
 has-props
 
@@ -296,7 +262,7 @@ has-props
 
 
 
-98299
+99017
 
 tetranonplanar.cpp
 file
@@ -304,10 +270,10 @@ file
 
 
 
-2010-10-06T05:58:09.811723Z
-f002296529ba4c4386ebac8530ce8faf
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:43.281725Z
+33a582bd22a18c31b7ef6f355c4fe18b
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -330,7 +296,7 @@ has-props
 
 
 
-1273
+1261
 
 tetraplanar.cpp
 file
@@ -338,10 +304,10 @@ file
 
 
 
-2010-10-06T05:58:09.821721Z
-9e6b1d512c30dedbb3fdc7f87895186b
-2010-09-07T17:26:18.131028Z
-4026
+2010-10-15T07:41:43.291722Z
+6c9b6cf9f4eed18682d31bbc9b320e74
+2010-10-10T01:24:39.947636Z
+4162
 ghutchis
 has-props
 
@@ -364,5 +330,5 @@ has-props
 
 
 
-2606
+2594
 

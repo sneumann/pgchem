@@ -5,7 +5,7 @@ Copyright (C) 1998-2001 by OpenEye Scientific Software, Inc.
 Some portions Copyright (C) 2001-2006 by Geoffrey R. Hutchison
 
 This file is part of the Open Babel project.
-For more information, see <http://openbabel.sourceforge.net/>
+For more information, see <http://openbabel.org/>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -296,7 +296,7 @@ namespace OpenBabel
 
   static int DeterminePotency( unsigned int m, unsigned int a )
   {
-    auto DoubleType d;
+    DoubleType d;
     register unsigned int k;
     register unsigned int b;
     register int s;
@@ -370,7 +370,7 @@ namespace OpenBabel
                          unsigned int *pa,
                          unsigned int *pc )
   {
-    auto unsigned int fact[MAXFACT];
+    unsigned int fact[MAXFACT];
     register unsigned int a=0, c;
     register unsigned int b;
     register int pot,best;
@@ -430,7 +430,7 @@ namespace OpenBabel
   {
     register unsigned int i;
     register unsigned int x;
-    auto DoubleType d;
+    DoubleType d;
 
     x = 0;  /* seed */
     for( i=0; i<p; i++ )

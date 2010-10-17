@@ -4,7 +4,7 @@ op.h - plugin options or operations
 Copyright (C) 2007 by Chris Morley
 
 This file is part of the Open Babel project.
-For more information, see <http://openbabel.sourceforge.net/>
+For more information, see <http://openbabel.org/>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -48,7 +48,7 @@ public:
   virtual bool WorksWith(OBBase* pOb)const=0;
 
   /// Do something with an array of objects. Used a a callback routine in OpSort, etc.
-  virtual bool ProcessVec(std::vector<OBBase*>& vec){ return false; }
+  virtual bool ProcessVec(std::vector<OBBase*>& /* vec */){ return false; }
 
   /// \return string describing options, for display with -H and to make checkboxes in GUI
   static std::string OpOptions(OBBase* pOb)

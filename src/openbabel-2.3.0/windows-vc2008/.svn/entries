@@ -1,14 +1,14 @@
 10
 
 dir
-4136
+4219
 https://openbabel.svn.sourceforge.net/svnroot/openbabel/openbabel/trunk/windows-vc2008
 https://openbabel.svn.sourceforge.net/svnroot/openbabel
 
 
 
-2010-08-24T10:25:14.509258Z
-4005
+2010-10-17T14:51:16.782445Z
+4218
 chrismorl
 
 
@@ -72,10 +72,10 @@ file
 
 
 
-2010-10-06T05:58:45.141726Z
-c9b67329cc18ec918e86a861fce350ec
-2010-07-19T16:49:46.240758Z
-3892
+2010-10-17T20:15:24.821723Z
+4ab0c0a18350348b80cb3602aaf75320
+2010-10-17T14:51:16.782445Z
+4218
 chrismorl
 has-props
 
@@ -98,7 +98,7 @@ has-props
 
 
 
-752
+1033
 
 libs
 dir

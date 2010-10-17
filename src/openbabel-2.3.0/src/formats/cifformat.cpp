@@ -4,7 +4,7 @@ cifformat.cpp - Implementation of subclass of OBFormat for conversion of OBMol.
 Copyright (C) 2006 Vincent Favre-Nicolin
 
 This file is part of the Open Babel project.
-For more information, see <http://openbabel.sourceforge.net/>
+For more information, see <http://openbabel.org/>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -53,7 +53,7 @@ namespace OpenBabel
       return
         "Crystallographic Information File\n"
         "The CIF file format is the standard interchange format for small-molecule chemical structures\n\n"
-        "Read Options e.g. -b:\n"
+        "Read Options e.g. -ab:\n"
         "  v  Verbose CIF conversion\n"
         "  s  Output single bonds only\n"
         "  b  Disable bonding entirely\n"

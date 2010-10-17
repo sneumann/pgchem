@@ -3,21 +3,21 @@ set(SOVERSION 4)
 set(LIBRARY_VERSION 4.0.0)
 
 set(charges
-        charges/gasteiger.cpp
-        charges/mmff94.cpp
+  charges/gasteiger.cpp
+  charges/mmff94.cpp
 )
 
 if (EIGEN2_FOUND)
 # if eigen is available, compile QEq and QTPIE charge models
 set(charges ${charges}
-        charges/qeq.cpp
-        charges/qtpie.cpp
+  charges/qeq.cpp
+  charges/qtpie.cpp
 )
 endif(EIGEN2_FOUND)
 
 set(depict_srcs
-    depict/depict.cpp
-    depict/svgpainter.cpp
+  depict/depict.cpp
+  depict/svgpainter.cpp
 )
 
 set(descriptors
@@ -30,30 +30,29 @@ set(descriptors
 )
 
 set(fingerprints
-    fingerprints/finger2.cpp
-    fingerprints/finger3.cpp
+  fingerprints/finger2.cpp
+  fingerprints/finger3.cpp
 )
 
 set(forcefields
-    forcefields/forcefieldgaff.cpp
-    forcefields/forcefieldghemical.cpp
-    forcefields/forcefieldmmff94.cpp
-    forcefields/forcefielduff.cpp
+  forcefields/forcefieldgaff.cpp
+  forcefields/forcefieldghemical.cpp
+  forcefields/forcefieldmmff94.cpp
+  forcefields/forcefielduff.cpp
 )
 
 set(math_srcs
-    math/matrix3x3.cpp
-    math/spacegroup.cpp
-    math/transform3d.cpp
-    math/vector3.cpp
+  math/matrix3x3.cpp
+  math/spacegroup.cpp
+  math/transform3d.cpp
+  math/vector3.cpp
 )
 
-if (EIGEN2_FOUND)
-set(math_srcs
-        ${math_srcs}
-        math/align.cpp
-)
-endif (EIGEN2_FOUND)
+if(EIGEN2_FOUND)
+  set(math_srcs ${math_srcs}
+    math/align.cpp
+  )
+endif(EIGEN2_FOUND)
 
 set(ops
   ops/addinindex.cpp
@@ -71,92 +70,105 @@ set(ops
   ops/opisomorph.cpp
   ops/xout.cpp
 )
-if (EIGEN2_FOUND)
-set(ops
-        ${ops}
-        ops/conformer.cpp
-)
-endif (EIGEN2_FOUND)
+if(EIGEN2_FOUND)
+  set(ops ${ops}
+    ops/conformer.cpp
+  )
+endif(EIGEN2_FOUND)
 
 set(stereo_srcs
-    stereo/stereo.cpp
-    stereo/stereoutil.cpp
-    stereo/tetranonplanar.cpp
-    stereo/tetraplanar.cpp
-    stereo/squareplanar.cpp
-    stereo/cistrans.cpp
-    stereo/tetrahedral.cpp
-    stereo/perception.cpp
-    stereo/facade.cpp
+  stereo/stereo.cpp
+  stereo/tetranonplanar.cpp
+  stereo/tetraplanar.cpp
+  stereo/squareplanar.cpp
+  stereo/cistrans.cpp
+  stereo/tetrahedral.cpp
+  stereo/perception.cpp
+  stereo/facade.cpp
 )
 
 set(openbabel_srcs
-    alias.cpp
-    atom.cpp
-    base.cpp
-    bitvec.cpp
-    bond.cpp
-    bondtyper.cpp
-    builder.cpp
-    canon.cpp
-    chains.cpp
-    chargemodel.cpp
-    chiral.cpp
-    data.cpp
-    descriptor.cpp
-    fingerprint.cpp
-    forcefield.cpp
-    format.cpp
-    generic.cpp
-    graphsym.cpp
-    grid.cpp
-    griddata.cpp
-    isomorphism.cpp
-    kekulize.cpp
-    locale.cpp
-    matrix.cpp
-    mcdlutil.cpp
-    molchrg.cpp
-    mol.cpp
-    obconversion.cpp
-    oberror.cpp
-    obiter.cpp
-    obutil.cpp
-    op.cpp
-    parsmart.cpp
-    patty.cpp
-    phmodel.cpp
-    plugin.cpp
-    pointgroup.cpp
-    query.cpp
-    rand.cpp
-    residue.cpp
-    ring.cpp
-    rotamer.cpp
-    rotor.cpp
-    spectrophore.cpp
-    tokenst.cpp
-    transform.cpp
-    typer.cpp
-    obmolecformat.cpp
+  alias.cpp
+  atom.cpp
+  base.cpp
+  bitvec.cpp
+  bond.cpp
+  bondtyper.cpp
+  builder.cpp
+  canon.cpp
+  chains.cpp
+  chargemodel.cpp
+  chiral.cpp
+  data.cpp
+  descriptor.cpp
+  fingerprint.cpp
+  forcefield.cpp
+  format.cpp
+  generic.cpp
+  graphsym.cpp
+  grid.cpp
+  griddata.cpp
+  isomorphism.cpp
+  kekulize.cpp
+  locale.cpp
+  matrix.cpp
+  mcdlutil.cpp
+  molchrg.cpp
+  mol.cpp
+  obconversion.cpp
+  oberror.cpp
+  obiter.cpp
+  obutil.cpp
+  op.cpp
+  parsmart.cpp
+  patty.cpp
+  phmodel.cpp
+  plugin.cpp
+  pointgroup.cpp
+  query.cpp
+  rand.cpp
+  residue.cpp
+  ring.cpp
+  rotamer.cpp
+  rotor.cpp
+  spectrophore.cpp
+  tokenst.cpp
+  transform.cpp
+  typer.cpp
+  obmolecformat.cpp
 )
-if (EIGEN2_FOUND)
-set(openbabel_srcs
-        ${openbabel_srcs}
-        conformersearch.cpp
-)
+if(EIGEN2_FOUND)
+  set(openbabel_srcs ${openbabel_srcs}
+    conformersearch.cpp
+  )
 endif (EIGEN2_FOUND)
 
 if(BUILD_SHARED)
   if(MSVC)
     set(openbabel_srcs ${openbabel_srcs}
-        dlhandler_win32.cpp
-        )
+      dlhandler_win32.cpp
+    )
   else(MSVC)
     set(openbabel_srcs ${openbabel_srcs}
-        dlhandler_unix.cpp
-        )
+      dlhandler_unix.cpp
+    )
   endif(MSVC)
+else(BUILD_SHARED)
+  include(formats/formats.cmake)
+  foreach(format ${formats})
+    set(openbabel_srcs ${openbabel_srcs} formats/${format}.cpp)
+  endforeach(format ${formats})
+
+  if (LIBXML2_FOUND)
+    set(openbabel_srcs ${openbabel_srcs} formats/xml/xml.cpp)
+    foreach(format ${formats_xml})
+      set(openbabel_srcs ${openbabel_srcs} formats/xml/${format}.cpp)
+    endforeach(format ${formats_xml})
+  endif(LIBXML2_FOUND)
+
+  foreach(plugingroup descriptors fingerprints forcefields ops charges)
+    set(openbabel_srcs ${openbabel_srcs} ${${plugingroup}})
+  endforeach(plugingroup descriptors fingerprints forcefields ops charges)
 endif(BUILD_SHARED)
 
 set(openbabel_library_srcs
@@ -167,39 +179,31 @@ set(openbabel_library_srcs
   ${headers}
   "${openbabel_BINARY_DIR}/include/openbabel/babelconfig.h"
   )
-if(NOT MSVC AND BUILD_SHARED)
-  set(openbabel_library_srcs
-    ${openbabel_library_srcs}
-    ${charges}
-    ${descriptors}
-    ${fingerprints}
-    ${forcefields}
-    ${ops}
-    )
-endif(NOT MSVC AND BUILD_SHARED)
 
 if(WIN32)
   set(libs ${libs} ${ZLIB_LIBRARY})
 else(WIN32)
   # the C math library
-  set(libs ${libs} m)
+  if(BUILD_MIXED)
+    set(libs ${libs} m)
+  else(BUILD_MIXED)
+    # Make sure to find the static library with .a suffix (see CMAKE_FIND_LIBRARY_SUFFIXES)
+    find_library(MATH_LIBRARY NAMES m)
+    if(MATH_LIBRARY)
+      set(libs ${libs} ${MATH_LIBRARY})
+    endif(MATH_LIBRARY)
+  endif(BUILD_MIXED)
+
   if(BUILD_SHARED)
     # dl library if it is found and we are doing a shared build
     if(HAVE_LIBDL)
       set(libs ${libs} dl)
     endif(HAVE_LIBDL)
-    # shared zlib
-    if(ZLIB_FOUND)
-      set(libs ${libs} ${ZLIB_LIBRARY})
-    endif(ZLIB_FOUND)
-  else(BUILD_SHARED)
-    # static zlib
-    if(ZLIB_FOUND)
-      set(ZLIB_NAMES z.a zdll.a zlib.a libz.a)
-      find_library(ZLIB_STATIC_LIBRARY NAMES ${ZLIB_NAMES})
-      set(libs ${libs} ${ZLIB_STATIC_LIBRARY})
-    endif(ZLIB_FOUND)
   endif(BUILD_SHARED)
+
+  if(ZLIB_FOUND)
+    set(libs ${libs} ${ZLIB_LIBRARY})
+  endif(ZLIB_FOUND)
 endif(WIN32)
 
 add_library(openbabel ${BUILD_TYPE}
@@ -216,7 +220,6 @@ set_target_properties(openbabel PROPERTIES
 if(MSVC)
   # Set the output name to openbabel-2 (preserves old behaviour). Is this desired?
   set_target_properties(openbabel PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}
     OUTPUT_NAME openbabel-2)
 endif(MSVC)
 
@@ -230,7 +233,7 @@ install(TARGETS openbabel
   ARCHIVE DESTINATION ${LIB_INSTALL_DIR}
 )
 
-if(MSVC AND BUILD_SHARED)
+if(BUILD_SHARED)
   foreach(plugingroup descriptors fingerprints forcefields ops charges)
     add_library(plugin_${plugingroup} ${PLUGIN_TYPE} ${${plugingroup}}
       "${openbabel_BINARY_DIR}/include/openbabel/babelconfig.h")
@@ -242,9 +245,8 @@ if(MSVC AND BUILD_SHARED)
     set_target_properties(plugin_${plugingroup} PROPERTIES
       OUTPUT_NAME plugin_${plugingroup}
       PREFIX ""
-      SUFFIX ${MODULE_EXTENSION}
-      LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+      SUFFIX ${MODULE_EXTENSION})
   endforeach(plugingroup)
-endif(MSVC AND BUILD_SHARED)
 
-add_subdirectory(formats)
+  add_subdirectory(formats)
+endif(BUILD_SHARED)
