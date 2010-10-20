@@ -43,7 +43,6 @@ new_molecule (char *smiles, char *molfile)
   MOLECULE *result;
   char *inchikey = NULL;
   char *ancillarydata = NULL;
-  //uint32 *offset;
   char *aidata = NULL;
   uint32 ancsize = 0;
   
@@ -75,20 +74,22 @@ new_molecule (char *smiles, char *molfile)
 
   inchikey = ob_smiles_to_inchikey (smiles);
     
-  if(inchikey == NULL) {
-    goto inchikey_fail;
-  }  else if (strlen(inchikey) != INCHIKEYSZ) {
-    free(inchikey);
-  inchikey_fail: elog (ERROR, "InChI key generation failled ! SMILES:\n %s", smiles);
-  }    
+  if(inchikey == NULL || strlen(inchikey) != INCHIKEYSZ) {
+    elog (ERROR, "InChI key generation failled ! SMILES:\n %s", smiles);
+  } else {
+    memcpy(result->inchikey, inchikey, INCHIKEYSZ);
+  }   
 
-  memcpy(result->inchikey, inchikey, INCHIKEYSZ);
-  free (inchikey);
+  if (inchikey != NULL) {
+    free (inchikey);
+    inchikey=NULL;
+  }
   
   ob_fp_bin(aidata, result->fp);
   
   if(ancillarydata != NULL) {
     free(ancillarydata);
+    ancillarydata=NULL;
   }  
 
   SET_VARSIZE (result,totalsize);
