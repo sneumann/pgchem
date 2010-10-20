@@ -54,38 +54,27 @@ new_molecule (char *smiles, char *molfile)
   }    
   
   ancsize = *(unsigned int*) ancillarydata;
-
   sizemf = strlen (molfile)+1;
-  
   sizesmi = strlen (smiles)+1;
-
   totalsize = CALCDATASZ (sizemf, sizesmi, ancsize);
 
   result = (MOLECULE *) palloc (totalsize);
-
   memset (result, 0x0, totalsize);
 
   if (strchr (smiles, '.') != NULL)
     result->disconnected = true;
 
-  //result->nobz = true;
   result->sizemf = sizemf;
   result->sizesmi = sizesmi;
 
   strncpy (SMIPTR(result), smiles, sizesmi);
-
   strncpy (MFPTR(result), molfile, sizemf);
   
   aidata = (char*) &((unsigned int*)ancillarydata)[1];
-  
   memcpy(ANCPTR(result), aidata, ancsize);
 
   inchikey = ob_smiles_to_inchikey (smiles);
-  
-  //printf("%s\n",inchi);
-  //printf("%s\n",smiles);
-  //printf("%s\n",molfile);
-  
+    
   if(inchikey == NULL) {
     goto inchikey_fail;
   }  else if (strlen(inchikey) != INCHIKEYSZ) {
@@ -93,49 +82,16 @@ new_molecule (char *smiles, char *molfile)
   inchikey_fail: elog (ERROR, "InChI key generation failled ! SMILES:\n %s", smiles);
   }    
 
-  //pg_md5_hash (inchi, strlen (inchi) + 1, result->molhash);
-  //calculateDigestFromBuffer(inchi, strlen (inchi), result->molhash);
-  
   memcpy(result->inchikey, inchikey, INCHIKEYSZ);
-  
-  //calculateDigestFromBuffer(smiles, sizesmi, result->molhash);
-  
-  //result->molhash[16]='\0';
-
   free (inchikey);
   
   ob_fp_bin(aidata, result->fp);
   
   if(ancillarydata != NULL) {
-    //printf("%d %d %d %d\n",ancsize,offset[0],offset[1],offset[2]);
     free(ancillarydata);
   }  
 
-  //memset(fp3,0x0,FPSIZE3*sizeof(unsigned int));
-  //ob_fp2 (molfile, result->fp);
-  
-  //offset = result->fp+OFFSET;
-  
-  //ob_fp3 (molfile, offset);
-  
-  //result->popcount = ob_popcount((uint8 *)result->fp,FPSIZE*sizeof(uint32));
-  
-  //printf("popcount: %i\n",result->popcount);
-  
-  //merge_fps(result->fp2, fp3);
-
-  /*if (strncmp (result->molhash, get_bzhash (), MOLHASHSZ) == 0)
-    {
-    result->nobz = false;
-    result->isbz = true;
-    }
-    else if (ob_SSS_SMARTS_native (BZSMI, smiles) != 0)
-    {
-    result->nobz = false;
-    }*/
-
   SET_VARSIZE (result,totalsize);
-
   return result;
 }
 
