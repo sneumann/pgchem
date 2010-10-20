@@ -102,8 +102,6 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
   char *molfile = NULL;
   char *smiles = NULL;
   char *endptr;
-  bool freemolfile = false;
-  bool freesmiles = false;
   unsigned int new_len;
   
   if(strstr (raw_input, "M  END") != NULL) {
@@ -113,6 +111,8 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
     *endptr = 0x0;
     new_len = strlen(input);
     pfree (input);
+    input=NULL;
+
     input = palloc (new_len + 1);
     strncpy(input,raw_input,new_len);
     input[new_len] = 0x0;
@@ -129,7 +129,10 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
 	  molfile = ob_V3000_to_mol (input);
 	  
 	  if(molfile == NULL || !strlen(molfile) || strstr(molfile,"V3000")==NULL) {
-	    if(molfile!=NULL) free (molfile);
+	    if(molfile!=NULL) {
+	      free (molfile);
+	      molfile=NULL;
+	    }
 	    elog (ERROR, "Molfile generation failed! V3000:\n %s",input);
 	  }  
   
@@ -140,21 +143,19 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
 	  }  else if (!strlen(smiles)) {
 	    elog (WARNING, "SMILES generation failed! Trying fallback...");
 	    free (smiles);
+	    smiles=NULL;
+
 	    smiles = ob_mol_to_canonical_smiles (input,0);
             if(smiles == NULL) {
 	      elog (ERROR, "Canonical SMILES generation finally failed! Offender was :\n %s",input);
             } else if (!strlen(smiles)) {
 	      free(smiles);
+	      smiles=NULL;
 	      elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
 	    }  
 	    elog (WARNING, "Fallback OK"); 
 	  }  
-        
-	  freemolfile = true;
-	  freesmiles = true;
-	}
-      else if (strstr (input, "InChI=") != NULL) //InChI?
-	{
+	} else if (strstr (input, "InChI=") != NULL) { //InChI?	
 	  molfile = ob_inchi_to_mol (input);
 	  
 	  if(molfile == NULL || !strlen(molfile) || strstr(molfile,"V2000")==NULL) {
@@ -169,32 +170,31 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
 	  }  else if (!strlen(smiles)) {
 	    elog (WARNING, "SMILES generation failed! Trying fallback...");
 	    free (smiles);
+	    smiles=NULL;
 	    smiles = ob_mol_to_canonical_smiles (input,0);
             if(smiles == NULL) {
 	      elog (ERROR, "Canonical SMILES generation finally failed! InChI:\n %s",input);
             } else if (!strlen(smiles)) {
 	      free(smiles);
+	      smiles=NULL;
 	      elog (ERROR, "SMILES generation finally failed! InChi:\n %s",input);
 	    } 
-            elog (WARNING, "Fallback OK");   
+            elog (NOTICE, "Fallback OK");   
 	  }  
 	  
 	  freemolfile = true;
 	  freesmiles = true;
-	}
-      else //SMILES?
-	{
+	} else { //SMILES?       
 	  molfile = ob_smiles_to_mol (input);
 	  
 	  if(molfile == NULL || !strlen(molfile)) {
 	    if(molfile!=NULL) free (molfile);
 	    elog (ERROR, "Molfile generation failed! SMILES:\n %s",input);
 	  }  
-	  
-	  smiles = input;
-	  
-	  freemolfile = true;
-	}
+
+	  // smiles will be free()d below, but input was palloc()ed.
+	  smiles = strdup(input);
+      }
     }
   else //V2000
     {
@@ -205,41 +205,42 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
       }  else if (!strlen(smiles)) {
 	elog (WARNING, "SMILES generation failed! Trying fallback...");
 	free (smiles);
+	smiles=NULL;
+
 	smiles = ob_mol_to_canonical_smiles (input,0);
 	if(smiles == NULL) {
 	  elog (ERROR, "Cacnonical SMILES generation finally failed! Offender was :\n %s",input);
 	} else if (!strlen(smiles)) {
 	  free(smiles);
+	  smiles=NULL;
 	  elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
 	} 
-	elog (WARNING, "Fallback OK");   
+	elog (NOTICE, "Fallback OK");   
       }  
-      
-      molfile = input;
-      freesmiles = true;
+      molfile = strdup(input);
     }
 
-  if (molfile == NULL || smiles == NULL)
-    {
-      if (smiles != NULL && freesmiles)
-	free (smiles);
-      if (molfile != NULL && freemolfile)
-	free (molfile);
-      elog (ERROR,
-	    "Input is not a V2000/V3000 molfile or InChI or SMILES: %s",
-	    input);
-    }
-    
+  if (smiles==NULL || molfile==NULL) {
+    elog (ERROR,
+	  "Input is not a V2000/V3000 molfile or InChI or SMILES: %s",
+	  input);
+  }
 
   result = new_molecule (smiles, molfile);
-  
-  if (smiles != NULL && freesmiles)
-    free (smiles);
-  if (molfile != NULL && freemolfile)
-    free (molfile);
-    
-  if (input != NULL)  
+
+  if (smiles != NULL) {
+	free (smiles);
+	smiles=NULL;
+  }
+  if (molfile != NULL) {
+	free (molfile);
+	molfile=NULL;
+  }    
+      
+  if (input != NULL) {
     pfree(input);
+    input=NULL;
+  }
     
   return result;
 }    
