@@ -50,7 +50,7 @@ new_molecule (char *smiles, char *molfile)
   ancillarydata = ob_lyophilize_molecule(smiles);
   
   if(ancillarydata == NULL) {
-    elog (ERROR, "Molecule generation failed! Offender was :\n %s",molfile);
+    elog (ERROR, "Molecule lyophilization failed! SMILES:\n %s", smiles);
   }    
   
   ancsize = *(unsigned int*) ancillarydata;
@@ -90,7 +90,7 @@ new_molecule (char *smiles, char *molfile)
     goto inchikey_fail;
   }  else if (strlen(inchikey) != INCHIKEYSZ) {
     free(inchikey);
-  inchikey_fail: elog (ERROR, "Molecule generation failed! Offender was :\n %s",molfile);
+  inchikey_fail: elog (ERROR, "InChI key generation failled ! SMILES:\n %s", smiles);
   }    
 
   //pg_md5_hash (inchi, strlen (inchi) + 1, result->molhash);
