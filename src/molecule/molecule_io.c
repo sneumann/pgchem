@@ -105,7 +105,6 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
   bool freemolfile = false;
   bool freesmiles = false;
   unsigned int new_len;
-  //unsigned int *efa_array = NULL;
   
   if(strstr (raw_input, "M  END") != NULL) {
     input = palloc (size+sizeof(char));
@@ -117,9 +116,7 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
     input = palloc (new_len + 1);
     strncpy(input,raw_input,new_len);
     input[new_len] = 0x0;
-    //strncat(input,raw_input,new_len);
   } else {
-    //input = raw_input;
     input = palloc (size+1);
     memcpy (input, raw_input, size);
     input[size]=0x0;
@@ -233,12 +230,9 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
 	    input);
     }
     
-  //efa_array = ob_efa_array(smiles);
 
   result = new_molecule (smiles, molfile);
   
-  //if (efa_array != NULL) free(efa_array);
-
   if (smiles != NULL && freesmiles)
     free (smiles);
   if (molfile != NULL && freemolfile)
