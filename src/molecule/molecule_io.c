@@ -130,7 +130,7 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
 	  
 	  if(molfile == NULL || !strlen(molfile) || strstr(molfile,"V3000")==NULL) {
 	    if(molfile!=NULL) free (molfile);
-	    elog (ERROR, "Molfile generation failed! Offender was :\n %s",input);
+	    elog (ERROR, "Molfile generation failed! V3000:\n %s",input);
 	  }  
   
 	  smiles = ob_mol_to_smiles (input,0);
@@ -142,7 +142,7 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
 	    free (smiles);
 	    smiles = ob_mol_to_canonical_smiles (input,0);
             if(smiles == NULL) {
-	      elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
+	      elog (ERROR, "Canonical SMILES generation finally failed! Offender was :\n %s",input);
             } else if (!strlen(smiles)) {
 	      free(smiles);
 	      elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
@@ -159,7 +159,7 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
 	  
 	  if(molfile == NULL || !strlen(molfile) || strstr(molfile,"V2000")==NULL) {
 	    if(molfile!=NULL) free (molfile);
-	    elog (ERROR, "Molfile generation failed! Offender was :\n %s",input);
+	    elog (ERROR, "Molfile generation failed! InChI:\n %s",input);
 	  }  
       
 	  smiles = ob_mol_to_smiles (molfile,0);
@@ -171,10 +171,10 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
 	    free (smiles);
 	    smiles = ob_mol_to_canonical_smiles (input,0);
             if(smiles == NULL) {
-	      elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
+	      elog (ERROR, "Canonical SMILES generation finally failed! InChI:\n %s",input);
             } else if (!strlen(smiles)) {
 	      free(smiles);
-	      elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
+	      elog (ERROR, "SMILES generation finally failed! InChi:\n %s",input);
 	    } 
             elog (WARNING, "Fallback OK");   
 	  }  
@@ -188,7 +188,7 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
 	  
 	  if(molfile == NULL || !strlen(molfile)) {
 	    if(molfile!=NULL) free (molfile);
-	    elog (ERROR, "Molfile generation failed! Offender was :\n %s",input);
+	    elog (ERROR, "Molfile generation failed! SMILES:\n %s",input);
 	  }  
 	  
 	  smiles = input;
@@ -207,7 +207,7 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
 	free (smiles);
 	smiles = ob_mol_to_canonical_smiles (input,0);
 	if(smiles == NULL) {
-	  elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
+	  elog (ERROR, "Cacnonical SMILES generation finally failed! Offender was :\n %s",input);
 	} else if (!strlen(smiles)) {
 	  free(smiles);
 	  elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
