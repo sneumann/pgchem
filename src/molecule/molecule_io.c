@@ -249,37 +249,37 @@ Datum pgchem_remove_hydrogens (PG_FUNCTION_ARGS);
 //}*/
 
 /*inline static char *
-get_bzhash ()
-{
+  get_bzhash ()
+  {
   if (inited == false)
-    {
-      char *inchi;
-      char *molfile;
+  {
+  char *inchi;
+  char *molfile;
 
-      molfile = ob_smiles_to_mol (BZSMI);
+  molfile = ob_smiles_to_mol (BZSMI);
 
-      inchi = ob_mol_to_inchi (molfile);
+  inchi = ob_mol_to_inchi (molfile);
 
-      //pg_md5_hash (inchi, strlen (inchi) + 1, bzhash);
-      calculateDigestFromBuffer(inchi, strlen (inchi) + 1, bzhash);
+  //pg_md5_hash (inchi, strlen (inchi) + 1, bzhash);
+  calculateDigestFromBuffer(inchi, strlen (inchi) + 1, bzhash);
       
-      bzhash[16]='\0';
+  bzhash[16]='\0';
 
-      free (molfile);
-      free (inchi);
+  free (molfile);
+  free (inchi);
 
-      inited = true;
-    }
+  inited = true;
+  }
   return bzhash;
-}*/
+  }*/
 
 /*inline static void merge_fps(unsigned int *fp2, unsigned int *fp3)
-{
-        fp2[0] |= fp3[0];
-        fp2[8] |= fp3[1];
-        fp2[16] |= fp3[2];
-        fp2[24] |= fp3[3];
-}  */  
+  {
+  fp2[0] |= fp3[0];
+  fp2[8] |= fp3[1];
+  fp2[16] |= fp3[2];
+  fp2[24] |= fp3[3];
+  }  */  
 
 MOLECULE *
 new_molecule (char *smiles, char *molfile)
@@ -297,7 +297,7 @@ new_molecule (char *smiles, char *molfile)
   ancillarydata = ob_lyophilize_molecule(smiles);
   
   if(ancillarydata == NULL) {
-      elog (ERROR, "Molecule generation failed! Offender was :\n %s",molfile);
+    elog (ERROR, "Molecule generation failed! Offender was :\n %s",molfile);
   }    
   
   ancsize = *(unsigned int*) ancillarydata;
@@ -334,11 +334,11 @@ new_molecule (char *smiles, char *molfile)
   //printf("%s\n",molfile);
   
   if(inchikey == NULL) {
-              goto inchikey_fail;
-        }  else if (strlen(inchikey) != INCHIKEYSZ) {
-              free(inchikey);
-              inchikey_fail: elog (ERROR, "Molecule generation failed! Offender was :\n %s",molfile);
-        }    
+    goto inchikey_fail;
+  }  else if (strlen(inchikey) != INCHIKEYSZ) {
+    free(inchikey);
+  inchikey_fail: elog (ERROR, "Molecule generation failed! Offender was :\n %s",molfile);
+  }    
 
   //pg_md5_hash (inchi, strlen (inchi) + 1, result->molhash);
   //calculateDigestFromBuffer(inchi, strlen (inchi), result->molhash);
@@ -354,8 +354,8 @@ new_molecule (char *smiles, char *molfile)
   ob_fp_bin(aidata, result->fp);
   
   if(ancillarydata != NULL) {
-   //printf("%d %d %d %d\n",ancsize,offset[0],offset[1],offset[2]);
-   free(ancillarydata);
+    //printf("%d %d %d %d\n",ancsize,offset[0],offset[1],offset[2]);
+    free(ancillarydata);
   }  
 
   //memset(fp3,0x0,FPSIZE3*sizeof(unsigned int));
@@ -373,12 +373,12 @@ new_molecule (char *smiles, char *molfile)
 
   /*if (strncmp (result->molhash, get_bzhash (), MOLHASHSZ) == 0)
     {
-      result->nobz = false;
-      result->isbz = true;
+    result->nobz = false;
+    result->isbz = true;
     }
-  else if (ob_SSS_SMARTS_native (BZSMI, smiles) != 0)
+    else if (ob_SSS_SMARTS_native (BZSMI, smiles) != 0)
     {
-      result->nobz = false;
+    result->nobz = false;
     }*/
 
   SET_VARSIZE (result,totalsize);
@@ -398,21 +398,21 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
   //unsigned int *efa_array = NULL;
   
   if(strstr (raw_input, "M  END") != NULL) {
-      input = palloc (size+sizeof(char));
-      memcpy (input, raw_input, size);
-      endptr = strstr (input, "M  END") + strlen("M  END")*sizeof(char);
-      *endptr = 0x0;
-      new_len = strlen(input);
-      pfree (input);
-      input = palloc (new_len + 1);
-      strncpy(input,raw_input,new_len);
-      input[new_len] = 0x0;
-      //strncat(input,raw_input,new_len);
+    input = palloc (size+sizeof(char));
+    memcpy (input, raw_input, size);
+    endptr = strstr (input, "M  END") + strlen("M  END")*sizeof(char);
+    *endptr = 0x0;
+    new_len = strlen(input);
+    pfree (input);
+    input = palloc (new_len + 1);
+    strncpy(input,raw_input,new_len);
+    input[new_len] = 0x0;
+    //strncat(input,raw_input,new_len);
   } else {
-      //input = raw_input;
-      input = palloc (size+1);
-      memcpy (input, raw_input, size);
-      input[size]=0x0;
+    //input = raw_input;
+    input = palloc (size+1);
+    memcpy (input, raw_input, size);
+    input[size]=0x0;
   }    
   
   if (strstr (input, "V2000") == NULL || strstr (input, "M  END") == NULL)
@@ -421,27 +421,27 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
 	{
 	  molfile = ob_V3000_to_mol (input);
 	  
-      if(molfile == NULL || !strlen(molfile) || strstr(molfile,"V3000")==NULL) {
-          if(molfile!=NULL) free (molfile);
-      elog (ERROR, "Molfile generation failed! Offender was :\n %s",input);
-      }  
+	  if(molfile == NULL || !strlen(molfile) || strstr(molfile,"V3000")==NULL) {
+	    if(molfile!=NULL) free (molfile);
+	    elog (ERROR, "Molfile generation failed! Offender was :\n %s",input);
+	  }  
   
 	  smiles = ob_mol_to_smiles (input,0);
 	  
 	  if(smiles == NULL || !strlen(smiles)) {
-         elog (ERROR, "SMILES generation failed! Offender was :\n %s",input);
-      }  else if (!strlen(smiles)) {
-          elog (WARNING, "SMILES generation failed! Trying fallback...");
-          free (smiles);
-           smiles = ob_mol_to_canonical_smiles (input,0);
+	    elog (ERROR, "SMILES generation failed! Offender was :\n %s",input);
+	  }  else if (!strlen(smiles)) {
+	    elog (WARNING, "SMILES generation failed! Trying fallback...");
+	    free (smiles);
+	    smiles = ob_mol_to_canonical_smiles (input,0);
             if(smiles == NULL) {
-                elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
+	      elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
             } else if (!strlen(smiles)) {
-                free(smiles);
-                elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
-           }  
-           elog (WARNING, "Fallback OK"); 
-      }  
+	      free(smiles);
+	      elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
+	    }  
+	    elog (WARNING, "Fallback OK"); 
+	  }  
         
 	  freemolfile = true;
 	  freesmiles = true;
@@ -451,26 +451,26 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
 	  molfile = ob_inchi_to_mol (input);
 	  
 	  if(molfile == NULL || !strlen(molfile) || strstr(molfile,"V2000")==NULL) {
-	      if(molfile!=NULL) free (molfile);
-      elog (ERROR, "Molfile generation failed! Offender was :\n %s",input);
-      }  
+	    if(molfile!=NULL) free (molfile);
+	    elog (ERROR, "Molfile generation failed! Offender was :\n %s",input);
+	  }  
       
 	  smiles = ob_mol_to_smiles (molfile,0);
 	  
 	  if(smiles == NULL || !strlen(smiles)) {
-         elog (ERROR, "SMILES generation failed! Offender was :\n %s",input);
-      }  else if (!strlen(smiles)) {
-          elog (WARNING, "SMILES generation failed! Trying fallback...");
-          free (smiles);
-           smiles = ob_mol_to_canonical_smiles (input,0);
+	    elog (ERROR, "SMILES generation failed! Offender was :\n %s",input);
+	  }  else if (!strlen(smiles)) {
+	    elog (WARNING, "SMILES generation failed! Trying fallback...");
+	    free (smiles);
+	    smiles = ob_mol_to_canonical_smiles (input,0);
             if(smiles == NULL) {
-                elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
+	      elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
             } else if (!strlen(smiles)) {
-                free(smiles);
-                elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
-           } 
+	      free(smiles);
+	      elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
+	    } 
             elog (WARNING, "Fallback OK");   
-      }  
+	  }  
 	  
 	  freemolfile = true;
 	  freesmiles = true;
@@ -479,10 +479,10 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
 	{
 	  molfile = ob_smiles_to_mol (input);
 	  
-      if(molfile == NULL || !strlen(molfile)) {
-          if(molfile!=NULL) free (molfile);
-      elog (ERROR, "Molfile generation failed! Offender was :\n %s",input);
-      }  
+	  if(molfile == NULL || !strlen(molfile)) {
+	    if(molfile!=NULL) free (molfile);
+	    elog (ERROR, "Molfile generation failed! Offender was :\n %s",input);
+	  }  
 	  
 	  smiles = input;
 	  
@@ -494,18 +494,18 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
       smiles = ob_mol_to_smiles (input,0);
       
       if(smiles == NULL || !strlen(smiles)) {
-         elog (ERROR, "SMILES generation failed! Offender was :\n %s",input);
+	elog (ERROR, "SMILES generation failed! Offender was :\n %s",input);
       }  else if (!strlen(smiles)) {
-          elog (WARNING, "SMILES generation failed! Trying fallback...");
-          free (smiles);
-           smiles = ob_mol_to_canonical_smiles (input,0);
-            if(smiles == NULL) {
-                elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
-            } else if (!strlen(smiles)) {
-                free(smiles);
-                elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
-           } 
-            elog (WARNING, "Fallback OK");   
+	elog (WARNING, "SMILES generation failed! Trying fallback...");
+	free (smiles);
+	smiles = ob_mol_to_canonical_smiles (input,0);
+	if(smiles == NULL) {
+	  elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
+	} else if (!strlen(smiles)) {
+	  free(smiles);
+	  elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",input);
+	} 
+	elog (WARNING, "Fallback OK");   
       }  
       
       molfile = input;
@@ -541,14 +541,14 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
 }    
 
 /*
-* Convert an old pgchem::tigress bytea molecule to a new one of type molecule
-*/
+ * Convert an old pgchem::tigress bytea molecule to a new one of type molecule
+ */
 
 /*PG_FUNCTION_INFO_V1 (pgchem_molecule_to_new_molecule);
 
-Datum
-pgchem_molecule_to_new_molecule (PG_FUNCTION_ARGS)
-{
+  Datum
+  pgchem_molecule_to_new_molecule (PG_FUNCTION_ARGS)
+  {
   bytea *old = PG_GETARG_BYTEA_P (0);
   char *molfile;
   char *endptr;
@@ -568,7 +568,7 @@ pgchem_molecule_to_new_molecule (PG_FUNCTION_ARGS)
   memcpy (molfile, VARDATA (old), VARSIZE (old) - VARHDRSZ);
 
   if (strstr (molfile, "V2000") == NULL || strstr (molfile, "M  END") == NULL)
-    elog (ERROR, "Input is not a V2000 molfile: %s", molfile);
+  elog (ERROR, "Input is not a V2000 molfile: %s", molfile);
 
   endptr = strstr (molfile, "M  END") + 6;
 
@@ -578,21 +578,21 @@ pgchem_molecule_to_new_molecule (PG_FUNCTION_ARGS)
 
   smiles = ob_mol_to_smiles (molfile,0);
   
- if(smiles == NULL || !strlen(smiles)) {
-         elog (ERROR, "SMILES generation failed! Offender was :\n %s",molfile);
-      }  else if (!strlen(smiles)) {
-          elog (WARNING, "SMILES generation failed! Trying fallback...");
-          free (smiles);
-           smiles = ob_mol_to_canonical_smiles (molfile,0);
-            if(smiles == NULL) {
-                elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",molfile);
-            } else if (!strlen(smiles)) {
-                free(smiles);
-                free(ancillarydata);
-                elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",molfile);
-           }  
-           elog (WARNING, "Fallback OK"); 
-      }  
+  if(smiles == NULL || !strlen(smiles)) {
+  elog (ERROR, "SMILES generation failed! Offender was :\n %s",molfile);
+  }  else if (!strlen(smiles)) {
+  elog (WARNING, "SMILES generation failed! Trying fallback...");
+  free (smiles);
+  smiles = ob_mol_to_canonical_smiles (molfile,0);
+  if(smiles == NULL) {
+  elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",molfile);
+  } else if (!strlen(smiles)) {
+  free(smiles);
+  free(ancillarydata);
+  elog (ERROR, "SMILES generation finally failed! Offender was :\n %s",molfile);
+  }  
+  elog (WARNING, "Fallback OK"); 
+  }  
 
   sizesmi = strlen (smiles) + 1;
   
@@ -601,7 +601,7 @@ pgchem_molecule_to_new_molecule (PG_FUNCTION_ARGS)
   ancsize = *(unsigned int*) ancillarydata;
   
   if(ancillarydata == NULL) 
-      elog (ERROR, "Molecule generation failed! Offender was :\n %s",molfile);
+  elog (ERROR, "Molecule generation failed! Offender was :\n %s",molfile);
 
   totalsize = CALCDATASZ (sizemf, sizesmi, ancsize);
 
@@ -625,12 +625,12 @@ pgchem_molecule_to_new_molecule (PG_FUNCTION_ARGS)
 
   inchikey = ob_molfile_to_inchikey (molfile);
   
-   if(inchikey == NULL) {
-              goto inchikey_fail;
-        }  else if (strlen(inchikey) != INCHIKEYSZ) {
-              free(inchikey);
-              inchikey_fail: elog (ERROR, "Molecule generation failed! Offender was :\n %s",molfile);
-        }   
+  if(inchikey == NULL) {
+  goto inchikey_fail;
+  }  else if (strlen(inchikey) != INCHIKEYSZ) {
+  free(inchikey);
+  inchikey_fail: elog (ERROR, "Molecule generation failed! Offender was :\n %s",molfile);
+  }   
 
   //pg_md5_hash (inchi, strlen (inchi) + 1, result->molhash);
   
@@ -645,7 +645,7 @@ pgchem_molecule_to_new_molecule (PG_FUNCTION_ARGS)
   free (inchikey);
 
   if (strchr (smiles, '.') != NULL)
-    result->disconnected = true;
+  result->disconnected = true;
 
   //memset(fp3,0x0,FPSIZE3*sizeof(unsigned int));
   //ob_fp2 (molfile, result->fp);
@@ -657,23 +657,23 @@ pgchem_molecule_to_new_molecule (PG_FUNCTION_ARGS)
   ob_fp_bin(aidata, result->fp);
   
   if(ancillarydata != NULL) {
-   //printf("%d %d %d %d\n",ancsize,offset[0],offset[1],offset[2]);
-   free(ancillarydata);
+  //printf("%d %d %d %d\n",ancsize,offset[0],offset[1],offset[2]);
+  free(ancillarydata);
   }  
   
   //result->popcount = ob_popcount((uint8 *)result->fp,FPSIZE*sizeof(uint32));
   
   //merge_fps(result->fp2, fp3);
 
- /* if (strncmp (result->molhash, get_bzhash (), MOLHASHSZ) == 0)
-    {
-      result->nobz = false;
-      result->isbz = true;
-    }
+  /* if (strncmp (result->molhash, get_bzhash (), MOLHASHSZ) == 0)
+  {
+  result->nobz = false;
+  result->isbz = true;
+  }
   else if (ob_SSS_SMARTS_native (BZSMI, smiles) != 0)
-    {
-      result->nobz = false;
-    }
+  {
+  result->nobz = false;
+  }
 
   pfree (molfile);
 
@@ -682,11 +682,11 @@ pgchem_molecule_to_new_molecule (PG_FUNCTION_ARGS)
   SET_VARSIZE (result,totalsize);
 
   PG_RETURN_MOLECULE_P (result);
-}*/
+  }*/
 
 /*
-* Convert a molecule in text form (V2000, SMILES, InChI) into a molecule
-*/
+ * Convert a molecule in text form (V2000, SMILES, InChI) into a molecule
+ */
 PG_FUNCTION_INFO_V1 (molecule_in);
 
 Datum
@@ -735,8 +735,8 @@ molecule_in_bytea (PG_FUNCTION_ARGS)
 }
 
 /*
-* Output a molecule in cstring form as molfile
-*/
+ * Output a molecule in cstring form as molfile
+ */
 PG_FUNCTION_INFO_V1 (molecule_out);
 
 Datum
@@ -789,24 +789,24 @@ PG_FUNCTION_INFO_V1 (molecule_send);
 Datum
 molecule_send (PG_FUNCTION_ARGS)
 {
-    MOLECULE *molecule = PG_GETARG_MOLECULE_P (0);
+  MOLECULE *molecule = PG_GETARG_MOLECULE_P (0);
     
-    /*StringInfoData buf;
+  /*StringInfoData buf;
 
-	pq_begintypsend(&buf);
+    pq_begintypsend(&buf);
 	
-	pq_sendbytes(&buf,(const char*) molecule,sizeof(molecule));
+    pq_sendbytes(&buf,(const char*) molecule,sizeof(molecule));
 	
-	PG_RETURN_BYTEA_P(pq_endtypsend(&buf));*/
+    PG_RETURN_BYTEA_P(pq_endtypsend(&buf));*/
 	
-	PG_RETURN_BYTEA_P(molecule);
+  PG_RETURN_BYTEA_P(molecule);
 }
 
 /*PG_FUNCTION_INFO_V1 (pgchem_V3000_to_molecule);
 
-Datum
-pgchem_V3000_to_molecule (PG_FUNCTION_ARGS)
-{
+  Datum
+  pgchem_V3000_to_molecule (PG_FUNCTION_ARGS)
+  {
   MOLECULE *retval;
   text *arg_V3000;
   char *tmpV3000;
@@ -831,13 +831,13 @@ pgchem_V3000_to_molecule (PG_FUNCTION_ARGS)
   free(smiles);
 
   PG_RETURN_MOLECULE_P (retval);
-}
+  }
 
-PG_FUNCTION_INFO_V1 (pgchem_inchi_to_molecule);
+  PG_FUNCTION_INFO_V1 (pgchem_inchi_to_molecule);
 
-Datum
-pgchem_inchi_to_molecule (PG_FUNCTION_ARGS)
-{
+  Datum
+  pgchem_inchi_to_molecule (PG_FUNCTION_ARGS)
+  {
   MOLECULE *retval;
   text *arg_inchi;
   char *tmpinchi;
@@ -862,11 +862,11 @@ pgchem_inchi_to_molecule (PG_FUNCTION_ARGS)
   free(smiles);
 
   PG_RETURN_MOLECULE_P (retval);
-} */
+  } */
 
 /*
-* Strip smaller fragments from a molecule, leaving only the larggest one
-*/
+ * Strip smaller fragments from a molecule, leaving only the larggest one
+ */
 PG_FUNCTION_INFO_V1 (pgchem_strip_salts);
 
 Datum
@@ -884,8 +884,8 @@ pgchem_strip_salts (PG_FUNCTION_ARGS)
   molfile = ob_smiles_to_mol (smiles);
   
   if(molfile == NULL || !strlen(molfile)) {
-         elog (ERROR, "Molfile generation failed! Offender was :\n %s",smiles);
-      } 
+    elog (ERROR, "Molfile generation failed! Offender was :\n %s",smiles);
+  } 
    
   //efa_array = ob_efa_array(smiles);           
 
@@ -899,8 +899,8 @@ pgchem_strip_salts (PG_FUNCTION_ARGS)
 }
 
 /*
-* Add hydrogens to a molecule
-*/
+ * Add hydrogens to a molecule
+ */
 PG_FUNCTION_INFO_V1 (pgchem_add_hydrogens);
 
 Datum
@@ -920,9 +920,9 @@ pgchem_add_hydrogens (PG_FUNCTION_ARGS)
 
   molfile = ob_smiles_to_mol (smiles);
   
-   if(molfile == NULL || !strlen(molfile)) {
-         elog (ERROR, "Molfile generation failed! Offender was :\n %s",smiles);
-      } 
+  if(molfile == NULL || !strlen(molfile)) {
+    elog (ERROR, "Molfile generation failed! Offender was :\n %s",smiles);
+  } 
 
   //efa_array = ob_efa_array(smiles);           
 
@@ -936,8 +936,8 @@ pgchem_add_hydrogens (PG_FUNCTION_ARGS)
 }
 
 /*
-* Remove hydrogens from a molecule
-*/
+ * Remove hydrogens from a molecule
+ */
 PG_FUNCTION_INFO_V1 (pgchem_remove_hydrogens);
 
 Datum
@@ -950,15 +950,15 @@ pgchem_remove_hydrogens (PG_FUNCTION_ARGS)
   MOLECULE *arg_molecule = PG_GETARG_MOLECULE_P (0);
   bool nonpolaronly = PG_GETARG_BOOL (1);
 
- smiles =
+  smiles =
     ob_delete_hydrogens (SMIPTR (arg_molecule),
 			 nonpolaronly ? 1 : 0);
 
- molfile = ob_smiles_to_mol (smiles);
+  molfile = ob_smiles_to_mol (smiles);
   
-   if(molfile == NULL || !strlen(molfile)) {
-         elog (ERROR, "Molfile generation failed! Offender was :\n %s",smiles);
-      } 
+  if(molfile == NULL || !strlen(molfile)) {
+    elog (ERROR, "Molfile generation failed! Offender was :\n %s",smiles);
+  } 
   //efa_array = ob_efa_array(smiles);           
 
   retval = new_molecule (smiles, molfile);
