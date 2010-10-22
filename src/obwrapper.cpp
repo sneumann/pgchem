@@ -42,14 +42,14 @@ using namespace OpenBabel;
 using namespace std;
 
 static const int popcount_counts[] = {
-    0,1,1,2,1,2,2,3,1,2,2,3,2,3,3,4,1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,
-    1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,
-    1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,
-    2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,
-    1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,
-    2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,
-    2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,
-    3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,4,5,5,6,5,6,6,7,5,6,6,7,6,7,7,8,
+  0,1,1,2,1,2,2,3,1,2,2,3,2,3,3,4,1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,
+  1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,
+  1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,
+  2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,
+  1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,
+  2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,
+  2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,
+  3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,4,5,5,6,5,6,6,7,5,6,6,7,6,7,7,8,
 };
 
 
@@ -644,18 +644,18 @@ ob_delete_hydrogens (char *smiles, int nonpolaronly)
 
   conv.Read (&mol, &molstream1);
 
-if(mol.NumHvyAtoms () > 0) {
-  if (nonpolaronly != 0)
-    {
-      mol.DeleteNonPolarHydrogens ();
-    }
-  else
-    {
-      mol.DeleteHydrogens ();
-    }
-} else {
+  if(mol.NumHvyAtoms () > 0) {
+    if (nonpolaronly != 0)
+      {
+	mol.DeleteNonPolarHydrogens ();
+      }
+    else
+      {
+	mol.DeleteHydrogens ();
+      }
+  } else {
     cout << "Warning: Cannot remove hydrogens. Resulting molecule would be empty!" << endl;
-}        
+  }        
 
   conv.Write (&mol, &molstream2);
 
@@ -699,17 +699,17 @@ ob_strip_salts (char *smiles, int neutralize_residue)
   fragments = mol.Separate();
   
   for( i = fragments.begin(); i != fragments.end(); i++ ) {
-      if (i->NumAtoms() > max) {
-          max=i->NumAtoms();
-          largestFragment = *i;
-      }
+    if (i->NumAtoms() > max) {
+      max=i->NumAtoms();
+      largestFragment = *i;
+    }
   }       
  
   if(neutralize_residue != 0) {
-      largestFragment.ConvertDativeBonds();
-      FOR_ATOMS_OF_MOL(atom, largestFragment) {
-         atom->SetFormalCharge(0);
-         }
+    largestFragment.ConvertDativeBonds();
+    FOR_ATOMS_OF_MOL(atom, largestFragment) {
+      atom->SetFormalCharge(0);
+    }
   }    
 
   conv.Write (&largestFragment, &molstream2);
@@ -773,8 +773,8 @@ ob_fp2 (char *molfile, unsigned int *fp)
   fprint->GetFingerprint (&mol, vfp);
 
   /*  for (i = vfp.begin();i != vfp.end();i++) {
-     fp[j++]=*i;
-     } */
+      fp[j++]=*i;
+      } */
      
   memset(fp,0x0, FPSIZE2*sizeof(unsigned int));
 
@@ -791,34 +791,34 @@ ob_fp3_bin (char *serializedInput, unsigned int *fp)
   //vector < unsigned int >::iterator i;
   int len;
   
-   memset(fp,0x0, FPSIZE3*sizeof(unsigned int));    
+  memset(fp,0x0, FPSIZE3*sizeof(unsigned int));    
   
   if (fprint != NULL) {
       
-       ob_rehydrate_molecule(&mol, serializedInput);
+    ob_rehydrate_molecule(&mol, serializedInput);
        
-        fprint->GetFingerprint (&mol, vfp);
+    fprint->GetFingerprint (&mol, vfp);
 
-   /* for (i = vfp.begin();i != vfp.end();i++) {
-     fp[j++]=*i;
-     printf("%i",*i);
-     }  */
+    /* for (i = vfp.begin();i != vfp.end();i++) {
+       fp[j++]=*i;
+       printf("%i",*i);
+       }  */
      
-  len = vfp.size();
+    len = vfp.size();
   
-  //cout << len << endl;
+    //cout << len << endl;
   
-  if (len > FPSIZE3) {
-          len = FPSIZE3;
-          cout << "Warning: Index dictionary size exceeded. Only the first " << FPSIZE3*sizeof(unsigned int)*8 << " bits will be used!" << endl; 
-          }
+    if (len > FPSIZE3) {
+      len = FPSIZE3;
+      cout << "Warning: Index dictionary size exceeded. Only the first " << FPSIZE3*sizeof(unsigned int)*8 << " bits will be used!" << endl; 
+    }
           
      
 
-  memcpy (fp, &vfp[0], len*sizeof(unsigned int));
+    memcpy (fp, &vfp[0], len*sizeof(unsigned int));
   } else {
     cout << "FPPC8 fingerprint not found!" << endl;
-}   
+  }   
 
 }
 
@@ -839,32 +839,32 @@ ob_fp3 (char *molfile, unsigned int *fp)
   
   memset(fp,0x0, FPSIZE3*sizeof(unsigned int));    
 
-if (fprint != NULL) {
+  if (fprint != NULL) {
     
-  conv.SetInFormat ("MDL");
+    conv.SetInFormat ("MDL");
 
-  conv.Read (&mol, &molstream);
+    conv.Read (&mol, &molstream);
 
-  fprint->GetFingerprint (&mol, vfp);
+    fprint->GetFingerprint (&mol, vfp);
 
-   /* for (i = vfp.begin();i != vfp.end();i++) {
-     fp[j++]=*i;
-     printf("%i",*i);
-     }  */
+    /* for (i = vfp.begin();i != vfp.end();i++) {
+       fp[j++]=*i;
+       printf("%i",*i);
+       }  */
      
-  len = vfp.size();
+    len = vfp.size();
   
-  //cout << len << endl;
+    //cout << len << endl;
   
-  if (len > FPSIZE3) {
-          len = FPSIZE3;
-          cout << "Warning: Index dictionary size exceeded. Only the first " << FPSIZE3*sizeof(unsigned int)*8 << " bits will be used!" << endl; 
-          }    
+    if (len > FPSIZE3) {
+      len = FPSIZE3;
+      cout << "Warning: Index dictionary size exceeded. Only the first " << FPSIZE3*sizeof(unsigned int)*8 << " bits will be used!" << endl; 
+    }    
 
-  memcpy (fp, &vfp[0], len*sizeof(unsigned int));
+    memcpy (fp, &vfp[0], len*sizeof(unsigned int));
   } else {
     cout << "FPPC8 fingerprint not found!" << endl;
-}   
+  }   
 
 }
 
@@ -883,34 +883,34 @@ ob_fp_MACCS_bin (char *serializedInput, unsigned int *fp)
   
   if (fprint != NULL) {
       
-       ob_rehydrate_molecule(&mol, serializedInput);
+    ob_rehydrate_molecule(&mol, serializedInput);
        
-            //cout << mol.NumHvyAtoms() << endl;
+    //cout << mol.NumHvyAtoms() << endl;
   
-  //cout << fprint->GetID() << endl;
+    //cout << fprint->GetID() << endl;
       
-       fprint->GetFingerprint (&mol, vfp);
+    fprint->GetFingerprint (&mol, vfp);
 
-   /* for (i = vfp.begin();i != vfp.end();i++) {
-     fp[j++]=*i;
-     printf("%i",*i);
-     }  */
+    /* for (i = vfp.begin();i != vfp.end();i++) {
+       fp[j++]=*i;
+       printf("%i",*i);
+       }  */
      
-  len = vfp.size();
+    len = vfp.size();
   
-  //cout << len << endl;
+    //cout << len << endl;
   
-  if (len > FPSIZE_MACCS) {
-          len = FPSIZE_MACCS;
-          cout << "Warning: Index dictionary size exceeded. Only the first " << FPSIZE_MACCS*sizeof(unsigned int)*8 << " bits will be used!" << endl; 
-          }
+    if (len > FPSIZE_MACCS) {
+      len = FPSIZE_MACCS;
+      cout << "Warning: Index dictionary size exceeded. Only the first " << FPSIZE_MACCS*sizeof(unsigned int)*8 << " bits will be used!" << endl; 
+    }
           
       
 
-  memcpy (fp, &vfp[0], len*sizeof(unsigned int));
+    memcpy (fp, &vfp[0], len*sizeof(unsigned int));
   } else {
     cout << "MACCS fingerprint not found!" << endl;
-}   
+  }   
 
 }
 
@@ -931,36 +931,36 @@ ob_fp_MACCS (char *molfile, unsigned int *fp)
   
   memset(fp,0x0, FPSIZE_MACCS*sizeof(unsigned int));    
 
-if (fprint != NULL) {
+  if (fprint != NULL) {
     
-  conv.SetInFormat ("MDL");
+    conv.SetInFormat ("MDL");
 
-  conv.Read (&mol, &molstream);
+    conv.Read (&mol, &molstream);
   
-  //cout << mol.NumHvyAtoms() << endl;
+    //cout << mol.NumHvyAtoms() << endl;
   
-  //cout << fprint->GetID() << endl;
+    //cout << fprint->GetID() << endl;
 
-  fprint->GetFingerprint (&mol, vfp);
+    fprint->GetFingerprint (&mol, vfp);
 
-   /* for (i = vfp.begin();i != vfp.end();i++) {
-     fp[j++]=*i;
-     printf("%i",*i);
-     }  */
+    /* for (i = vfp.begin();i != vfp.end();i++) {
+       fp[j++]=*i;
+       printf("%i",*i);
+       }  */
      
-  len = vfp.size();
+    len = vfp.size();
   
-  //cout << len << endl;
+    //cout << len << endl;
   
-  if (len > FPSIZE_MACCS) {
-          len = FPSIZE_MACCS;
-          cout << "Warning: Index dictionary size exceeded. Only the first " << FPSIZE_MACCS*sizeof(unsigned int)*8 << " bits will be used!" << endl; 
-          }    
+    if (len > FPSIZE_MACCS) {
+      len = FPSIZE_MACCS;
+      cout << "Warning: Index dictionary size exceeded. Only the first " << FPSIZE_MACCS*sizeof(unsigned int)*8 << " bits will be used!" << endl; 
+    }    
 
-  memcpy (fp, &vfp[0], len*sizeof(unsigned int));
+    memcpy (fp, &vfp[0], len*sizeof(unsigned int));
   } else {
     cout << "MACCS fingerprint not found!" << endl;
-}   
+  }   
 
 }
 
@@ -985,37 +985,37 @@ ob_fp_bin (char *serializedInput, unsigned int *fp) {
   
   if (fprint3 != NULL) {
   
-  vfp.clear();
+    vfp.clear();
   
-  fprint3->GetFingerprint (&mol, vfp);    
+    fprint3->GetFingerprint (&mol, vfp);    
   
-  len = vfp.size();  
+    len = vfp.size();  
   
-  if (len > FPSIZE3) {
-          len = FPSIZE3;
-          cout << "Warning: Index dictionary size exceeded. Only the first " << FPSIZE3*sizeof(unsigned int)*8 << " bits will be used!" << endl; 
-          }
+    if (len > FPSIZE3) {
+      len = FPSIZE3;
+      cout << "Warning: Index dictionary size exceeded. Only the first " << FPSIZE3*sizeof(unsigned int)*8 << " bits will be used!" << endl; 
+    }
           
-  offset = fp+OFFSET;          
+    offset = fp+OFFSET;          
           
-  memcpy (offset, &vfp[0], len*sizeof(unsigned int)); 
+    memcpy (offset, &vfp[0], len*sizeof(unsigned int)); 
   } else {
     cout << "FPPC8 fingerprint not found!" << endl;
-}   
+  }   
 }    
 
 
 extern "C" double
 ob_tanimoto (unsigned char *fp1, unsigned char *fp2, unsigned short size)
 {
-/* Fast tanimoto code with 8 bit LUT by Andrew Dalke as published in http://www.dalkescientific.com/writings/diary/archive/2008/06/27/computing_tanimoto_scores.html.
-   Used with permission */
+  /* Fast tanimoto code with 8 bit LUT by Andrew Dalke as published in http://www.dalkescientific.com/writings/diary/archive/2008/06/27/computing_tanimoto_scores.html.
+     Used with permission */
   
   unsigned int and_count=0, or_count=0;
   register int i=size;
   
   while (i--) {
-      //cout << (int) (fp2[i] | fp1[i]) << endl;
+    //cout << (int) (fp2[i] | fp1[i]) << endl;
     or_count  += popcount_counts[*fp2 | *fp1];
     and_count += popcount_counts[*fp2 & *fp1];
     fp1++;
@@ -1061,7 +1061,7 @@ ob_popcount (unsigned char *fp, unsigned short size)
 }
 
 /* Copyright © The International Union of Pure and Applied Chemistry 2005: IUPAC
-  International Chemical Identifier (InChI) (contact: secretariat@iupac.org) */
+   International Chemical Identifier (InChI) (contact: secretariat@iupac.org) */
 
 extern "C" char *
 ob_smiles_to_inchi (char *smiles)
@@ -1223,8 +1223,8 @@ ob_SSS_SMARTS_native_count_bin (const char *smarts_pattern, char *serializedInpu
   if(mol.NumHvyAtoms() < sp.NumAtoms()) return 0;
 
   if (sp.Match(mol,false)) {
-      matchcount = sp.GetUMapList().size();
-      //matchcount=sp.NumMatches();
+    matchcount = sp.GetUMapList().size();
+    //matchcount=sp.NumMatches();
   }    
 
   //maplist = sp.GetUMapList ();
@@ -1258,8 +1258,8 @@ ob_SSS_SMARTS_native_count (const char *smarts_pattern, char *smiles)
   if(mol.NumHvyAtoms() < sp.NumAtoms()) return 0;
 
   if (sp.Match(mol,false)) {
-      matchcount = sp.GetUMapList().size();
-      //matchcount=sp.NumMatches();
+    matchcount = sp.GetUMapList().size();
+    //matchcount=sp.NumMatches();
   }    
 
   //maplist = sp.GetUMapList ();
@@ -1287,7 +1287,7 @@ ob_MR (char *smiles)
   mol.AddHydrogens (false, false);
 
   //MR = mr.Predict (mol);
-   if(pDescr)
+  if(pDescr)
     MR = pDescr->Predict(&mol);
   
 
@@ -1312,7 +1312,7 @@ ob_PSA (char *smiles)
   mol.AddHydrogens (false, false);
 
   //PSA = psa.Predict (mol);
-   if(pDescr)
+  if(pDescr)
     PSA = pDescr->Predict(&mol);
 
   return (PSA);
@@ -1355,10 +1355,10 @@ ob_num_H_donors (char *smiles)
 
   conv.Read (&mol, &molstream);
   
-      FOR_ATOMS_OF_MOL(a, mol)
-      {
-            if(a->IsHbondDonor()) numHdonors++;
-      }
+  FOR_ATOMS_OF_MOL(a, mol)
+    {
+      if(a->IsHbondDonor()) numHdonors++;
+    }
 
   return (numHdonors);
 }
@@ -1376,272 +1376,272 @@ ob_num_H_acceptors (char *smiles)
 
   conv.Read (&mol, &molstream);
   
-      FOR_ATOMS_OF_MOL(a, mol)
-      {
+  FOR_ATOMS_OF_MOL(a, mol)
+    {
       if(a->IsHbondAcceptor()) numHacceptors++;
-      }
+    }
 
   return (numHacceptors);
 }
 
 static bool ob_rehydrate_molecule(OBBase* pOb, char *serializedInput)
-  {
-    OBMol* pmol = pOb->CastAndClear<OBMol>();
-    map<OBAtom*,OBChiralData*> _mapcd;
+{
+  OBMol* pmol = pOb->CastAndClear<OBMol>();
+  map<OBAtom*,OBChiralData*> _mapcd;
 
-    //Define some references so we can use the old parameter names
-    OBMol &mol = *pmol;
-    _mapcd.clear();
-    bool chiralWatch=false;
+  //Define some references so we can use the old parameter names
+  OBMol &mol = *pmol;
+  _mapcd.clear();
+  bool chiralWatch=false;
   
-    //stringstream errorMsg;
-    //string clearError;
+  //stringstream errorMsg;
+  //string clearError;
 
-    // Allows addition of further disconnected atoms to an existing molecule
-    //int offset = mol.NumAtoms(); 
+  // Allows addition of further disconnected atoms to an existing molecule
+  //int offset = mol.NumAtoms(); 
 
-    int i,natoms,nbonds;
-    //string r1,r2;
+  int i,natoms,nbonds;
+  //string r1,r2;
     
-    unsigned int *intptr = (unsigned int*) serializedInput;
+  unsigned int *intptr = (unsigned int*) serializedInput;
     
-    //cout << *intptr << endl;
+  //cout << *intptr << endl;
      
-    //mol.SetDimension(*intptr);
+  //mol.SetDimension(*intptr);
           
-    //intptr++;
+  //intptr++;
 
-    natoms = *intptr;
+  natoms = *intptr;
     
-    intptr++;
+  intptr++;
     
-    nbonds = *intptr;
+  nbonds = *intptr;
     
-    intptr++;
+  intptr++;
     
-    //cout << mol.GetDimension() << natoms << nbonds << endl;
+  //cout << mol.GetDimension() << natoms << nbonds << endl;
     
-    _ATOM *atomptr = (_ATOM*) intptr;
+  _ATOM *atomptr = (_ATOM*) intptr;
 
-    //mol.BeginModify();
+  //mol.BeginModify();
     
-        mol.ReserveAtoms(natoms);
+  mol.ReserveAtoms(natoms);
 
-        OBAtom atom;
-        int stereo;
+  OBAtom atom;
+  int stereo;
 
-        for (i = 1;i <= natoms;i++) {
+  for (i = 1;i <= natoms;i++) {
             
-        //cout << atomptr->atomicnum << " " << atomptr->isotope << " " << atomptr->idx << " " << atomptr->radical << " " << atomptr->stereo << " " << atomptr->formalcharge << endl;
+    //cout << atomptr->atomicnum << " " << atomptr->isotope << " " << atomptr->idx << " " << atomptr->radical << " " << atomptr->stereo << " " << atomptr->formalcharge << endl;
          
-         atom.SetIdx(atomptr->idx);
+    atom.SetIdx(atomptr->idx);
          
-         atom.SetHyb(atomptr->hybridization);
+    atom.SetHyb(atomptr->hybridization);
          
-          //int iso=0;
-          atom.SetAtomicNum((int) atomptr->atomicnum);
-          //iso=atomptr->isotope;
+    //int iso=0;
+    atom.SetAtomicNum((int) atomptr->atomicnum);
+    //iso=atomptr->isotope;
           
-          //if(iso)
-            atom.SetIsotope((unsigned int) atomptr->isotope);
+    //if(iso)
+    atom.SetIsotope((unsigned int) atomptr->isotope);
 
-          atom.SetFormalCharge((int) atomptr->formalcharge);
+    atom.SetFormalCharge((int) atomptr->formalcharge);
 
-         stereo = atomptr->stereo;
+    stereo = atomptr->stereo;
          
-              if (stereo == 2)
-                {
-                  chiralWatch=true;
-                  atom.SetAntiClockwiseStereo();
-                }
-              else if (stereo == 1)
-                {
-                  chiralWatch=true;
-                  atom.SetClockwiseStereo();
-                }
-              else if(stereo == 3)
-                {
-                  chiralWatch=true;
-                  atom.SetChiral();
-                }
-                
-          atom.SetSpinMultiplicity((short) atomptr->spinmultiplicity);
-          
-          if(atomptr->aromatic != 0) atom.SetAromatic();            
-                
-          if (!mol.AddAtom(atom)) return (false);
-          
-          if(chiralWatch)  // fill the map with data for each chiral atom
-            _mapcd[mol.GetAtom(i)] = new OBChiralData;
-          atom.Clear();
-          atomptr++;
-        }
-        
-        _BOND *bondptr = (_BOND*) atomptr;
-
-        unsigned int start,end,order,flags;
-        
-        for (i = 0;i < nbonds;i++) {
-          flags = 0;
-         
-          start = bondptr->beginidx;
-          end = bondptr->endidx;
-          order = (int) bondptr->order;
-          
-          if (start == 0 || end == 0 || order == 0 ||
-              start > natoms || end > natoms)
-            return false;
-
-          order = (unsigned int) (order == 4) ? 5 : order;
-         
-          stereo = bondptr->stereo;
-          
-          //cout << atomptr->atomicnum << " " << atomptr->isotope << " " << atomptr->idx << " " << atomptr->radical << " " << atomptr->stereo << " " << atomptr->formalcharge << endl;
-            
-            if (stereo) {
-              if (stereo == 1) flags |= OB_WEDGE_BOND;
-              if (stereo == 6) flags |= OB_HASH_BOND;
-            } 
-            
-          if(bondptr->aromatic != 0) flags |= OB_AROMATIC_BOND;
-          
-          //flags |= bondptr->flags;        
-
-          if (!mol.AddBond(start,end,order,flags)) return (false);
-
-          // after adding a bond to atom # "start+offset"
-          // search to see if atom is bonded to a chiral atom
-          // HERE
-          map<OBAtom*,OBChiralData*>::iterator ChiralSearch;
-          ChiralSearch = _mapcd.find(mol.GetAtom(start));
-          if (ChiralSearch!=_mapcd.end())
-            {
-              (ChiralSearch->second)->AddAtomRef(end, input);
-            }
-          // after adding a bond to atom # "end + offset"
-          // search to see if atom is bonded to a chiral atom
-          ChiralSearch = _mapcd.find(mol.GetAtom(end));
-          if (ChiralSearch!=_mapcd.end())
-            {
-              (ChiralSearch->second)->AddAtomRef(start, input);
-            }
-         bondptr++;
-        }
-        
-    //mol.AssignSpinMultiplicity();
-
-    //mol.EndModify();
-    
-    intptr = (unsigned int*) bondptr;
-        
-    //NE add the OBChiralData stored inside the _mapcd to the atoms now after end
-    // modify so they don't get lost.
-    if(_mapcd.size()>0)
+    if (stereo == 2)
       {
-        OBAtom* atomptr;
-        OBChiralData* cd;
-        map<OBAtom*,OBChiralData*>::iterator ChiralSearch;
-        for(ChiralSearch=_mapcd.begin();ChiralSearch!=_mapcd.end();ChiralSearch++)
-          {
-            atomptr=ChiralSearch->first;
-            cd=ChiralSearch->second;
-            atomptr->SetData(cd);
-          }    
+	chiralWatch=true;
+	atom.SetAntiClockwiseStereo();
       }
-      
-    //mol.SetFlags(*(int*)intptr);  
-      
-    mol.SetAromaticPerceived();
-    mol.SetKekulePerceived();
-    mol.SetChiralityPerceived();  
-
-    return(true);
+    else if (stereo == 1)
+      {
+	chiralWatch=true;
+	atom.SetClockwiseStereo();
+      }
+    else if(stereo == 3)
+      {
+	chiralWatch=true;
+	atom.SetChiral();
+      }
+                
+    atom.SetSpinMultiplicity((short) atomptr->spinmultiplicity);
+          
+    if(atomptr->aromatic != 0) atom.SetAromatic();            
+                
+    if (!mol.AddAtom(atom)) return (false);
+          
+    if(chiralWatch)  // fill the map with data for each chiral atom
+      _mapcd[mol.GetAtom(i)] = new OBChiralData;
+    atom.Clear();
+    atomptr++;
   }
+        
+  _BOND *bondptr = (_BOND*) atomptr;
+
+  unsigned int start,end,order,flags;
+        
+  for (i = 0;i < nbonds;i++) {
+    flags = 0;
+         
+    start = bondptr->beginidx;
+    end = bondptr->endidx;
+    order = (int) bondptr->order;
+          
+    if (start == 0 || end == 0 || order == 0 ||
+	start > natoms || end > natoms)
+      return false;
+
+    order = (unsigned int) (order == 4) ? 5 : order;
+         
+    stereo = bondptr->stereo;
+          
+    //cout << atomptr->atomicnum << " " << atomptr->isotope << " " << atomptr->idx << " " << atomptr->radical << " " << atomptr->stereo << " " << atomptr->formalcharge << endl;
+            
+    if (stereo) {
+      if (stereo == 1) flags |= OB_WEDGE_BOND;
+      if (stereo == 6) flags |= OB_HASH_BOND;
+    } 
+            
+    if(bondptr->aromatic != 0) flags |= OB_AROMATIC_BOND;
+          
+    //flags |= bondptr->flags;        
+
+    if (!mol.AddBond(start,end,order,flags)) return (false);
+
+    // after adding a bond to atom # "start+offset"
+    // search to see if atom is bonded to a chiral atom
+    // HERE
+    map<OBAtom*,OBChiralData*>::iterator ChiralSearch;
+    ChiralSearch = _mapcd.find(mol.GetAtom(start));
+    if (ChiralSearch!=_mapcd.end())
+      {
+	(ChiralSearch->second)->AddAtomRef(end, input);
+      }
+    // after adding a bond to atom # "end + offset"
+    // search to see if atom is bonded to a chiral atom
+    ChiralSearch = _mapcd.find(mol.GetAtom(end));
+    if (ChiralSearch!=_mapcd.end())
+      {
+	(ChiralSearch->second)->AddAtomRef(start, input);
+      }
+    bondptr++;
+  }
+        
+  //mol.AssignSpinMultiplicity();
+
+  //mol.EndModify();
+    
+  intptr = (unsigned int*) bondptr;
+        
+  //NE add the OBChiralData stored inside the _mapcd to the atoms now after end
+  // modify so they don't get lost.
+  if(_mapcd.size()>0)
+    {
+      OBAtom* atomptr;
+      OBChiralData* cd;
+      map<OBAtom*,OBChiralData*>::iterator ChiralSearch;
+      for(ChiralSearch=_mapcd.begin();ChiralSearch!=_mapcd.end();ChiralSearch++)
+	{
+	  atomptr=ChiralSearch->first;
+	  cd=ChiralSearch->second;
+	  atomptr->SetData(cd);
+	}    
+    }
+      
+  //mol.SetFlags(*(int*)intptr);  
+      
+  mol.SetAromaticPerceived();
+  mol.SetKekulePerceived();
+  mol.SetChiralityPerceived();  
+
+  return(true);
+}
   
 extern "C" char *ob_lyophilize_molecule(char* smiles) {
-      OBMol mol;
-      OBConversion conv;
-      string tmpStr (smiles);
-      istringstream molstream (tmpStr);
-      conv.SetInFormat("SMI");
-      conv.Read (&mol, &molstream);
-      if(mol.Empty()) return NULL;
-      unsigned int numatoms = mol.NumAtoms();
-      unsigned int numbonds = mol.NumBonds();
-      unsigned int totalsize=(numatoms*sizeof(_ATOM))+(numbonds*sizeof(_BOND))+(3*sizeof(unsigned int));
-      char *retval = new char[totalsize];
-      int  stereo;
-      _ATOM *atomptr;
-      _BOND *bondptr;
+  OBMol mol;
+  OBConversion conv;
+  string tmpStr (smiles);
+  istringstream molstream (tmpStr);
+  conv.SetInFormat("SMI");
+  conv.Read (&mol, &molstream);
+  if(mol.Empty()) return NULL;
+  unsigned int numatoms = mol.NumAtoms();
+  unsigned int numbonds = mol.NumBonds();
+  unsigned int totalsize=(numatoms*sizeof(_ATOM))+(numbonds*sizeof(_BOND))+(3*sizeof(unsigned int));
+  char *retval = new char[totalsize];
+  int  stereo;
+  _ATOM *atomptr;
+  _BOND *bondptr;
       
-      //mol.Kekulize();
+  //mol.Kekulize();
       
-      memset(retval,0x0,totalsize);
+  memset(retval,0x0,totalsize);
       
-      unsigned int *uintptr = (unsigned int*) retval;
+  unsigned int *uintptr = (unsigned int*) retval;
       
-      *uintptr = totalsize-sizeof(unsigned int);
+  *uintptr = totalsize-sizeof(unsigned int);
       
-      uintptr++;
+  uintptr++;
       
-      //*uintptr = (unsigned int) mol.GetDimension();
+  //*uintptr = (unsigned int) mol.GetDimension();
       
-      //uintptr++;
+  //uintptr++;
       
-      *uintptr = numatoms;
+  *uintptr = numatoms;
       
-      uintptr++;
+  uintptr++;
       
-      *uintptr = numbonds;
+  *uintptr = numbonds;
       
-      uintptr++;
+  uintptr++;
       
-      atomptr = (_ATOM*) uintptr;
+  atomptr = (_ATOM*) uintptr;
       
-      //cout << mol.GetDimension() << numatoms << numbonds << endl;
+  //cout << mol.GetDimension() << numatoms << numbonds << endl;
       
       
-        FOR_ATOMS_OF_MOL(atom, mol) {
-            stereo = 0;
-            atomptr->idx = atom->GetIdx();
-            atomptr->hybridization = atom->GetHyb();
-            atomptr->atomicnum = (unsigned char) atom->GetAtomicNum();
-            atomptr->formalcharge = (char) atom->GetFormalCharge();
-            atomptr->isotope = (unsigned short) atom->GetIsotope();
+  FOR_ATOMS_OF_MOL(atom, mol) {
+    stereo = 0;
+    atomptr->idx = atom->GetIdx();
+    atomptr->hybridization = atom->GetHyb();
+    atomptr->atomicnum = (unsigned char) atom->GetAtomicNum();
+    atomptr->formalcharge = (char) atom->GetFormalCharge();
+    atomptr->isotope = (unsigned short) atom->GetIsotope();
             
-            //cout << atom->GetFormalCharge() << " " << atom->GetIsotope() << " " << atom->GetSpinMultiplicity() << endl;
+    //cout << atom->GetFormalCharge() << " " << atom->GetIsotope() << " " << atom->GetSpinMultiplicity() << endl;
             
-            if(atom->IsClockwise()) stereo = 1;
-            else if (atom->IsAntiClockwise()) stereo = 2;
-            else if (atom->IsChiral()) stereo = 3;
-            atomptr->stereo = stereo;
-            atomptr->spinmultiplicity = (unsigned char) atom->GetSpinMultiplicity();
-            atomptr->aromatic = atom->IsAromatic() ? 1 : 0;
-            //atomptr->flags = atom->GetFlag();
-            atomptr++;
-            }
+    if(atom->IsClockwise()) stereo = 1;
+    else if (atom->IsAntiClockwise()) stereo = 2;
+    else if (atom->IsChiral()) stereo = 3;
+    atomptr->stereo = stereo;
+    atomptr->spinmultiplicity = (unsigned char) atom->GetSpinMultiplicity();
+    atomptr->aromatic = atom->IsAromatic() ? 1 : 0;
+    //atomptr->flags = atom->GetFlag();
+    atomptr++;
+  }
         
         
-       bondptr = (_BOND*) atomptr;    
+  bondptr = (_BOND*) atomptr;    
        
-       if(numbonds>0) { 
-         FOR_BONDS_OF_MOL(bond, mol) {
-             stereo = 0;
-             bondptr->beginidx = bond->GetBeginAtomIdx();
-             bondptr->endidx = bond->GetEndAtomIdx();
-             bondptr->order = (unsigned char) bond->GetBondOrder();
-             if(bond->IsWedge()) stereo = 1;
-             else if(bond->IsHash()) stereo = 6;
-             bondptr->stereo = stereo;
-             bondptr->aromatic = bond->IsAromatic() ? 1 : 0;
-             //bondptr->flags = bond->GetFlags();
-             bondptr++;
-             }
-         }
+  if(numbonds>0) { 
+    FOR_BONDS_OF_MOL(bond, mol) {
+      stereo = 0;
+      bondptr->beginidx = bond->GetBeginAtomIdx();
+      bondptr->endidx = bond->GetEndAtomIdx();
+      bondptr->order = (unsigned char) bond->GetBondOrder();
+      if(bond->IsWedge()) stereo = 1;
+      else if(bond->IsHash()) stereo = 6;
+      bondptr->stereo = stereo;
+      bondptr->aromatic = bond->IsAromatic() ? 1 : 0;
+      //bondptr->flags = bond->GetFlags();
+      bondptr++;
+    }
+  }
          
-      //int *intptr = (int*) bondptr;
+  //int *intptr = (int*) bondptr;
       
-      //*intptr = mol.GetFlags();           
+  //*intptr = mol.GetFlags();           
       
-      return retval;
-  }    
+  return retval;
+}    
