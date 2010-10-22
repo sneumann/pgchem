@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/svnroot/openbabel/!svn/ver/4213/openbabel/trunk/test
+/svnroot/openbabel/!svn/ver/4239/openbabel/trunk/test
 END
 aromatest.cpp
 K 25
@@ -187,7 +187,7 @@ testbabel.py
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/testbabel.py
+/svnroot/openbabel/!svn/ver/4227/openbabel/trunk/test/testbabel.py
 END
 zipstream.cpp
 K 25
@@ -343,7 +343,7 @@ CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/svnroot/openbabel/!svn/ver/4213/openbabel/trunk/test/CMakeLists.txt
+/svnroot/openbabel/!svn/ver/4239/openbabel/trunk/test/CMakeLists.txt
 END
 squareplanartest.cpp
 K 25
@@ -351,17 +351,17 @@ svn:wc:ra_dav:version-url
 V 74
 /svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/squareplanartest.cpp
 END
-test-set.sh
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/test/test-set.sh
-END
 atom.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 62
 /svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/atom.cpp
+END
+test-set.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openbabel/!svn/ver/2608/openbabel/trunk/test/test-set.sh
 END
 charge-gasteiger.cpp
 K 25
@@ -375,17 +375,17 @@ svn:wc:ra_dav:version-url
 V 71
 /svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/internalcoord.cpp
 END
-smartsparse.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/smartsparse.cpp
-END
 logp_psa.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 66
 /svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/logp_psa.cpp
+END
+smartsparse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/test/smartsparse.cpp
 END
 formula.cpp
 K 25

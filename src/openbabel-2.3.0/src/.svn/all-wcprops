@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/svnroot/openbabel/!svn/ver/4219/openbabel/trunk/src
+/svnroot/openbabel/!svn/ver/4242/openbabel/trunk/src
 END
 plugin.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/plugin.cpp
+/svnroot/openbabel/!svn/ver/4239/openbabel/trunk/src/plugin.cpp
 END
 canon.cpp
 K 25
@@ -151,7 +151,7 @@ bond.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/bond.cpp
+/svnroot/openbabel/!svn/ver/4230/openbabel/trunk/src/bond.cpp
 END
 kekulize.cpp
 K 25
@@ -187,7 +187,7 @@ builder.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/builder.cpp
+/svnroot/openbabel/!svn/ver/4238/openbabel/trunk/src/builder.cpp
 END
 tokenst.cpp
 K 25
@@ -241,7 +241,7 @@ CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svnroot/openbabel/!svn/ver/4216/openbabel/trunk/src/CMakeLists.txt
+/svnroot/openbabel/!svn/ver/4239/openbabel/trunk/src/CMakeLists.txt
 END
 obutil.cpp
 K 25

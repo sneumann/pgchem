@@ -9,11 +9,11 @@ svn:wc:ra_dav:version-url
 V 70
 /svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/addpolarh.cpp
 END
-xout.cpp
+opisomorph.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/xout.cpp
+V 71
+/svnroot/openbabel/!svn/ver/4145/openbabel/trunk/src/ops/opisomorph.cpp
 END
 gen2D.cpp
 K 25
@@ -21,11 +21,11 @@ svn:wc:ra_dav:version-url
 V 66
 /svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/gen2D.cpp
 END
-opisomorph.cpp
+xout.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 71
-/svnroot/openbabel/!svn/ver/4145/openbabel/trunk/src/ops/opisomorph.cpp
+V 65
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/xout.cpp
 END
 gen3d.cpp
 K 25
@@ -45,17 +45,17 @@ svn:wc:ra_dav:version-url
 V 65
 /svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/op2d.cpp
 END
-unique.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 67
-/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/unique.cpp
-END
 loader.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 67
 /svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/loader.cpp
+END
+unique.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/ops/unique.cpp
 END
 addinindex.cpp
 K 25

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/inchi
+/svnroot/openbabel/!svn/ver/4234/openbabel/trunk/test/inchi
 END
 Samples.sdf
 K 25
@@ -19,13 +19,13 @@ Samples.txt
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/inchi/Samples.txt
+/svnroot/openbabel/!svn/ver/4234/openbabel/trunk/test/inchi/Samples.txt
 END
 SamplesTechMan.txt
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/inchi/SamplesTechMan.txt
+/svnroot/openbabel/!svn/ver/4233/openbabel/trunk/test/inchi/SamplesTechMan.txt
 END
 SamplesFail.txt
 K 25

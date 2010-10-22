@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openbabel/!svn/ver/4240/openbabel/trunk/doc/examples/static_executable
+END
+myexe.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openbabel/!svn/ver/4209/openbabel/trunk/doc/examples/static_executable/myexe.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openbabel/!svn/ver/4240/openbabel/trunk/doc/examples/static_executable/CMakeLists.txt
+END

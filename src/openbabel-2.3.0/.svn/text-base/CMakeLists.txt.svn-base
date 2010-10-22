@@ -20,9 +20,11 @@ include (CheckCXXCompilerFlag)
 include (MacroEnsureVersion)
 
 # Version numbering - should be bumped for each release
+# Note that for "beta" releases, we should start at x.90.0 -- we've
+# had too many 1.100.1 releases. :-)
 set(BABEL_MAJ_VER   2)
-set(BABEL_MIN_VER   2)
-set(BABEL_PATCH_VER 99)
+set(BABEL_MIN_VER   3)
+set(BABEL_PATCH_VER 00)
 
 # This should be phased out in preference for just using the target name
 set(BABEL_LIBRARY openbabel)
@@ -133,6 +135,9 @@ endif()
 
 # configure checks
 find_package(LibXml2)
+if(NOT LIBXML2_FOUND)
+  message(WARNING "libxml2 not found - disabling CML support!")
+endif()
 
 find_package(ZLIB)
 if(ZLIB_FOUND)
@@ -265,6 +270,10 @@ if(CMAKE_COMPILER_IS_GNUCXX)
   else()
     set(SHARED_POINTER true)
   endif()
+endif()
+
+if (${CMAKE_CXX_COMPILER_ID} MATCHES Clang)
+   set(SHARED_POINTER true)
 endif()
 
 # Intel C++ Compiler

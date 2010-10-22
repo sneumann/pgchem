@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/svnroot/openbabel/!svn/ver/4214/openbabel/trunk/src/stereo
+/svnroot/openbabel/!svn/ver/4228/openbabel/trunk/src/stereo
 END
 squareplanar.cpp
 K 25
@@ -37,13 +37,13 @@ cistrans.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/stereo/cistrans.cpp
+/svnroot/openbabel/!svn/ver/4228/openbabel/trunk/src/stereo/cistrans.cpp
 END
 perception.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svnroot/openbabel/!svn/ver/4192/openbabel/trunk/src/stereo/perception.cpp
+/svnroot/openbabel/!svn/ver/4228/openbabel/trunk/src/stereo/perception.cpp
 END
 tetranonplanar.cpp
 K 25

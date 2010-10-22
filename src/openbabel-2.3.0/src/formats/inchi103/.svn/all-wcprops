@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svnroot/openbabel/!svn/ver/3837/openbabel/trunk/src/formats/inchi103
+/svnroot/openbabel/!svn/ver/4237/openbabel/trunk/src/formats/inchi103
 END
 runichi.c
 K 25
@@ -157,7 +157,7 @@ CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/src/formats/inchi103/CMakeLists.txt
+/svnroot/openbabel/!svn/ver/4237/openbabel/trunk/src/formats/inchi103/CMakeLists.txt
 END
 ichimap2.c
 K 25

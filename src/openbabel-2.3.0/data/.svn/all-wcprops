@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/svnroot/openbabel/!svn/ver/4194/openbabel/trunk/data
+/svnroot/openbabel/!svn/ver/4222/openbabel/trunk/data
 END
 torlib.h
 K 25
@@ -105,41 +105,23 @@ svn:wc:ra_dav:version-url
 V 67
 /svnroot/openbabel/!svn/ver/4162/openbabel/trunk/data/phmodeldata.h
 END
-templates.sdf
-K 25
-svn:wc:ra_dav:version-url
-V 67
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/templates.sdf
-END
 resdata.h
 K 25
 svn:wc:ra_dav:version-url
 V 63
 /svnroot/openbabel/!svn/ver/4162/openbabel/trunk/data/resdata.h
 END
+templates.sdf
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/templates.sdf
+END
 atomtyp.txt
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/openbabel/!svn/ver/4186/openbabel/trunk/data/atomtyp.txt
-END
-space-groups.xsl
-K 25
-svn:wc:ra_dav:version-url
-V 70
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/space-groups.xsl
-END
-aromatic.txt
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/svnroot/openbabel/!svn/ver/2334/openbabel/trunk/data/aromatic.txt
-END
-UFF.prm
-K 25
-svn:wc:ra_dav:version-url
-V 61
-/svnroot/openbabel/!svn/ver/3829/openbabel/trunk/data/UFF.prm
+/svnroot/openbabel/!svn/ver/4221/openbabel/trunk/data/atomtyp.txt
 END
 CMakeLists.txt
 K 25
@@ -147,23 +129,29 @@ svn:wc:ra_dav:version-url
 V 68
 /svnroot/openbabel/!svn/ver/3815/openbabel/trunk/data/CMakeLists.txt
 END
+UFF.prm
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openbabel/!svn/ver/3829/openbabel/trunk/data/UFF.prm
+END
+aromatic.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openbabel/!svn/ver/2334/openbabel/trunk/data/aromatic.txt
+END
+space-groups.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/space-groups.xsl
+END
 patterns.txt
 K 25
 svn:wc:ra_dav:version-url
 V 66
 /svnroot/openbabel/!svn/ver/2571/openbabel/trunk/data/patterns.txt
-END
-element.h
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/data/element.h
-END
-logp.txt
-K 25
-svn:wc:ra_dav:version-url
-V 62
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/logp.txt
 END
 mmff94s.ff
 K 25
@@ -171,23 +159,35 @@ svn:wc:ra_dav:version-url
 V 64
 /svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmff94s.ff
 END
+logp.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/logp.txt
+END
+element.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/data/element.h
+END
 atomtyp.h
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svnroot/openbabel/!svn/ver/4162/openbabel/trunk/data/atomtyp.h
-END
-SMARTS_InteLigand.txt
-K 25
-svn:wc:ra_dav:version-url
-V 75
-/svnroot/openbabel/!svn/ver/2035/openbabel/trunk/data/SMARTS_InteLigand.txt
+/svnroot/openbabel/!svn/ver/4222/openbabel/trunk/data/atomtyp.h
 END
 mmffdef.par
 K 25
 svn:wc:ra_dav:version-url
 V 65
 /svnroot/openbabel/!svn/ver/3765/openbabel/trunk/data/mmffdef.par
+END
+SMARTS_InteLigand.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openbabel/!svn/ver/2035/openbabel/trunk/data/SMARTS_InteLigand.txt
 END
 aromatic.h
 K 25

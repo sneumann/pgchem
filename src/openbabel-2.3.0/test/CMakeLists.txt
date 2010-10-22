@@ -40,14 +40,20 @@ endif (EIGEN2_FOUND)
 
 set(TEST_PATH ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 
+if(NOT BUILD_SHARED)
+  set(libs openbabel ${LIBXML2_LIBRARIES} inchi)
+  set(CMAKE_CXX_FLAGS "-static ${CMAKE_CXX_FLAGS}")
+else()
+  set(libs openbabel)
+endif()
+
 foreach(test ${tests})
   add_executable(test_${test} ${test}test.cpp)
-  target_link_libraries(test_${test} ${BABEL_LIBRARY})
-  if(MSVC)
-    add_test(${test}_Test ${CMAKE_BINARY_DIR}/test_${test})
-  else(MSVC)
-    add_test(${test}_Test ${TEST_PATH}/test_${test})
-  endif(MSVC)
+  target_link_libraries(test_${test} ${libs})
+  if(NOT BUILD_SHARED)
+    set_target_properties(test_${test} PROPERTIES LINK_SEARCH_END_STATIC TRUE)
+  endif()
+  add_test(${test}_Test ${TEST_PATH}/test_${test})
   set_tests_properties(${test}_Test PROPERTIES
     FAIL_REGULAR_EXPRESSION "ERROR;FAIL;Test failed"
     ENVIRONMENT "BABEL_LIBDIR=${CMAKE_BINARY_DIR}/lib"
@@ -95,19 +101,16 @@ endif(LIBXML2_FOUND)
 
 if(WITH_INCHI)
   add_executable(test_inchiwrite inchiwrite.cpp ../src/formats/getinchi.cpp)
-  target_link_libraries(test_inchiwrite ${BABEL_LIBRARY})
+  target_link_libraries(test_inchiwrite ${libs})
+  if(NOT BUILD_SHARED)
+    set_target_properties(test_inchiwrite PROPERTIES LINK_SEARCH_END_STATIC TRUE)
+  endif()
   # files in test/inchi -- both .sdf and .txt
   set(inchitests Samples SamplesTechMan)
   set(inchidata ${CMAKE_SOURCE_DIR}/test/inchi)
   foreach(test ${inchitests})
-    if(MSVC)
-      add_test(inchi${test}_Test 
-               ${CMAKE_BINARY_DIR}/test_inchiwrite ${inchidata}/${test}.sdf ${inchidata}/${test}.txt)
-    else(MSVC)
-      add_test(inchi${test}_Test 
-              ${TEST_PATH}/test_inchiwrite ${inchidata}/${test}.sdf ${inchidata}/${test}.txt)
-    endif(MSVC)
-
+    add_test(inchi${test}_Test 
+             ${TEST_PATH}/test_inchiwrite ${inchidata}/${test}.sdf ${inchidata}/${test}.txt)
     set_tests_properties(inchi${test}_Test PROPERTIES
                          FAIL_REGULAR_EXPRESSION "Not ok"
                          ENVIRONMENT "BABEL_LIBDIR=${CMAKE_BINARY_DIR}/lib"
@@ -118,12 +121,11 @@ endif(WITH_INCHI)
 
 foreach(test ${old_tests})
   add_executable(test_${test} ${test}.cpp)
-  target_link_libraries(test_${test} ${BABEL_LIBRARY})
-  if(MSVC)
-    add_test(${test}_Test ${CMAKE_BINARY_DIR}/test_${test})
-  else(MSVC)
-    add_test(${test}_Test ${TEST_PATH}/test_${test})
-  endif(MSVC)
+  target_link_libraries(test_${test} ${libs})
+  if(NOT BUILD_SHARED)
+    set_target_properties(test_${test} PROPERTIES LINK_SEARCH_END_STATIC TRUE)
+  endif()
+  add_test(${test}_Test ${TEST_PATH}/test_${test})
   set_tests_properties(${test}_Test PROPERTIES
     FAIL_REGULAR_EXPRESSION "not ok"
     ENVIRONMENT "BABEL_LIBDIR=${CMAKE_BINARY_DIR}/lib"
@@ -136,7 +138,10 @@ endforeach(test ${old_tests})
 ############################################################  
 
 add_executable(roundtrip roundtrip.cpp)
-target_link_libraries(roundtrip ${BABEL_LIBRARY})
+target_link_libraries(roundtrip ${libs})
+if(NOT BUILD_SHARED)
+  set_target_properties(roundtrip PROPERTIES LINK_SEARCH_END_STATIC TRUE)
+endif()
 install(TARGETS roundtrip
                 RUNTIME DESTINATION bin
                 LIBRARY DESTINATION lib

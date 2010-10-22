@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 60
-/svnroot/openbabel/!svn/ver/4217/openbabel/trunk/src/formats
+/svnroot/openbabel/!svn/ver/4242/openbabel/trunk/src/formats
 END
 fingerprintformat.cpp
 K 25
@@ -19,13 +19,13 @@ adfformat.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svnroot/openbabel/!svn/ver/3904/openbabel/trunk/src/formats/adfformat.cpp
+/svnroot/openbabel/!svn/ver/4239/openbabel/trunk/src/formats/adfformat.cpp
 END
 smilesformat.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svnroot/openbabel/!svn/ver/4199/openbabel/trunk/src/formats/smilesformat.cpp
+/svnroot/openbabel/!svn/ver/4228/openbabel/trunk/src/formats/smilesformat.cpp
 END
 nulformat.cpp
 K 25
@@ -163,7 +163,7 @@ inchiformat.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/openbabel/!svn/ver/4171/openbabel/trunk/src/formats/inchiformat.cpp
+/svnroot/openbabel/!svn/ver/4232/openbabel/trunk/src/formats/inchiformat.cpp
 END
 xyzformat.cpp
 K 25
@@ -307,7 +307,7 @@ chemdrawcdx.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/formats/chemdrawcdx.cpp
+/svnroot/openbabel/!svn/ver/4231/openbabel/trunk/src/formats/chemdrawcdx.cpp
 END
 gausscubeformat.cpp
 K 25
@@ -397,13 +397,13 @@ moldenformat.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/formats/moldenformat.cpp
+/svnroot/openbabel/!svn/ver/4239/openbabel/trunk/src/formats/moldenformat.cpp
 END
 msmsformat.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/openbabel/!svn/ver/3825/openbabel/trunk/src/formats/msmsformat.cpp
+/svnroot/openbabel/!svn/ver/4239/openbabel/trunk/src/formats/msmsformat.cpp
 END
 yasaraformat.cpp
 K 25
@@ -427,7 +427,7 @@ CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/openbabel/!svn/ver/4208/openbabel/trunk/src/formats/CMakeLists.txt
+/svnroot/openbabel/!svn/ver/4224/openbabel/trunk/src/formats/CMakeLists.txt
 END
 pcmodelformat.cpp
 K 25
@@ -481,7 +481,7 @@ formats.cmake
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svnroot/openbabel/!svn/ver/4208/openbabel/trunk/src/formats/formats.cmake
+/svnroot/openbabel/!svn/ver/4239/openbabel/trunk/src/formats/formats.cmake
 END
 cifformat.cpp
 K 25
@@ -523,7 +523,7 @@ mol2format.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svnroot/openbabel/!svn/ver/4026/openbabel/trunk/src/formats/mol2format.cpp
+/svnroot/openbabel/!svn/ver/4242/openbabel/trunk/src/formats/mol2format.cpp
 END
 vaspformat.cpp
 K 25
@@ -554,6 +554,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 78
 /svnroot/openbabel/!svn/ver/4162/openbabel/trunk/src/formats/chemkinformat.cpp
+END
+castepformat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openbabel/!svn/ver/4223/openbabel/trunk/src/formats/castepformat.cpp
 END
 xedformat.cpp
 K 25

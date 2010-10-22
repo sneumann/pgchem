@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/svnroot/openbabel/!svn/ver/4206/openbabel/trunk/test/files
+/svnroot/openbabel/!svn/ver/4221/openbabel/trunk/test/files
 END
 alias.mol
 K 25
@@ -51,17 +51,17 @@ svn:wc:ra_dav:version-url
 V 79
 /svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/testsym_2Dtests.sdf
 END
+implicitH.sdf
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openbabel/!svn/ver/4221/openbabel/trunk/test/files/implicitH.sdf
+END
 unitcell.txt
 K 25
 svn:wc:ra_dav:version-url
 V 72
 /svnroot/openbabel/!svn/ver/3645/openbabel/trunk/test/files/unitcell.txt
-END
-implicitH.sdf
-K 25
-svn:wc:ra_dav:version-url
-V 73
-/svnroot/openbabel/!svn/ver/4143/openbabel/trunk/test/files/implicitH.sdf
 END
 ringresults.txt
 K 25
@@ -183,12 +183,6 @@ svn:wc:ra_dav:version-url
 V 72
 /svnroot/openbabel/!svn/ver/3853/openbabel/trunk/test/files/hao_xu_1.mol
 END
-dipole-mmff94.txt
-K 25
-svn:wc:ra_dav:version-url
-V 77
-/svnroot/openbabel/!svn/ver/4206/openbabel/trunk/test/files/dipole-mmff94.txt
-END
 formalchargeresults.txt
 K 25
 svn:wc:ra_dav:version-url
@@ -200,6 +194,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 72
 /svnroot/openbabel/!svn/ver/3853/openbabel/trunk/test/files/hao_xu_2.mol
+END
+dipole-mmff94.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openbabel/!svn/ver/4206/openbabel/trunk/test/files/dipole-mmff94.txt
 END
 hao_xu_3.mol
 K 25
@@ -231,17 +231,17 @@ svn:wc:ra_dav:version-url
 V 72
 /svnroot/openbabel/!svn/ver/3853/openbabel/trunk/test/files/hao_xu_5.mol
 END
-invalid-smiles.txt
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/invalid-smiles.txt
-END
 hao_xu_6.mol
 K 25
 svn:wc:ra_dav:version-url
 V 72
 /svnroot/openbabel/!svn/ver/3853/openbabel/trunk/test/files/hao_xu_6.mol
+END
+invalid-smiles.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openbabel/!svn/ver/3765/openbabel/trunk/test/files/invalid-smiles.txt
 END
 test2d.xyz
 K 25

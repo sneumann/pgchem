@@ -36,6 +36,7 @@ GNU General Public License for more details.
 #include <openbabel/stereo/stereo.h>
 #include <openbabel/stereo/cistrans.h>
 #include <openbabel/stereo/tetrahedral.h>
+#include <openbabel/stereo/squareplanar.h>
 
 /* OBBuilder::GetNewBondVector():
  * - is based on OBAtom::GetNewBondVector()
@@ -227,12 +228,21 @@ namespace OpenBabel
           v2 = v2.normalize();
         }
 
+        // check to see if atom is a square planar in disguise
+        if (atom->GetHyb() == 3) {
+          OBStereoFacade stereoFacade((OBMol*)atom->GetParent(), false); // Don't reperceive
+          if (stereoFacade.HasSquarePlanarStereo(atom->GetId()))
+            atom->SetHyb(4); // force sq. planar geometry for sq. planar stereo
+        }
+
         if (atom->GetHyb() == 1)
           newbond = bond1;
         else if (atom->GetHyb() == 2)
           newbond = bond1 - v2 * tan(DEG_TO_RAD*60.0);
         else if (atom->GetHyb() == 3)
           newbond = bond1 - v2 * tan(DEG_TO_RAD*70.5);
+        else if (atom->GetHyb() == 4)
+          newbond = bond1; // like 5-coordinate below, we want a 180-degree bond (trans)
         else if (atom->GetHyb() == 5) {
           /* the first two atoms are the axial ones;  the third, fourth, and fifth atom are equatorial */
           newbond = bond1;
@@ -271,7 +281,7 @@ namespace OpenBabel
           //v1 = v1.normalize();
           newbond = v2 + v1 * tan(DEG_TO_RAD*35.25);
         }
-        if (atom->GetHyb() == 5) {
+        if (atom->GetHyb() == 5 || atom->GetHyb() == 4) {
           /* add the first equatorial atom, orthogonally to bond1 (and bond2 = -bond1) */
           /* is atom order correct?  I don't think it matters, but I might have to ask a chemist
            * whether PClF4 would be more likely to have an equatorial or axial Cl-P bond */
@@ -335,6 +345,25 @@ namespace OpenBabel
           bond2 = bond2.normalize();
           bond3 = bond3.normalize();
           newbond = bond1 + bond2 + bond3;
+          newbond = newbond.normalize();
+          newbond *= length;
+          newbond += atom->GetVector();
+          return newbond;
+        }
+
+        if (atom->GetHyb() == 4) { // OK, we want this at -bond3, since bond1 & bond2 are opposite
+          FOR_NBORS_OF_ATOM (nbr, atom) {
+            if (bond1 == VZero)
+              bond1 = atom->GetVector() - nbr->GetVector();
+            else if (bond2 == VZero)
+              bond2 = atom->GetVector() - nbr->GetVector();
+            else if (bond3 == VZero)
+              bond3 = atom->GetVector() - nbr->GetVector();
+          }
+
+          bond3 = bond3.normalize();
+
+          newbond = bond3;
           newbond = newbond.normalize();
           newbond *= length;
           newbond += atom->GetVector();
@@ -790,6 +819,51 @@ namespace OpenBabel
      }
      }
   */
+
+  // Variation of OBBuilder::Swap that allows swapping with a vector3 rather than
+  // an explicit bond. This is useful for correcting stereochemistry at Tet Centers
+  // where it is sometimes necessary to swap an existing bond with the location
+  // of an implicit hydrogen (or lone pair), in order to correct the stereo.
+  bool OBBuilder::SwapWithVector(OBMol &mol, int idxA, int idxB, int idxC, const vector3 &newlocation)
+  {
+    OBAtom *a = mol.GetAtom(idxA);
+    OBAtom *b = mol.GetAtom(idxB);
+    OBAtom *c = mol.GetAtom(idxC);
+
+    // make sure the atoms exist
+    if (a == NULL || b == NULL || c == NULL)
+      return false;
+
+    OBBond *bond1 = mol.GetBond(idxA, idxB);
+
+    // make sure a-b is connected
+    if (bond1 == NULL)
+      return false;
+
+    // make sure the bond are not in a ring
+    if (bond1->IsInRing())
+      return false;
+
+    // save the original bond order
+    int bondOrder1 = bond1->GetBondOrder();
+
+    // delete the bond
+    mol.DeleteBond(bond1);
+
+    // Get the old bond vector
+    vector3 bondB = b->GetVector() - a->GetVector();
+    vector3 bondD =  newlocation   - c->GetVector();
+
+    // Get the new positions for B and D
+    vector3 newB = c->GetVector() + bondB.length() * (bondD/bondD.length());
+    vector3 newD = a->GetVector() + bondD.length() * (bondB/bondB.length());
+
+    // connect the fragments
+    if (!Connect(mol, idxC, idxB, newB, bondOrder1))
+      return false;
+
+    return true;
+  }
 
   bool OBBuilder::Swap(OBMol &mol, int idxA, int idxB, int idxC, int idxD)
   {
@@ -1406,7 +1480,7 @@ namespace OpenBabel
           OBAtom* non_ring_atom = mol.GetAtom(idxs.at(0));
           OBBond* non_ring_bond = mol.GetBond(center, non_ring_atom);
           vector3 newcoords = OBBuilder::GetNewBondVector(center, non_ring_bond->GetLength());
-          non_ring_atom->SetVector(newcoords);
+          SwapWithVector(mol, center->GetIdx(), idxs.at(0), center->GetIdx(), newcoords);
         }
       }
     }
