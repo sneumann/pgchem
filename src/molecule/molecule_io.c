@@ -181,10 +181,7 @@ static MOLECULE *make_molecule(char *raw_input, int size) {
 	    } 
             elog (NOTICE, "Fallback OK");   
 	  }  
-	  
-	  freemolfile = true;
-	  freesmiles = true;
-	} else { //SMILES?       
+      } else { //SMILES?       
 	  molfile = ob_smiles_to_mol (input);
 	  
 	  if(molfile == NULL || !strlen(molfile)) {
