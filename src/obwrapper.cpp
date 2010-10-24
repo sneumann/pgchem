@@ -1569,14 +1569,12 @@ extern "C" char *ob_lyophilize_molecule(char* smiles) {
   unsigned int numatoms = mol.NumAtoms();
   unsigned int numbonds = mol.NumBonds();
   unsigned int totalsize=(numatoms*sizeof(_ATOM))+(numbonds*sizeof(_BOND))+(3*sizeof(unsigned int));
-  char *retval = new char[totalsize];
+  char *retval = (char*) calloc(totalsize, sizeof(char));
   int  stereo;
   _ATOM *atomptr;
   _BOND *bondptr;
       
   //mol.Kekulize();
-      
-  memset(retval,0x0,totalsize);
       
   unsigned int *uintptr = (unsigned int*) retval;
       
